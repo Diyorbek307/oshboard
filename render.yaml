@@ -1,0 +1,18 @@
+# Конфигурация для деплоя на Render.com (https://render.com)
+# Render прочитает этот файл и сам поднимет сервис.
+services:
+  - type: web
+    name: oshboard
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: ADMIN_USER
+        value: admin
+      - key: ADMIN_PASSWORD
+        sync: false          # задаётся вручную в панели Render (секрет)
+      - key: SESSION_SECRET
+        generateValue: true  # Render сгенерирует случайно
+      - key: LEAD_TO
+        value: diyorbekmustafaev7@gmail.com

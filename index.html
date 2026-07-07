@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSHBOARD — умная система для ресторанов: POS + аналитика + AI</title>
+<meta name="description" content="OSHBOARD — POS-система и глубокая аналитика для ресторанов в одном приложении. Трекинг сотрудников, анализ продаж, гостей, блюд, бухгалтерские отчёты, AI-ассистент и тепло-навигатор зала. Самарканд.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>
+  /* Apply saved/preferred theme before first paint (prevents a flash of the wrong theme). */
+  (function () {
+    var r = document.documentElement, k = 'oshboard-theme', s = localStorage.getItem(k);
+    if (s) r.setAttribute('data-theme', s);
+    else if (window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches) r.setAttribute('data-theme', 'light');
+  })();
+</script>
+</head>
+<body>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div class="progress" id="progress"></div>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="logo"><span class="mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 4-6"/></svg></span>OSHBOARD</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#features">Возможности</a>
+      <a href="#heat">Тепло-навигатор</a>
+      <a href="#whom">Для кого</a>
+      <a href="#pricing">Тарифы</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang" id="lang" role="group" aria-label="Язык / Til / Language">
+        <button type="button" data-lang="ru">RU</button>
+        <button type="button" data-lang="uz">UZ</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <button class="theme-btn" id="themeBtn" aria-label="Сменить тему">
+        <svg class="moon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg>
+      </button>
+      <a href="#lead" class="btn btn-primary">Получить демо</a>
+      <button class="burger" id="burger" aria-label="Меню"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="aurora"><b></b><b></b><b></b></div>
+  <canvas class="hero-3d" id="hero3d" aria-hidden="true"></canvas>
+  <div class="wrap hero-in">
+    <div class="reveal">
+      <span class="eyebrow">🇺🇿 Сделано в Самарканде</span>
+      <h1>Управляйте рестораном <span class="grad-text">по цифрам</span>, а не на глаз</h1>
+      <p class="lead">OSHBOARD — POS-касса и глубокая аналитика в одном приложении. Трекинг сотрудников, анализ продаж, гостей и блюд, готовый бухгалтерский отчёт для руководителя и AI-ассистент, который подсказывает решения.</p>
+      <div class="hero-cta">
+        <a href="#lead" class="btn btn-primary btn-lg">Получить демо</a>
+        <a href="#features" class="btn btn-ghost btn-lg">Смотреть возможности</a>
+      </div>
+      <div class="hero-stats">
+        <div class="st"><b>2 в 1</b><span>POS + аналитика</span></div>
+        <div class="st"><b>24/7</b><span>тех. поддержка</span></div>
+        <div class="st"><b>AI</b><span>умный ассистент</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="hero-photo">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=900&q=80" alt="Интерьер ресторана" loading="eager">
+      </div>
+      <div class="float-card fc-1">
+        <div class="lbl">Выручка сегодня</div>
+        <div class="val">12,4 млн<span class="up">▲ 8%</span></div>
+        <div class="mini-bars"><span style="height:40%"></span><span style="height:60%"></span><span style="height:48%"></span><span style="height:80%"></span><span style="height:100%"></span><span style="height:72%"></span></div>
+      </div>
+      <div class="float-card fc-2">
+        <div class="lbl">Средний чек</div>
+        <div class="val">148 000</div>
+      </div>
+      <div class="float-card fc-3">
+        <div class="dot"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9z"/></svg></div>
+        <div><div class="lbl">AI-ассистент</div><div class="val" style="font-size:15px">Онлайн 24/7</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="cap">Одна система вместо табличек, тетрадей и десятка приложений</div>
+  <div class="mq-track" id="mq">
+    <span>🍽 Рестораны</span><span>☕ Кофейни</span><span>🍢 Чайханы</span><span>🍕 Пиццерии</span><span>🥡 Фастфуд</span><span>🏨 Отели</span><span>🍰 Кондитерские</span><span>🍔 Бургерные</span>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Проблема</span>
+      <h2>Рестораны теряют деньги там, где не смотрят</h2>
+      <p>Без точных данных решения принимаются «на глаз». В итоге — воровство, слабые смены и блюда, которые работают в минус.</p>
+    </div>
+    <div class="prob stagger">
+      <div class="pcard"><div class="big" data-count="20" data-suffix="%">0%</div><h3>уходит мимо кассы</h3><p>Ошибки, недосписания и человеческий фактор без контроля продаж.</p></div>
+      <div class="pcard"><div class="big" data-count="30" data-suffix="%">0%</div><h3>блюд в меню — балласт</h3><p>Позиции, которые почти не заказывают или приносят убыток.</p></div>
+      <div class="pcard"><div class="big" data-count="7" data-suffix=" ч">0 ч</div><h3>в неделю на отчёты</h3><p>Ручная сборка цифр вместо автоматического отчёта для босса.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="sec" id="features" style="background:var(--bg-soft);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Возможности</span>
+      <h2>Всё для контроля ресторана — в одном месте</h2>
+      <p>Мы объединили удобную POS-кассу и мощную аналитику: вы видите не только сколько заработали, но и <b>почему</b>.</p>
+    </div>
+    <div class="fgrid stagger">
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg></div><h3>POS-касса</h3><p>Быстрые заказы, столы, разделение счёта, кухонные тикеты, приём оплаты. Работает даже без интернета.</p></div>
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M17 11l2 2 4-4"/></svg></div><h3>Трекинг сотрудников</h3><p>Кто открыл смену, сколько продал каждый официант, скорость обслуживания и KPI по всей команде.</p></div>
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 13l3-3 3 2 5-6"/></svg></div><h3>Анализ продаж</h3><p>Выручка по дням, сменам и точкам. Динамика, средний чек, план/факт — в реальном времени.</p></div>
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Анализ гостей по времени</h3><p>Видно, в какие часы и дни поток большой, а когда пусто — чтобы правильно ставить смены и запускать акции.</p></div>
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h3>Анализ блюд</h3><p>Хиты и аутсайдеры меню, маржа по каждой позиции. Понятно, что убрать, а что продвигать.</p></div>
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></div><h3>Бухгалтерский отчёт боссу</h3><p>Точный и понятный отчёт для руководителя — доходы, расходы, прибыль. Красиво и без ручной сборки.</p></div>
+
+      <div class="fcard feature-big">
+        <div class="txt">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9z"/><path d="M5 19l.9 2 .9-2 2-.9-2-.9-.9-2-.9 2-2 .9z"/></svg></div>
+          <h3>AI-ассистент внутри системы</h3>
+          <p style="color:var(--text-muted);font-size:15px">Спросите обычными словами: «Почему упала выручка в четверг?» или «Какое блюдо приносит меньше всего прибыли?» — ассистент проанализирует данные и даст ответ с рекомендацией.</p>
+        </div>
+        <div class="pic">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Дашборд аналитики">
+          <div class="chat">💬 «Выручка в четверг ниже на 18%: мало гостей после 21:00. Совет — запустить вечернюю акцию на десерты.»</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Интерфейс</span>
+      <h2>Понятная аналитика — на любом экране</h2>
+      <p>Дашборды, отчёты и графики, в которых разберётся даже тот, кто далёк от цифр.</p>
+    </div>
+    <div class="gal stagger">
+      <div class="gcard"><div class="ph"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80" alt="Дашборд продаж" loading="lazy"></div><div class="cap"><h3>Дашборд продаж</h3><p>Выручка, средний чек и динамика в реальном времени.</p></div></div>
+      <div class="gcard"><div class="ph"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=700&q=80" alt="Отчёты по сменам" loading="lazy"></div><div class="cap"><h3>Отчёты по сменам</h3><p>Кто и сколько продал, KPI официантов и поваров.</p></div></div>
+      <div class="gcard"><div class="ph"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80" alt="Аналитика блюд" loading="lazy"></div><div class="cap"><h3>Аналитика меню</h3><p>Хиты, аутсайдеры и маржа по каждому блюду.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HEAT -->
+<section class="sec heat" id="heat">
+  <div class="wrap heat-in">
+    <div class="reveal">
+      <span class="eyebrow">Уникальная фишка</span>
+      <h2>Тепло-навигатор зала через камеру</h2>
+      <p>Подключаем датчик к вашей камере — и в приложении вы видите не просто трекинг, а тепловую карту зала: где скапливаются гости, какие столы «горячие», а какие простаивают.</p>
+      <ul>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Тепловая карта посадки и проходимости в реальном времени</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Видно «мёртвые» зоны зала — можно переставить столы</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Подключается к обычной камере — без дорогого оборудования</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Докупается к «Старт» и «Бизнес», в «Премиум» — уже включён</li>
+      </ul>
+    </div>
+    <div class="heat-visual reveal">
+      <div class="heat-photo"><img src="assets/restaurant-interior.png" alt="Интерьер ресторана — тепловая карта загрузки зала" loading="lazy"></div>
+      <div class="heat-spots" aria-hidden="true">
+        <i style="left:30%;top:66%"></i>
+        <i style="left:43%;top:73%;animation-delay:1s"></i>
+        <i style="left:55%;top:79%;animation-delay:2s"></i>
+        <i style="left:70%;top:60%;animation-delay:.5s"></i>
+        <i style="left:24%;top:52%;animation-delay:2.6s"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOR WHOM -->
+<section class="sec" id="whom">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Для кого</span>
+      <h2>Подходит любому заведению</h2>
+      <p>От маленькой кофейни до большой сети — система масштабируется под вас.</p>
+    </div>
+    <div class="whom stagger">
+      <div class="wcard"><img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=600&q=80" alt="Ресторан" loading="lazy"><div class="lab"><h3>Рестораны</h3><p>Полный контроль зала, кухни и выручки</p></div></div>
+      <div class="wcard"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80" alt="Кофейня" loading="lazy"><div class="lab"><h3>Кофейни</h3><p>Быстрые заказы и аналитика потока</p></div></div>
+      <div class="wcard"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Чайхана" loading="lazy"><div class="lab"><h3>Чайханы</h3><p>Учёт больших залов и банкетов</p></div></div>
+      <div class="wcard"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&q=80" alt="Фастфуд" loading="lazy"><div class="lab"><h3>Фастфуд</h3><p>Высокая скорость и анализ блюд</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="sec results">
+  <div class="wrap">
+    <div class="res-grid stagger">
+      <div class="r"><b data-count="18" data-suffix="%">0%</b><span>рост выручки в среднем</span></div>
+      <div class="r"><b data-count="7" data-suffix=" ч">0 ч</b><span>экономии на отчётах / нед.</span></div>
+      <div class="r"><b data-count="24" data-suffix="/7">0/7</b><span>поддержка без выходных</span></div>
+      <div class="r"><b data-count="1" data-suffix=" день">0 дней</b><span>на запуск и обучение</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section class="sec" id="advantages">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Почему мы</span>
+      <h2>Главные плюсы OSHBOARD</h2>
+      <p>Мы объединили лучшее из аналитики и POS — и сделали это доступным для ресторанов любого размера.</p>
+    </div>
+    <div class="adv stagger">
+      <div class="acard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>Доступная цена</h3><p>Дешевле аналогов — сильная аналитика по цене обычной кассы.</p></div>
+      <div class="acard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9z"/></svg></div><h3>AI-ассистент</h3><p>Умный помощник анализирует данные и подсказывает решения.</p></div>
+      <div class="acard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 1 1-4-7.2L21 5"/><path d="M12 7v5l3 2"/></svg></div><h3>Поддержка 24/7</h3><p>Технические вопросы решаем в любое время, без выходных.</p></div>
+      <div class="acard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>Бесплатный техосмотр</h3><p>Каждый месяц — бесплатная проверка и обзор системы. Всё включено.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="sec" id="compare">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Сравнение</span>
+      <h2>OSHBOARD против обычной кассы</h2>
+      <p>Обычная касса просто принимает оплату. OSHBOARD ещё и показывает, где вы теряете, а где зарабатываете.</p>
+    </div>
+    <div class="cmp reveal">
+      <div class="cmp-row cmp-head">
+        <div class="cmp-feat">Возможность</div>
+        <div class="cmp-old">Обычная касса</div>
+        <div class="cmp-new">OSHBOARD</div>
+      </div>
+      <div class="cmp-row"><div class="cmp-feat">Приём заказов и оплата</div><div class="cmp-old"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Аналитика продаж в реальном времени</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Трекинг сотрудников и KPI</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Анализ гостей по времени</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Маржа и рейтинг по каждому блюду</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Бухгалтерский отчёт для руководителя</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">AI-ассистент с рекомендациями</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Тепло-навигатор загрузки зала</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Поддержка 24/7 и бесплатный техосмотр</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="sec" id="pricing" style="background:var(--bg-soft);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Тарифы</span>
+      <h2>Тариф под размер вашего заведения</h2>
+      <p>Цены указаны ориентировочно — точную стоимость подберём под ваше меню и количество точек. Оставьте заявку на демо.</p>
+    </div>
+    <div class="plans stagger">
+      <div class="plan-card">
+        <h3>Старт</h3><div class="area">Рестораны 150–200 м²</div>
+        <div class="price">от 690 000<small> сум/мес</small></div><div class="price-note">небольшое заведение, одна точка</div>
+        <ul>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> POS-касса и заказы</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> Анализ продаж и блюд</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> Трекинг сотрудников</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> Поддержка 24/7 + техосмотр</li>
+          <li class="off"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg> Тепло-навигатор (докупается)</li>
+        </ul>
+        <a href="#lead" class="btn btn-ghost">Выбрать «Старт»</a>
+      </div>
+      <div class="plan-card pop">
+        <h3>Бизнес</h3><div class="area">Рестораны до 400 м²</div>
+        <div class="price">от 1 190 000<small> сум/мес</small></div><div class="price-note">среднее заведение, до 2 точек</div>
+        <ul>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> Всё из «Старт»</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> Анализ гостей по времени</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> Бухгалтерский отчёт боссу</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> AI-ассистент</li>
+          <li class="off"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg> Тепло-навигатор (докупается)</li>
+        </ul>
+        <a href="#lead" class="btn btn-primary">Выбрать «Бизнес»</a>
+      </div>
+      <div class="plan-card">
+        <h3>Премиум</h3><div class="area">Без ограничений по площади</div>
+        <div class="price">Индивидуально</div><div class="price-note">сеть, большие площади, много точек</div>
+        <ul>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> Всё из «Бизнес»</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> <b>Тепло-навигатор включён</b></li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> Неограниченно точек и сотрудников</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> Приоритетная поддержка</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> Персональный менеджер</li>
+        </ul>
+        <a href="#lead" class="btn btn-ghost">Обсудить «Премиум»</a>
+      </div>
+    </div>
+    <div class="addon reveal">
+      <div class="t"><h3>➕ Доп. модуль: датчик «Тепло-навигатор»</h3><p>Подключается к камере и превращает обычный трекинг в тепловую карту зала. Доступен к тарифам «Старт» и «Бизнес», в «Премиум» уже входит бесплатно.</p></div>
+      <span class="badge">В «Премиум» — включён</span>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="sec" style="background:var(--bg-soft);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Как начать</span><h2>Запуск за 4 простых шага</h2></div>
+    <div class="steps stagger">
+      <div class="step"><h3>Заявка</h3><p>Оставляете заявку на демо — мы связываемся и показываем систему.</p></div>
+      <div class="step"><h3>Настройка</h3><p>Заносим меню, столы и сотрудников, подключаем оборудование.</p></div>
+      <div class="step"><h3>Обучение</h3><p>Быстро обучаем команду — интерфейс простой и на русском.</p></div>
+      <div class="step"><h3>Работа</h3><p>Продаёте и сразу видите аналитику. Мы рядом 24/7.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">FAQ</span><h2>Частые вопросы</h2></div>
+    <div class="faq">
+      <details class="qa reveal"><summary>Чем OSHBOARD отличается от обычной кассы?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Обычная касса просто принимает заказы. OSHBOARD дополнительно анализирует продажи, сотрудников, гостей и блюда, собирает бухгалтерский отчёт и подсказывает решения через AI-ассистента.</div></details>
+      <details class="qa reveal"><summary>Что такое тепло-навигатор?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Это датчик, который подключается к вашей камере и строит тепловую карту зала: видно загрузку столов и зон. В «Премиум» включён, к остальным тарифам докупается.</div></details>
+      <details class="qa reveal"><summary>Нужен ли интернет для работы кассы?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">POS-касса работает и без интернета — данные синхронизируются с аналитикой, как только связь появится.</div></details>
+      <details class="qa reveal"><summary>Сколько стоит и есть ли скрытые платежи?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Цена зависит от тарифа и размера заведения. Ежемесячный техосмотр и поддержка 24/7 входят в стоимость — без доплат.</div></details>
+      <details class="qa reveal"><summary>Вы работаете в Самарканде и по Узбекистану?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Да. Мы из Самарканда и подключаем заведения по всему Узбекистану. Интерфейс и поддержка — на русском.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS (управляется из админки; скрыт, пока нет новостей) -->
+<section class="sec" id="news" hidden>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Новости</span>
+      <h2>Новости и обновления</h2>
+    </div>
+    <div class="news-grid" id="newsGrid"></div>
+  </div>
+</section>
+
+<!-- LEAD / CTA -->
+<section class="sec" id="lead">
+  <div class="wrap">
+    <div class="lead-band reveal">
+      <div class="lead-copy">
+        <h2>Готовы навести порядок в цифрах?</h2>
+        <p>Оставьте заявку — покажем OSHBOARD на вашем меню и рассчитаем точную цену под ваше заведение.</p>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> Бесплатная демонстрация на вашем меню</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> Перезвоним в течение 15 минут</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> Поможем с запуском и обучением команды</li>
+        </ul>
+      </div>
+      <form class="lead-form" id="leadForm" novalidate>
+        <div class="lf-row">
+          <label>Ваше имя<input name="name" required placeholder="Азиз" autocomplete="name"></label>
+          <label>Телефон<input name="phone" type="tel" required placeholder="+998 90 123-45-67" autocomplete="tel"></label>
+        </div>
+        <label>Название заведения<input name="place" required placeholder="Напр. Chaykhana Registon" autocomplete="organization"></label>
+        <label>Тип заведения<select name="type"><option>Ресторан</option><option>Кофейня</option><option>Чайхана</option><option>Фастфуд</option><option>Другое</option></select></label>
+        <button class="btn btn-primary btn-lg" type="submit">Отправить заявку</button>
+        <p class="lf-note">Нажимая кнопку, вы соглашаетесь на обработку данных. Без спама.</p>
+        <div class="lf-ok" hidden>✓ Спасибо! Заявка принята — свяжемся с вами очень скоро.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#top" class="logo"><span class="mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 4-6"/></svg></span>OSHBOARD</a>
+        <p>Умная система для ресторанов: POS-касса, аналитика и AI-ассистент в одном приложении. Самарканд, Узбекистан.</p>
+      </div>
+      <div class="foot-col"><h4>Продукт</h4><a href="#features">Возможности</a><a href="#heat">Тепло-навигатор</a><a href="#pricing">Тарифы</a><a href="#faq">FAQ</a></div>
+      <div class="foot-col"><h4>Компания</h4><a href="#">О нас</a><a href="#">Блог</a><a href="#lead">Демо</a><a href="#">Контакты</a></div>
+      <div class="foot-col"><h4>Контакты</h4><a href="tel:+998900000000">+998 90 000-00-00</a><a href="#">Telegram</a><a href="#">Instagram</a><a href="mailto:hello@oshboard.uz">hello@oshboard.uz</a></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 OSHBOARD. Все права защищены.</span><span>Сделано в Самарканде 🧡</span></div>
+  </div>
+</footer>
+
+<a class="fab" id="fab" href="https://t.me/oshboard" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+  <span class="pulse"></span>
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.05-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+  <span>Написать нам</span>
+</a>
+
+<!-- Three.js (hero background) then app logic -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/i18n.js" defer></script>
+</body>
+</html>

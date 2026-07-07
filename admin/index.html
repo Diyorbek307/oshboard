@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>OSHBOARD — админ-панель</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<!-- ЭКРАН ВХОДА -->
+<div class="login-wrap" id="loginView">
+  <form class="login-card" id="loginForm">
+    <div class="brand"><span class="mark">📊</span> OSHBOARD</div>
+    <h1>Вход в админ-панель</h1>
+    <label>Логин<input name="username" autocomplete="username" required></label>
+    <label>Пароль<input name="password" type="password" autocomplete="current-password" required></label>
+    <div class="login-err" id="loginErr" hidden></div>
+    <button class="btn btn-primary" type="submit">Войти</button>
+    <a class="back-link" href="/">← Вернуться на сайт</a>
+  </form>
+</div>
+
+<!-- ПАНЕЛЬ -->
+<div class="app" id="appView" hidden>
+  <header class="topbar">
+    <div class="brand"><span class="mark">📊</span> OSHBOARD <span class="tag">админка</span></div>
+    <div class="topbar-right">
+      <a class="link" href="/" target="_blank" rel="noopener">Открыть сайт ↗</a>
+      <button class="btn btn-ghost" id="logoutBtn">Выйти</button>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab on" data-tab="news">📰 Новости</button>
+    <button class="tab" data-tab="texts">✏️ Тексты сайта</button>
+    <button class="tab" data-tab="settings">⚙️ Настройки</button>
+    <button class="tab" data-tab="stats">📊 Статистика</button>
+    <button class="tab" data-tab="leads">📥 Заявки</button>
+  </nav>
+
+  <main class="content">
+    <!-- НОВОСТИ -->
+    <section class="panel on" id="tab-news">
+      <div class="panel-head">
+        <h2>Новости</h2>
+        <button class="btn btn-primary" id="addNewsBtn">+ Добавить новость</button>
+      </div>
+      <div class="news-editor" id="newsEditor" hidden>
+        <div class="ne-grid">
+          <label>Заголовок<input id="ne-title" placeholder="Например: Запустили тепло-навигатор"></label>
+          <label>Дата<input id="ne-date" type="date"></label>
+        </div>
+        <label>Текст<textarea id="ne-body" rows="4" placeholder="Текст новости…"></textarea></label>
+        <label>Картинка
+          <div class="uploader">
+            <input id="ne-file" type="file" accept="image/*" hidden>
+            <button type="button" class="btn btn-ghost" id="ne-upload">Загрузить изображение</button>
+            <span class="up-status" id="ne-upstatus"></span>
+          </div>
+        </label>
+        <div class="ne-preview" id="ne-preview" hidden><img id="ne-img" alt=""></div>
+        <div class="ne-actions">
+          <button class="btn btn-primary" id="ne-save">Сохранить</button>
+          <button class="btn btn-ghost" id="ne-cancel">Отмена</button>
+        </div>
+      </div>
+      <div class="cards" id="newsList"></div>
+      <p class="empty" id="newsEmpty" hidden>Пока новостей нет. Нажмите «Добавить новость».</p>
+    </section>
+
+    <!-- ТЕКСТЫ САЙТА -->
+    <section class="panel" id="tab-texts">
+      <div class="panel-head">
+        <h2>Тексты сайта <span class="count" id="txtCount"></span></h2>
+        <button class="btn btn-primary" id="texts-save">Сохранить тексты</button>
+      </div>
+      <p class="txt-hint">Каждый текст сайта — на 3 языках (RU / UZ / EN). Поменяйте нужное и нажмите «Сохранить». Пустое поле = вернуть значение по умолчанию.</p>
+      <input class="txt-search" id="txt-search" placeholder="🔍 Поиск по тексту…">
+      <p class="empty" id="txt-loading">Загрузка текстов…</p>
+      <div class="txt-list" id="txt-list"></div>
+    </section>
+
+    <!-- НАСТРОЙКИ -->
+    <section class="panel" id="tab-settings">
+      <div class="panel-head"><h2>Настройки сайта</h2></div>
+      <div class="settings-form">
+        <label>Название / логотип (текст)<input id="set-logoText" placeholder="OSHBOARD"></label>
+        <label>Логотип (картинка, необязательно)
+          <div class="uploader">
+            <input id="set-logofile" type="file" accept="image/*" hidden>
+            <button type="button" class="btn btn-ghost" id="set-logoupload">Загрузить логотип</button>
+            <span class="up-status" id="set-logostatus"></span>
+          </div>
+        </label>
+        <div class="ne-preview" id="set-logopreview" hidden><img id="set-logoimg" alt="" style="max-height:60px"></div>
+        <label>Телефон<input id="set-phone" placeholder="+998 90 000-00-00"></label>
+        <label>Telegram (ссылка)<input id="set-telegram" placeholder="https://t.me/username"></label>
+        <label>Instagram (ссылка)<input id="set-instagram" placeholder="https://instagram.com/username"></label>
+        <label>E-mail<input id="set-email" placeholder="hello@oshboard.uz"></label>
+        <div class="ne-actions"><button class="btn btn-primary" id="set-save">Сохранить настройки</button><span class="up-status" id="set-status"></span></div>
+      </div>
+    </section>
+
+    <!-- СТАТИСТИКА -->
+    <section class="panel" id="tab-stats">
+      <div class="panel-head"><h2>Посещаемость сайта</h2></div>
+      <div class="stat-cards">
+        <div class="stat"><div class="stat-num" id="st-total">—</div><div class="stat-lbl">Всего просмотров</div></div>
+        <div class="stat"><div class="stat-num" id="st-uniq">—</div><div class="stat-lbl">Уникальных посетителей</div></div>
+        <div class="stat"><div class="stat-num" id="st-today">—</div><div class="stat-lbl">Просмотров сегодня</div></div>
+        <div class="stat"><div class="stat-num" id="st-todayuniq">—</div><div class="stat-lbl">Уникальных сегодня</div></div>
+      </div>
+      <h3 class="chart-title">Просмотры за последние 14 дней</h3>
+      <div class="chart" id="st-chart"></div>
+      <p class="txt-hint">Считаются реальные заходы на сайт. Уникальные — по браузеру (cookie).</p>
+    </section>
+
+    <!-- ЗАЯВКИ -->
+    <section class="panel" id="tab-leads">
+      <div class="panel-head"><h2>Заявки на демо <span class="count" id="leadsCount"></span></h2></div>
+      <div class="table-wrap">
+        <table class="tbl">
+          <thead><tr><th>Дата</th><th>Имя</th><th>Телефон</th><th>Заведение</th><th>Тип</th></tr></thead>
+          <tbody id="leadsBody"></tbody>
+        </table>
+        <p class="empty" id="leadsEmpty" hidden>Заявок пока нет.</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="admin.js"></script>
+</body>
+</html>
