@@ -1,7 +1,7 @@
 {
   "name": "oshboard-landing",
   "version": "1.0.0",
-  "description": "OSHBOARD — лендинг для ресторанной POS + аналитики, с бэкендом приёма заявок.",
+  "description": "OSHBOARD — рекламный сайт программы для ресторанов, магазинов и клининговых компаний, с приёмом заявок.",
   "type": "commonjs",
   "main": "server/server.js",
   "scripts": {

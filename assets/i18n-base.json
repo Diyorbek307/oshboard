@@ -1,190 +1,1298 @@
 {
-  "Возможности": ["Imkoniyatlar", "Features"],
-  "Тепло-навигатор": ["Issiqlik-navigator", "Heat navigator"],
-  "Для кого": ["Kimlar uchun", "Who it’s for"],
-  "Тарифы": ["Tariflar", "Pricing"],
-  "Получить демо": ["Demo olish", "Get a demo"],
-  "🇺🇿 Сделано в Самарканде": ["🇺🇿 Samarqandda ishlab chiqilgan", "🇺🇿 Made in Samarkand"],
-  "Управляйте рестораном": ["Restoranni boshqaring", "Run your restaurant"],
-  "по цифрам": ["raqamlar bilan", "by the numbers"],
-  ", а не на глаз": [", ko‘z bilan chamalab emas", ", not by guesswork"],
-  "OSHBOARD — POS-касса и глубокая аналитика в одном приложении. Трекинг сотрудников, анализ продаж, гостей и блюд, готовый бухгалтерский отчёт для руководителя и AI-ассистент, который подсказывает решения.": ["OSHBOARD — bitta ilovada POS-kassa va chuqur analitika. Xodimlarni kuzatish, savdo, mehmonlar va taomlar tahlili, rahbar uchun tayyor buxgalteriya hisoboti va yechim taklif qiluvchi AI-yordamchi.", "OSHBOARD is a POS register and deep analytics in one app. Staff tracking, analysis of sales, guests and dishes, a ready accounting report for the owner, and an AI assistant that suggests decisions."],
-  "Смотреть возможности": ["Imkoniyatlarni ko‘rish", "See features"],
-  "2 в 1": ["2 tadan 1", "2-in-1"],
-  "POS + аналитика": ["POS + analitika", "POS + analytics"],
-  "тех. поддержка": ["texnik yordam", "tech support"],
-  "умный ассистент": ["aqlli yordamchi", "smart assistant"],
-  "Выручка сегодня": ["Bugungi tushum", "Revenue today"],
-  "Средний чек": ["O‘rtacha chek", "Average check"],
-  "AI-ассистент": ["AI-yordamchi", "AI assistant"],
-  "Онлайн 24/7": ["Onlayn 24/7", "Online 24/7"],
-  "Одна система вместо табличек, тетрадей и десятка приложений": ["Jadvallar, daftarlar va o‘nlab ilovalar o‘rniga bitta tizim", "One system instead of spreadsheets, notebooks and a dozen apps"],
-  "🍽 Рестораны": ["🍽 Restoranlar", "🍽 Restaurants"],
-  "☕ Кофейни": ["☕ Qahvaxonalar", "☕ Coffee shops"],
-  "🍢 Чайханы": ["🍢 Choyxonalar", "🍢 Teahouses"],
-  "🍕 Пиццерии": ["🍕 Picceriyalar", "🍕 Pizzerias"],
-  "🥡 Фастфуд": ["🥡 Fastfud", "🥡 Fast food"],
-  "🏨 Отели": ["🏨 Mehmonxonalar", "🏨 Hotels"],
-  "🍰 Кондитерские": ["🍰 Qandolatxonalar", "🍰 Pastry shops"],
-  "🍔 Бургерные": ["🍔 Burgerxonalar", "🍔 Burger joints"],
-  "Проблема": ["Muammo", "The problem"],
-  "Рестораны теряют деньги там, где не смотрят": ["Restoranlar e’tibor bermagan joyda pul yo‘qotadi", "Restaurants lose money where they don’t look"],
-  "Без точных данных решения принимаются «на глаз». В итоге — воровство, слабые смены и блюда, которые работают в минус.": ["Aniq ma’lumotsiz qarorlar «ko‘z bilan» qabul qilinadi. Natijada — o‘g‘irlik, zaif smenalar va zararga ishlaydigan taomlar.", "Without accurate data, decisions are made by guesswork. The result: theft, weak shifts and dishes that run at a loss."],
-  "уходит мимо кассы": ["kassadan chetga ketadi", "slips past the register"],
-  "Ошибки, недосписания и человеческий фактор без контроля продаж.": ["Xatolar, hisobdan chiqarmaslik va nazoratsiz inson omili.", "Errors, missed write-offs and the human factor without sales control."],
-  "блюд в меню — балласт": ["menyudagi taomlar — ballast", "of menu items are dead weight"],
-  "Позиции, которые почти не заказывают или приносят убыток.": ["Deyarli buyurtma qilinmaydigan yoki zarar keltiradigan pozitsiyalar.", "Items that are rarely ordered or bring losses."],
-  "в неделю на отчёты": ["haftasiga hisobotlarga", "a week on reports"],
-  "Ручная сборка цифр вместо автоматического отчёта для босса.": ["Boshliq uchun avtomatik hisobot o‘rniga raqamlarni qo‘lda yig‘ish.", "Manually assembling numbers instead of an automatic report for the boss."],
-  "Всё для контроля ресторана — в одном месте": ["Restoranni nazorat qilish uchun hammasi — bir joyda", "Everything to control your restaurant — in one place"],
-  "Мы объединили удобную POS-кассу и мощную аналитику: вы видите не только сколько заработали, но и": ["Biz qulay POS-kassa va kuchli analitikani birlashtirdik: siz qancha ishlaganingizni emas, balki", "We combined a convenient POS register with powerful analytics: you see not just how much you earned, but"],
-  "почему": ["nega ekanini ham", "why"],
-  "POS-касса": ["POS-kassa", "POS register"],
-  "Быстрые заказы, столы, разделение счёта, кухонные тикеты, приём оплаты. Работает даже без интернета.": ["Tez buyurtmalar, stollar, hisobni bo‘lish, oshxona tiketlari, to‘lov qabul qilish. Internetsiz ham ishlaydi.", "Fast orders, tables, bill splitting, kitchen tickets, payments. Works even offline."],
-  "Трекинг сотрудников": ["Xodimlarni kuzatish", "Staff tracking"],
-  "Кто открыл смену, сколько продал каждый официант, скорость обслуживания и KPI по всей команде.": ["Kim smena ochgan, har bir ofitsiant qancha sotgan, xizmat tezligi va butun jamoa KPI’si.", "Who opened the shift, how much each waiter sold, service speed and KPIs across the team."],
-  "Анализ продаж": ["Savdo tahlili", "Sales analysis"],
-  "Выручка по дням, сменам и точкам. Динамика, средний чек, план/факт — в реальном времени.": ["Kunlar, smenalar va nuqtalar bo‘yicha tushum. Dinamika, o‘rtacha chek, reja/fakt — real vaqtda.", "Revenue by day, shift and location. Trends, average check, plan/actual — in real time."],
-  "Анализ гостей по времени": ["Mehmonlarni vaqt bo‘yicha tahlil", "Guest analysis by time"],
-  "Видно, в какие часы и дни поток большой, а когда пусто — чтобы правильно ставить смены и запускать акции.": ["Qaysi soat va kunlarda oqim katta, qachon bo‘sh ekani ko‘rinadi — smenalarni to‘g‘ri qo‘yish va aksiyalarni ishga tushirish uchun.", "See which hours and days are busy and when it’s empty — to schedule shifts right and run promotions."],
-  "Анализ блюд": ["Taomlar tahlili", "Dish analysis"],
-  "Хиты и аутсайдеры меню, маржа по каждой позиции. Понятно, что убрать, а что продвигать.": ["Menyu xit va autsayderlari, har bir pozitsiya bo‘yicha marja. Nimani olib tashlash, nimani targ‘ib qilishni bilib olasiz.", "Menu hits and flops, margin per item. Clear what to drop and what to push."],
-  "Бухгалтерский отчёт боссу": ["Boshliqqa buxgalteriya hisoboti", "Accounting report for the boss"],
-  "Точный и понятный отчёт для руководителя — доходы, расходы, прибыль. Красиво и без ручной сборки.": ["Rahbar uchun aniq va tushunarli hisobot — daromad, xarajat, foyda. Chiroyli va qo‘lda yig‘ishsiz.", "An accurate, clear report for the owner — income, expenses, profit. Beautiful and no manual work."],
-  "AI-ассистент внутри системы": ["Tizim ichidagi AI-yordamchi", "AI assistant inside the system"],
-  "Спросите обычными словами: «Почему упала выручка в четверг?» или «Какое блюдо приносит меньше всего прибыли?» — ассистент проанализирует данные и даст ответ с рекомендацией.": ["Oddiy so‘zlar bilan so‘rang: «Payshanba kuni tushum nega tushdi?» yoki «Qaysi taom eng kam foyda keltiradi?» — yordamchi ma’lumotlarni tahlil qilib, tavsiya bilan javob beradi.", "Ask in plain words: “Why did revenue drop on Thursday?” or “Which dish brings the least profit?” — the assistant analyzes the data and answers with a recommendation."],
-  "💬 «Выручка в четверг ниже на 18%: мало гостей после 21:00. Совет — запустить вечернюю акцию на десерты.»": ["💬 «Payshanba tushumi 18% pastroq: 21:00 dan keyin mehmon kam. Maslahat — kechki desert aksiyasini ishga tushiring.»", "💬 “Thursday revenue is 18% lower: few guests after 9 PM. Tip — launch an evening dessert promo.”"],
-  "Интерфейс": ["Interfeys", "Interface"],
-  "Понятная аналитика — на любом экране": ["Tushunarli analitika — istalgan ekranda", "Clear analytics — on any screen"],
-  "Дашборды, отчёты и графики, в которых разберётся даже тот, кто далёк от цифр.": ["Raqamlardan yiroq odam ham tushunadigan dashboardlar, hisobotlar va grafiklar.", "Dashboards, reports and charts that even a non-numbers person can understand."],
-  "Дашборд продаж": ["Savdo dashboardi", "Sales dashboard"],
-  "Выручка, средний чек и динамика в реальном времени.": ["Tushum, o‘rtacha chek va dinamika real vaqtda.", "Revenue, average check and trends in real time."],
-  "Отчёты по сменам": ["Smenalar bo‘yicha hisobotlar", "Shift reports"],
-  "Кто и сколько продал, KPI официантов и поваров.": ["Kim qancha sotgan, ofitsiant va oshpazlar KPI’si.", "Who sold how much, KPIs of waiters and cooks."],
-  "Аналитика меню": ["Menyu analitikasi", "Menu analytics"],
-  "Хиты, аутсайдеры и маржа по каждому блюду.": ["Har bir taom bo‘yicha xit, autsayder va marja.", "Hits, flops and margin for each dish."],
-  "Уникальная фишка": ["Noyob xususiyat", "Unique feature"],
-  "Тепло-навигатор зала через камеру": ["Kamera orqali zal issiqlik-navigatori", "Hall heat navigator via camera"],
-  "Подключаем датчик к вашей камере — и в приложении вы видите не просто трекинг, а тепловую карту зала: где скапливаются гости, какие столы «горячие», а какие простаивают.": ["Kameringizga datchik ulaymiz — ilovada oddiy kuzatuvni emas, zal issiqlik xaritasini ko‘rasiz: mehmonlar qayerda to‘planadi, qaysi stollar «issiq», qaysilari bo‘sh turadi.", "We connect a sensor to your camera — and in the app you see not just tracking, but a heat map of the hall: where guests gather, which tables are “hot” and which sit idle."],
-  "Тепловая карта посадки и проходимости в реальном времени": ["Joylashuv va o‘tuvchanlik issiqlik xaritasi real vaqtda", "Real-time heat map of seating and footfall"],
-  "Видно «мёртвые» зоны зала — можно переставить столы": ["Zalning «o‘lik» zonalari ko‘rinadi — stollarni qayta joylash mumkin", "See the hall’s “dead” zones — you can rearrange tables"],
-  "Подключается к обычной камере — без дорогого оборудования": ["Oddiy kameraga ulanadi — qimmat jihozsiz", "Connects to an ordinary camera — no expensive hardware"],
-  "Докупается к «Старт» и «Бизнес», в «Премиум» — уже включён": ["«Start» va «Biznes»ga qo‘shimcha olinadi, «Premium»da — allaqachon kiritilgan", "An add-on for “Start” and “Business”, already included in “Premium”"],
-  "Подходит любому заведению": ["Har qanday muassasaga mos", "Fits any venue"],
-  "От маленькой кофейни до большой сети — система масштабируется под вас.": ["Kichik qahvaxonadan katta tarmoqqacha — tizim sizga moslashadi.", "From a small coffee shop to a large chain — the system scales to you."],
-  "Рестораны": ["Restoranlar", "Restaurants"],
-  "Полный контроль зала, кухни и выручки": ["Zal, oshxona va tushumni to‘liq nazorat", "Full control of hall, kitchen and revenue"],
-  "Кофейни": ["Qahvaxonalar", "Coffee shops"],
-  "Быстрые заказы и аналитика потока": ["Tez buyurtmalar va oqim analitikasi", "Fast orders and flow analytics"],
-  "Чайханы": ["Choyxonalar", "Teahouses"],
-  "Учёт больших залов и банкетов": ["Katta zallar va bazmlarni hisobga olish", "Managing large halls and banquets"],
-  "Фастфуд": ["Fastfud", "Fast food"],
-  "Высокая скорость и анализ блюд": ["Yuqori tezlik va taomlar tahlili", "High speed and dish analysis"],
-  "рост выручки в среднем": ["o‘rtacha tushum o‘sishi", "average revenue growth"],
-  "экономии на отчётах / нед.": ["hisobotlarda tejamkorlik / haft.", "saved on reports / week"],
-  "поддержка без выходных": ["dam olishsiz qo‘llab-quvvatlash", "support with no days off"],
-  "на запуск и обучение": ["ishga tushirish va o‘qitishga", "to launch and train"],
-  "Почему мы": ["Nega biz", "Why us"],
-  "Главные плюсы OSHBOARD": ["OSHBOARD asosiy afzalliklari", "Key advantages of OSHBOARD"],
-  "Мы объединили лучшее из аналитики и POS — и сделали это доступным для ресторанов любого размера.": ["Analitika va POS’ning eng yaxshisini birlashtirib, uni har qanday restoran uchun arzon qildik.", "We combined the best of analytics and POS — and made it affordable for restaurants of any size."],
-  "Доступная цена": ["Arzon narx", "Affordable price"],
-  "Дешевле аналогов — сильная аналитика по цене обычной кассы.": ["Analoglardan arzon — oddiy kassa narxiga kuchli analitika.", "Cheaper than rivals — strong analytics at the price of a plain register."],
-  "Умный помощник анализирует данные и подсказывает решения.": ["Aqlli yordamchi ma’lumotlarni tahlil qilib, yechim taklif qiladi.", "A smart helper analyzes data and suggests decisions."],
-  "Поддержка 24/7": ["24/7 qo‘llab-quvvatlash", "24/7 support"],
-  "Технические вопросы решаем в любое время, без выходных.": ["Texnik masalalarni istalgan vaqtda, dam olishsiz hal qilamiz.", "We solve technical issues anytime, no days off."],
-  "Бесплатный техосмотр": ["Bepul texnik ko‘rik", "Free tech check-up"],
-  "Каждый месяц — бесплатная проверка и обзор системы. Всё включено.": ["Har oy — tizimni bepul tekshirish va ko‘rib chiqish. Hammasi kiritilgan.", "Every month — a free system check and review. All included."],
-  "Сравнение": ["Taqqoslash", "Comparison"],
-  "OSHBOARD против обычной кассы": ["OSHBOARD oddiy kassaga qarshi", "OSHBOARD vs a plain register"],
-  "Обычная касса просто принимает оплату. OSHBOARD ещё и показывает, где вы теряете, а где зарабатываете.": ["Oddiy kassa faqat to‘lovni qabul qiladi. OSHBOARD esa qayerda yo‘qotayotganingiz va topayotganingizni ko‘rsatadi.", "A plain register just takes payment. OSHBOARD also shows where you lose and where you earn."],
-  "Возможность": ["Imkoniyat", "Feature"],
-  "Обычная касса": ["Oddiy kassa", "Plain register"],
-  "Приём заказов и оплата": ["Buyurtma va to‘lov qabul qilish", "Taking orders and payments"],
-  "Аналитика продаж в реальном времени": ["Real vaqtli savdo analitikasi", "Real-time sales analytics"],
-  "Трекинг сотрудников и KPI": ["Xodimlar va KPI kuzatuvi", "Staff & KPI tracking"],
-  "Маржа и рейтинг по каждому блюду": ["Har bir taom bo‘yicha marja va reyting", "Margin & rating per dish"],
-  "Бухгалтерский отчёт для руководителя": ["Rahbar uchun buxgalteriya hisoboti", "Accounting report for the owner"],
-  "AI-ассистент с рекомендациями": ["Tavsiyali AI-yordamchi", "AI assistant with recommendations"],
-  "Тепло-навигатор загрузки зала": ["Zal bandligi issiqlik-navigatori", "Hall load heat navigator"],
-  "Поддержка 24/7 и бесплатный техосмотр": ["24/7 qo‘llab-quvvatlash va bepul texnik ko‘rik", "24/7 support & free check-up"],
-  "Тариф под размер вашего заведения": ["Muassasangiz o‘lchamiga mos tarif", "A plan for your venue’s size"],
-  "Цены указаны ориентировочно — точную стоимость подберём под ваше меню и количество точек. Оставьте заявку на демо.": ["Narxlar taxminiy — aniq narxni menyu va nuqtalar soniga qarab tanlaymiz. Demoga ariza qoldiring.", "Prices are approximate — we’ll set the exact cost based on your menu and number of locations. Leave a demo request."],
-  "Старт": ["Start", "Start"],
-  "Бизнес": ["Biznes", "Business"],
-  "Премиум": ["Premium", "Premium"],
-  "Рестораны 150–200 м²": ["Restoranlar 150–200 m²", "Restaurants 150–200 m²"],
-  "небольшое заведение, одна точка": ["kichik muassasa, bitta nuqta", "small venue, one location"],
-  "сум/мес": ["so‘m/oy", "UZS/mo"],
-  "POS-касса и заказы": ["POS-kassa va buyurtmalar", "POS register & orders"],
-  "Анализ продаж и блюд": ["Savdo va taomlar tahlili", "Sales & dish analysis"],
-  "Поддержка 24/7 + техосмотр": ["24/7 qo‘llab-quvvatlash + texnik ko‘rik", "24/7 support + check-up"],
-  "Тепло-навигатор (докупается)": ["Issiqlik-navigator (qo‘shimcha)", "Heat navigator (add-on)"],
-  "Выбрать «Старт»": ["«Start»ni tanlash", "Choose “Start”"],
-  "Рестораны до 400 м²": ["Restoranlar 400 m² gacha", "Restaurants up to 400 m²"],
-  "среднее заведение, до 2 точек": ["o‘rta muassasa, 2 nuqtagacha", "mid-size venue, up to 2 locations"],
-  "Всё из «Старт»": ["«Start»dagi hammasi", "Everything in “Start”"],
-  "Выбрать «Бизнес»": ["«Biznes»ni tanlash", "Choose “Business”"],
-  "Без ограничений по площади": ["Maydon bo‘yicha cheklovsiz", "No area limits"],
-  "Индивидуально": ["Individual", "Custom"],
-  "сеть, большие площади, много точек": ["tarmoq, katta maydonlar, ko‘p nuqta", "chain, large areas, many locations"],
-  "Всё из «Бизнес»": ["«Biznes»dagi hammasi", "Everything in “Business”"],
-  "Тепло-навигатор включён": ["Issiqlik-navigator kiritilgan", "Heat navigator included"],
-  "Неограниченно точек и сотрудников": ["Cheksiz nuqta va xodimlar", "Unlimited locations & staff"],
-  "Приоритетная поддержка": ["Ustuvor qo‘llab-quvvatlash", "Priority support"],
-  "Персональный менеджер": ["Shaxsiy menejer", "Personal manager"],
-  "Обсудить «Премиум»": ["«Premium»ni muhokama qilish", "Discuss “Premium”"],
-  "➕ Доп. модуль: датчик «Тепло-навигатор»": ["➕ Qo‘shimcha modul: «Issiqlik-navigator» datchigi", "➕ Add-on: “Heat navigator” sensor"],
-  "Подключается к камере и превращает обычный трекинг в тепловую карту зала. Доступен к тарифам «Старт» и «Бизнес», в «Премиум» уже входит бесплатно.": ["Kameraga ulanadi va oddiy kuzatuvni zal issiqlik xaritasiga aylantiradi. «Start» va «Biznes» tariflariga mavjud, «Premium»ga bepul kiradi.", "Connects to the camera and turns basic tracking into a hall heat map. Available for “Start” and “Business”, free in “Premium”."],
-  "В «Премиум» — включён": ["«Premium»da — kiritilgan", "Included in “Premium”"],
-  "Как начать": ["Qanday boshlash", "How to start"],
-  "Запуск за 4 простых шага": ["4 oddiy qadamda ishga tushirish", "Launch in 4 simple steps"],
-  "Заявка": ["Ariza", "Request"],
-  "Оставляете заявку на демо — мы связываемся и показываем систему.": ["Demoga ariza qoldirasiz — biz bog‘lanamiz va tizimni ko‘rsatamiz.", "You leave a demo request — we get in touch and show the system."],
-  "Настройка": ["Sozlash", "Setup"],
-  "Заносим меню, столы и сотрудников, подключаем оборудование.": ["Menyu, stollar va xodimlarni kiritamiz, jihozlarni ulaymiz.", "We add the menu, tables and staff, connect the hardware."],
-  "Обучение": ["O‘qitish", "Training"],
-  "Быстро обучаем команду — интерфейс простой и на русском.": ["Jamoani tez o‘rgatamiz — interfeys oddiy.", "We train the team fast — the interface is simple."],
-  "Работа": ["Ishlash", "Work"],
-  "Продаёте и сразу видите аналитику. Мы рядом 24/7.": ["Sotasiz va analitikani darhol ko‘rasiz. Biz 24/7 yoningizdamiz.", "You sell and instantly see analytics. We’re with you 24/7."],
-  "Частые вопросы": ["Ko‘p beriladigan savollar", "Frequently asked questions"],
-  "Чем OSHBOARD отличается от обычной кассы?": ["OSHBOARD oddiy kassadan nimasi bilan farq qiladi?", "How is OSHBOARD different from a plain register?"],
-  "Обычная касса просто принимает заказы. OSHBOARD дополнительно анализирует продажи, сотрудников, гостей и блюда, собирает бухгалтерский отчёт и подсказывает решения через AI-ассистента.": ["Oddiy kassa faqat buyurtma qabul qiladi. OSHBOARD qo‘shimcha ravishda savdo, xodimlar, mehmonlar va taomlarni tahlil qiladi, buxgalteriya hisobotini yig‘adi va AI-yordamchi orqali yechim taklif qiladi.", "A plain register just takes orders. OSHBOARD additionally analyzes sales, staff, guests and dishes, builds an accounting report and suggests decisions via an AI assistant."],
-  "Что такое тепло-навигатор?": ["Issiqlik-navigator nima?", "What is the heat navigator?"],
-  "Это датчик, который подключается к вашей камере и строит тепловую карту зала: видно загрузку столов и зон. В «Премиум» включён, к остальным тарифам докупается.": ["Bu kameringizga ulanadigan va zal issiqlik xaritasini quradigan datchik: stollar va zonalar bandligi ko‘rinadi. «Premium»da kiritilgan, boshqa tariflarga qo‘shimcha olinadi.", "It’s a sensor that connects to your camera and builds a hall heat map: you see table and zone occupancy. Included in “Premium”, an add-on for other plans."],
-  "Нужен ли интернет для работы кассы?": ["Kassa ishlashi uchun internet kerakmi?", "Do you need internet for the register?"],
-  "POS-касса работает и без интернета — данные синхронизируются с аналитикой, как только связь появится.": ["POS-kassa internetsiz ham ishlaydi — aloqa paydo bo‘lishi bilan ma’lumotlar analitika bilan sinxronlanadi.", "The POS register works offline too — data syncs with analytics as soon as the connection returns."],
-  "Сколько стоит и есть ли скрытые платежи?": ["Narxi qancha va yashirin to‘lovlar bormi?", "How much is it and are there hidden fees?"],
-  "Цена зависит от тарифа и размера заведения. Ежемесячный техосмотр и поддержка 24/7 входят в стоимость — без доплат.": ["Narx tarif va muassasa o‘lchamiga bog‘liq. Oylik texnik ko‘rik va 24/7 qo‘llab-quvvatlash narxga kiradi — qo‘shimcha to‘lovsiz.", "The price depends on the plan and venue size. Monthly check-ups and 24/7 support are included — no extra fees."],
-  "Вы работаете в Самарканде и по Узбекистану?": ["Siz Samarqand va O‘zbekiston bo‘ylab ishlaysizmi?", "Do you work in Samarkand and across Uzbekistan?"],
-  "Да. Мы из Самарканда и подключаем заведения по всему Узбекистану. Интерфейс и поддержка — на русском.": ["Ha. Biz Samarqanddanmiz va butun O‘zbekiston bo‘ylab muassasalarni ulaymiz. Interfeys va qo‘llab-quvvatlash uch tilda.", "Yes. We’re from Samarkand and connect venues across Uzbekistan. The interface and support are multilingual."],
-  "Готовы навести порядок в цифрах?": ["Raqamlarni tartibga solishga tayyormisiz?", "Ready to put your numbers in order?"],
-  "Оставьте заявку — покажем OSHBOARD на вашем меню и рассчитаем точную цену под ваше заведение.": ["Ariza qoldiring — OSHBOARD’ni menyungizda ko‘rsatamiz va muassasangiz uchun aniq narxni hisoblaymiz.", "Leave a request — we’ll show OSHBOARD on your menu and calculate an exact price for your venue."],
-  "Бесплатная демонстрация на вашем меню": ["Menyungizda bepul namoyish", "A free demo on your menu"],
-  "Перезвоним в течение 15 минут": ["15 daqiqa ichida qo‘ng‘iroq qilamiz", "We’ll call back within 15 minutes"],
-  "Поможем с запуском и обучением команды": ["Ishga tushirish va jamoani o‘qitishda yordam beramiz", "We’ll help with launch and team training"],
-  "Ваше имя": ["Ismingiz", "Your name"],
-  "Телефон": ["Telefon", "Phone"],
-  "Название заведения": ["Muassasa nomi", "Venue name"],
-  "Тип заведения": ["Muassasa turi", "Venue type"],
-  "Ресторан": ["Restoran", "Restaurant"],
-  "Кофейня": ["Qahvaxona", "Coffee shop"],
-  "Чайхана": ["Choyxona", "Teahouse"],
-  "Другое": ["Boshqa", "Other"],
-  "Отправить заявку": ["Ariza yuborish", "Send request"],
-  "Нажимая кнопку, вы соглашаетесь на обработку данных. Без спама.": ["Tugmani bosish orqali ma’lumotlarni qayta ishlashga rozilik bildirasiz. Spamsiz.", "By clicking, you agree to data processing. No spam."],
-  "✓ Спасибо! Заявка принята — свяжемся с вами очень скоро.": ["✓ Rahmat! Ariza qabul qilindi — tez orada bog‘lanamiz.", "✓ Thank you! Your request is received — we’ll contact you very soon."],
-  "Азиз": ["Aziz", "Aziz"],
-  "Напр. Chaykhana Registon": ["Masalan, Registon Choyxona", "e.g. Registon Teahouse"],
-  "Умная система для ресторанов: POS-касса, аналитика и AI-ассистент в одном приложении. Самарканд, Узбекистан.": ["Restoranlar uchun aqlli tizim: POS-kassa, analitika va AI-yordamchi bitta ilovada. Samarqand, O‘zbekiston.", "A smart system for restaurants: POS register, analytics and an AI assistant in one app. Samarkand, Uzbekistan."],
-  "Продукт": ["Mahsulot", "Product"],
-  "Компания": ["Kompaniya", "Company"],
-  "О нас": ["Biz haqimizda", "About"],
-  "Блог": ["Blog", "Blog"],
-  "Демо": ["Demo", "Demo"],
-  "Контакты": ["Kontaktlar", "Contacts"],
-  "© 2026 OSHBOARD. Все права защищены.": ["© 2026 OSHBOARD. Barcha huquqlar himoyalangan.", "© 2026 OSHBOARD. All rights reserved."],
-  "Сделано в Самарканде 🧡": ["Samarqandda yaratilgan 🧡", "Made in Samarkand 🧡"],
-  "Новости": ["Yangiliklar", "News"],
-  "Новости и обновления": ["Yangiliklar va yangilanishlar", "News & updates"],
-  "Написать нам": ["Bizga yozing", "Message us"]
+  "Возможности": [
+    "Imkoniyatlar",
+    "Features"
+  ],
+  "Тепло-навигатор": [
+    "Issiqlik-navigator",
+    "Heat navigator"
+  ],
+  "Для кого": [
+    "Kimlar uchun",
+    "Who it’s for"
+  ],
+  "Тарифы": [
+    "Tariflar",
+    "Pricing"
+  ],
+  "Получить демо": [
+    "Demo olish",
+    "Get a demo"
+  ],
+  "🇺🇿 Сделано в Самарканде": [
+    "🇺🇿 Samarqandda ishlab chiqilgan",
+    "🇺🇿 Made in Samarkand"
+  ],
+  "Управляйте рестораном": [
+    "Restoranni boshqaring",
+    "Run your restaurant"
+  ],
+  "по цифрам": [
+    "raqamlar bilan",
+    "by the numbers"
+  ],
+  ", а не на глаз": [
+    ", ko‘z bilan chamalab emas",
+    ", not by guesswork"
+  ],
+  "OSHBOARD — POS-касса и глубокая аналитика в одном приложении. Трекинг сотрудников, анализ продаж, гостей и блюд, готовый бухгалтерский отчёт для руководителя и AI-ассистент, который подсказывает решения.": [
+    "OSHBOARD — bitta ilovada POS-kassa va chuqur analitika. Xodimlarni kuzatish, savdo, mehmonlar va taomlar tahlili, rahbar uchun tayyor buxgalteriya hisoboti va yechim taklif qiluvchi AI-yordamchi.",
+    "OSHBOARD is a POS register and deep analytics in one app. Staff tracking, analysis of sales, guests and dishes, a ready accounting report for the owner, and an AI assistant that suggests decisions."
+  ],
+  "Смотреть возможности": [
+    "Imkoniyatlarni ko‘rish",
+    "See features"
+  ],
+  "2 в 1": [
+    "2 tadan 1",
+    "2-in-1"
+  ],
+  "POS + аналитика": [
+    "POS + analitika",
+    "POS + analytics"
+  ],
+  "тех. поддержка": [
+    "texnik yordam",
+    "tech support"
+  ],
+  "умный ассистент": [
+    "aqlli yordamchi",
+    "smart assistant"
+  ],
+  "Выручка сегодня": [
+    "Bugungi tushum",
+    "Revenue today"
+  ],
+  "Средний чек": [
+    "O‘rtacha chek",
+    "Average check"
+  ],
+  "AI-ассистент": [
+    "AI-yordamchi",
+    "AI assistant"
+  ],
+  "Онлайн 24/7": [
+    "Onlayn 24/7",
+    "Online 24/7"
+  ],
+  "Одна система вместо табличек, тетрадей и десятка приложений": [
+    "Jadvallar, daftarlar va o‘nlab ilovalar o‘rniga bitta tizim",
+    "One system instead of spreadsheets, notebooks and a dozen apps"
+  ],
+  "🍽 Рестораны": [
+    "🍽 Restoranlar",
+    "🍽 Restaurants"
+  ],
+  "☕ Кофейни": [
+    "☕ Qahvaxonalar",
+    "☕ Coffee shops"
+  ],
+  "🍢 Чайханы": [
+    "🍢 Choyxonalar",
+    "🍢 Teahouses"
+  ],
+  "🍕 Пиццерии": [
+    "🍕 Picceriyalar",
+    "🍕 Pizzerias"
+  ],
+  "🥡 Фастфуд": [
+    "🥡 Fastfud",
+    "🥡 Fast food"
+  ],
+  "🏨 Отели": [
+    "🏨 Mehmonxonalar",
+    "🏨 Hotels"
+  ],
+  "🍰 Кондитерские": [
+    "🍰 Qandolatxonalar",
+    "🍰 Pastry shops"
+  ],
+  "🍔 Бургерные": [
+    "🍔 Burgerxonalar",
+    "🍔 Burger joints"
+  ],
+  "Проблема": [
+    "Muammo",
+    "The problem"
+  ],
+  "Рестораны теряют деньги там, где не смотрят": [
+    "Restoranlar e’tibor bermagan joyda pul yo‘qotadi",
+    "Restaurants lose money where they don’t look"
+  ],
+  "Без точных данных решения принимаются «на глаз». В итоге — воровство, слабые смены и блюда, которые работают в минус.": [
+    "Aniq ma’lumotsiz qarorlar «ko‘z bilan» qabul qilinadi. Natijada — o‘g‘irlik, zaif smenalar va zararga ishlaydigan taomlar.",
+    "Without accurate data, decisions are made by guesswork. The result: theft, weak shifts and dishes that run at a loss."
+  ],
+  "уходит мимо кассы": [
+    "kassadan chetga ketadi",
+    "slips past the register"
+  ],
+  "Ошибки, недосписания и человеческий фактор без контроля продаж.": [
+    "Xatolar, hisobdan chiqarmaslik va nazoratsiz inson omili.",
+    "Errors, missed write-offs and the human factor without sales control."
+  ],
+  "блюд в меню — балласт": [
+    "menyudagi taomlar — ballast",
+    "of menu items are dead weight"
+  ],
+  "Позиции, которые почти не заказывают или приносят убыток.": [
+    "Deyarli buyurtma qilinmaydigan yoki zarar keltiradigan pozitsiyalar.",
+    "Items that are rarely ordered or bring losses."
+  ],
+  "в неделю на отчёты": [
+    "haftasiga hisobotlarga",
+    "a week on reports"
+  ],
+  "Ручная сборка цифр вместо автоматического отчёта для босса.": [
+    "Boshliq uchun avtomatik hisobot o‘rniga raqamlarni qo‘lda yig‘ish.",
+    "Manually assembling numbers instead of an automatic report for the boss."
+  ],
+  "Всё для контроля ресторана — в одном месте": [
+    "Restoranni nazorat qilish uchun hammasi — bir joyda",
+    "Everything to control your restaurant — in one place"
+  ],
+  "Мы объединили удобную POS-кассу и мощную аналитику: вы видите не только сколько заработали, но и": [
+    "Biz qulay POS-kassa va kuchli analitikani birlashtirdik: siz qancha ishlaganingizni emas, balki",
+    "We combined a convenient POS register with powerful analytics: you see not just how much you earned, but"
+  ],
+  "почему": [
+    "nega ekanini ham",
+    "why"
+  ],
+  "POS-касса": [
+    "POS-kassa",
+    "POS register"
+  ],
+  "Быстрые заказы, столы, разделение счёта, кухонные тикеты, приём оплаты. Работает даже без интернета.": [
+    "Tez buyurtmalar, stollar, hisobni bo‘lish, oshxona tiketlari, to‘lov qabul qilish. Internetsiz ham ishlaydi.",
+    "Fast orders, tables, bill splitting, kitchen tickets, payments. Works even offline."
+  ],
+  "Трекинг сотрудников": [
+    "Xodimlarni kuzatish",
+    "Staff tracking"
+  ],
+  "Кто открыл смену, сколько продал каждый официант, скорость обслуживания и KPI по всей команде.": [
+    "Kim smena ochgan, har bir ofitsiant qancha sotgan, xizmat tezligi va butun jamoa KPI’si.",
+    "Who opened the shift, how much each waiter sold, service speed and KPIs across the team."
+  ],
+  "Анализ продаж": [
+    "Savdo tahlili",
+    "Sales analysis"
+  ],
+  "Выручка по дням, сменам и точкам. Динамика, средний чек, план/факт — в реальном времени.": [
+    "Kunlar, smenalar va nuqtalar bo‘yicha tushum. Dinamika, o‘rtacha chek, reja/fakt — real vaqtda.",
+    "Revenue by day, shift and location. Trends, average check, plan/actual — in real time."
+  ],
+  "Анализ гостей по времени": [
+    "Mehmonlarni vaqt bo‘yicha tahlil",
+    "Guest analysis by time"
+  ],
+  "Видно, в какие часы и дни поток большой, а когда пусто — чтобы правильно ставить смены и запускать акции.": [
+    "Qaysi soat va kunlarda oqim katta, qachon bo‘sh ekani ko‘rinadi — smenalarni to‘g‘ri qo‘yish va aksiyalarni ishga tushirish uchun.",
+    "See which hours and days are busy and when it’s empty — to schedule shifts right and run promotions."
+  ],
+  "Анализ блюд": [
+    "Taomlar tahlili",
+    "Dish analysis"
+  ],
+  "Хиты и аутсайдеры меню, маржа по каждой позиции. Понятно, что убрать, а что продвигать.": [
+    "Menyu xit va autsayderlari, har bir pozitsiya bo‘yicha marja. Nimani olib tashlash, nimani targ‘ib qilishni bilib olasiz.",
+    "Menu hits and flops, margin per item. Clear what to drop and what to push."
+  ],
+  "Бухгалтерский отчёт боссу": [
+    "Boshliqqa buxgalteriya hisoboti",
+    "Accounting report for the boss"
+  ],
+  "Точный и понятный отчёт для руководителя — доходы, расходы, прибыль. Красиво и без ручной сборки.": [
+    "Rahbar uchun aniq va tushunarli hisobot — daromad, xarajat, foyda. Chiroyli va qo‘lda yig‘ishsiz.",
+    "An accurate, clear report for the owner — income, expenses, profit. Beautiful and no manual work."
+  ],
+  "AI-ассистент внутри системы": [
+    "Tizim ichidagi AI-yordamchi",
+    "AI assistant inside the system"
+  ],
+  "Спросите обычными словами: «Почему упала выручка в четверг?» или «Какое блюдо приносит меньше всего прибыли?» — ассистент проанализирует данные и даст ответ с рекомендацией.": [
+    "Oddiy so‘zlar bilan so‘rang: «Payshanba kuni tushum nega tushdi?» yoki «Qaysi taom eng kam foyda keltiradi?» — yordamchi ma’lumotlarni tahlil qilib, tavsiya bilan javob beradi.",
+    "Ask in plain words: “Why did revenue drop on Thursday?” or “Which dish brings the least profit?” — the assistant analyzes the data and answers with a recommendation."
+  ],
+  "💬 «Выручка в четверг ниже на 18%: мало гостей после 21:00. Совет — запустить вечернюю акцию на десерты.»": [
+    "💬 «Payshanba tushumi 18% pastroq: 21:00 dan keyin mehmon kam. Maslahat — kechki desert aksiyasini ishga tushiring.»",
+    "💬 “Thursday revenue is 18% lower: few guests after 9 PM. Tip — launch an evening dessert promo.”"
+  ],
+  "Интерфейс": [
+    "Interfeys",
+    "Interface"
+  ],
+  "Понятная аналитика — на любом экране": [
+    "Tushunarli analitika — istalgan ekranda",
+    "Clear analytics — on any screen"
+  ],
+  "Дашборды, отчёты и графики, в которых разберётся даже тот, кто далёк от цифр.": [
+    "Raqamlardan yiroq odam ham tushunadigan dashboardlar, hisobotlar va grafiklar.",
+    "Dashboards, reports and charts that even a non-numbers person can understand."
+  ],
+  "Дашборд продаж": [
+    "Savdo dashboardi",
+    "Sales dashboard"
+  ],
+  "Выручка, средний чек и динамика в реальном времени.": [
+    "Tushum, o‘rtacha chek va dinamika real vaqtda.",
+    "Revenue, average check and trends in real time."
+  ],
+  "Отчёты по сменам": [
+    "Smenalar bo‘yicha hisobotlar",
+    "Shift reports"
+  ],
+  "Кто и сколько продал, KPI официантов и поваров.": [
+    "Kim qancha sotgan, ofitsiant va oshpazlar KPI’si.",
+    "Who sold how much, KPIs of waiters and cooks."
+  ],
+  "Аналитика меню": [
+    "Menyu analitikasi",
+    "Menu analytics"
+  ],
+  "Хиты, аутсайдеры и маржа по каждому блюду.": [
+    "Har bir taom bo‘yicha xit, autsayder va marja.",
+    "Hits, flops and margin for each dish."
+  ],
+  "Уникальная фишка": [
+    "Noyob xususiyat",
+    "Unique feature"
+  ],
+  "Тепло-навигатор зала через камеру": [
+    "Kamera orqali zal issiqlik-navigatori",
+    "Hall heat navigator via camera"
+  ],
+  "Подключаем датчик к вашей камере — и в приложении вы видите не просто трекинг, а тепловую карту зала: где скапливаются гости, какие столы «горячие», а какие простаивают.": [
+    "Kameringizga datchik ulaymiz — ilovada oddiy kuzatuvni emas, zal issiqlik xaritasini ko‘rasiz: mehmonlar qayerda to‘planadi, qaysi stollar «issiq», qaysilari bo‘sh turadi.",
+    "We connect a sensor to your camera — and in the app you see not just tracking, but a heat map of the hall: where guests gather, which tables are “hot” and which sit idle."
+  ],
+  "Тепловая карта посадки и проходимости в реальном времени": [
+    "Joylashuv va o‘tuvchanlik issiqlik xaritasi real vaqtda",
+    "Real-time heat map of seating and footfall"
+  ],
+  "Видно «мёртвые» зоны зала — можно переставить столы": [
+    "Zalning «o‘lik» zonalari ko‘rinadi — stollarni qayta joylash mumkin",
+    "See the hall’s “dead” zones — you can rearrange tables"
+  ],
+  "Подключается к обычной камере — без дорогого оборудования": [
+    "Oddiy kameraga ulanadi — qimmat jihozsiz",
+    "Connects to an ordinary camera — no expensive hardware"
+  ],
+  "Докупается к «Старт» и «Бизнес», в «Премиум» — уже включён": [
+    "«Start» va «Biznes»ga qo‘shimcha olinadi, «Premium»da — allaqachon kiritilgan",
+    "An add-on for “Start” and “Business”, already included in “Premium”"
+  ],
+  "Подходит любому заведению": [
+    "Har qanday muassasaga mos",
+    "Fits any venue"
+  ],
+  "От маленькой кофейни до большой сети — система масштабируется под вас.": [
+    "Kichik qahvaxonadan katta tarmoqqacha — tizim sizga moslashadi.",
+    "From a small coffee shop to a large chain — the system scales to you."
+  ],
+  "Рестораны": [
+    "Restoranlar",
+    "Restaurants"
+  ],
+  "Полный контроль зала, кухни и выручки": [
+    "Zal, oshxona va tushumni to‘liq nazorat",
+    "Full control of hall, kitchen and revenue"
+  ],
+  "Кофейни": [
+    "Qahvaxonalar",
+    "Coffee shops"
+  ],
+  "Быстрые заказы и аналитика потока": [
+    "Tez buyurtmalar va oqim analitikasi",
+    "Fast orders and flow analytics"
+  ],
+  "Чайханы": [
+    "Choyxonalar",
+    "Teahouses"
+  ],
+  "Учёт больших залов и банкетов": [
+    "Katta zallar va bazmlarni hisobga olish",
+    "Managing large halls and banquets"
+  ],
+  "Фастфуд": [
+    "Fastfud",
+    "Fast food"
+  ],
+  "Высокая скорость и анализ блюд": [
+    "Yuqori tezlik va taomlar tahlili",
+    "High speed and dish analysis"
+  ],
+  "рост выручки в среднем": [
+    "o‘rtacha tushum o‘sishi",
+    "average revenue growth"
+  ],
+  "экономии на отчётах / нед.": [
+    "hisobotlarda tejamkorlik / haft.",
+    "saved on reports / week"
+  ],
+  "поддержка без выходных": [
+    "dam olishsiz qo‘llab-quvvatlash",
+    "support with no days off"
+  ],
+  "на запуск и обучение": [
+    "ishga tushirish va o‘qitishga",
+    "to launch and train"
+  ],
+  "Почему мы": [
+    "Nega biz",
+    "Why us"
+  ],
+  "Главные плюсы OSHBOARD": [
+    "OSHBOARD asosiy afzalliklari",
+    "Key advantages of OSHBOARD"
+  ],
+  "Мы объединили лучшее из аналитики и POS — и сделали это доступным для ресторанов любого размера.": [
+    "Analitika va POS’ning eng yaxshisini birlashtirib, uni har qanday restoran uchun arzon qildik.",
+    "We combined the best of analytics and POS — and made it affordable for restaurants of any size."
+  ],
+  "Доступная цена": [
+    "Arzon narx",
+    "Affordable price"
+  ],
+  "Дешевле аналогов — сильная аналитика по цене обычной кассы.": [
+    "Analoglardan arzon — oddiy kassa narxiga kuchli analitika.",
+    "Cheaper than rivals — strong analytics at the price of a plain register."
+  ],
+  "Умный помощник анализирует данные и подсказывает решения.": [
+    "Aqlli yordamchi ma’lumotlarni tahlil qilib, yechim taklif qiladi.",
+    "A smart helper analyzes data and suggests decisions."
+  ],
+  "Поддержка 24/7": [
+    "24/7 qo‘llab-quvvatlash",
+    "24/7 support"
+  ],
+  "Технические вопросы решаем в любое время, без выходных.": [
+    "Texnik masalalarni istalgan vaqtda, dam olishsiz hal qilamiz.",
+    "We solve technical issues anytime, no days off."
+  ],
+  "Бесплатный техосмотр": [
+    "Bepul texnik ko‘rik",
+    "Free tech check-up"
+  ],
+  "Каждый месяц — бесплатная проверка и обзор системы. Всё включено.": [
+    "Har oy — tizimni bepul tekshirish va ko‘rib chiqish. Hammasi kiritilgan.",
+    "Every month — a free system check and review. All included."
+  ],
+  "Сравнение": [
+    "Taqqoslash",
+    "Comparison"
+  ],
+  "OSHBOARD против обычной кассы": [
+    "OSHBOARD oddiy kassaga qarshi",
+    "OSHBOARD vs a plain register"
+  ],
+  "Обычная касса просто принимает оплату. OSHBOARD ещё и показывает, где вы теряете, а где зарабатываете.": [
+    "Oddiy kassa faqat to‘lovni qabul qiladi. OSHBOARD esa qayerda yo‘qotayotganingiz va topayotganingizni ko‘rsatadi.",
+    "A plain register just takes payment. OSHBOARD also shows where you lose and where you earn."
+  ],
+  "Возможность": [
+    "Imkoniyat",
+    "Feature"
+  ],
+  "Обычная касса": [
+    "Oddiy kassa",
+    "Plain register"
+  ],
+  "Приём заказов и оплата": [
+    "Buyurtma va to‘lov qabul qilish",
+    "Taking orders and payments"
+  ],
+  "Аналитика продаж в реальном времени": [
+    "Real vaqtli savdo analitikasi",
+    "Real-time sales analytics"
+  ],
+  "Трекинг сотрудников и KPI": [
+    "Xodimlar va KPI kuzatuvi",
+    "Staff & KPI tracking"
+  ],
+  "Маржа и рейтинг по каждому блюду": [
+    "Har bir taom bo‘yicha marja va reyting",
+    "Margin & rating per dish"
+  ],
+  "Бухгалтерский отчёт для руководителя": [
+    "Rahbar uchun buxgalteriya hisoboti",
+    "Accounting report for the owner"
+  ],
+  "AI-ассистент с рекомендациями": [
+    "Tavsiyali AI-yordamchi",
+    "AI assistant with recommendations"
+  ],
+  "Тепло-навигатор загрузки зала": [
+    "Zal bandligi issiqlik-navigatori",
+    "Hall load heat navigator"
+  ],
+  "Поддержка 24/7 и бесплатный техосмотр": [
+    "24/7 qo‘llab-quvvatlash va bepul texnik ko‘rik",
+    "24/7 support & free check-up"
+  ],
+  "Тариф под размер вашего заведения": [
+    "Muassasangiz o‘lchamiga mos tarif",
+    "A plan for your venue’s size"
+  ],
+  "Цены указаны ориентировочно — точную стоимость подберём под ваше меню и количество точек. Оставьте заявку на демо.": [
+    "Narxlar taxminiy — aniq narxni menyu va nuqtalar soniga qarab tanlaymiz. Demoga ariza qoldiring.",
+    "Prices are approximate — we’ll set the exact cost based on your menu and number of locations. Leave a demo request."
+  ],
+  "Старт": [
+    "Start",
+    "Start"
+  ],
+  "Бизнес": [
+    "Biznes",
+    "Business"
+  ],
+  "Премиум": [
+    "Premium",
+    "Premium"
+  ],
+  "Рестораны 150–200 м²": [
+    "Restoranlar 150–200 m²",
+    "Restaurants 150–200 m²"
+  ],
+  "небольшое заведение, одна точка": [
+    "kichik muassasa, bitta nuqta",
+    "small venue, one location"
+  ],
+  "сум/мес": [
+    "so‘m/oy",
+    "UZS/mo"
+  ],
+  "POS-касса и заказы": [
+    "POS-kassa va buyurtmalar",
+    "POS register & orders"
+  ],
+  "Анализ продаж и блюд": [
+    "Savdo va taomlar tahlili",
+    "Sales & dish analysis"
+  ],
+  "Поддержка 24/7 + техосмотр": [
+    "24/7 qo‘llab-quvvatlash + texnik ko‘rik",
+    "24/7 support + check-up"
+  ],
+  "Тепло-навигатор (докупается)": [
+    "Issiqlik-navigator (qo‘shimcha)",
+    "Heat navigator (add-on)"
+  ],
+  "Выбрать «Старт»": [
+    "«Start»ni tanlash",
+    "Choose “Start”"
+  ],
+  "Рестораны до 400 м²": [
+    "Restoranlar 400 m² gacha",
+    "Restaurants up to 400 m²"
+  ],
+  "среднее заведение, до 2 точек": [
+    "o‘rta muassasa, 2 nuqtagacha",
+    "mid-size venue, up to 2 locations"
+  ],
+  "Всё из «Старт»": [
+    "«Start»dagi hammasi",
+    "Everything in “Start”"
+  ],
+  "Выбрать «Бизнес»": [
+    "«Biznes»ni tanlash",
+    "Choose “Business”"
+  ],
+  "Без ограничений по площади": [
+    "Maydon bo‘yicha cheklovsiz",
+    "No area limits"
+  ],
+  "Индивидуально": [
+    "Individual",
+    "Custom"
+  ],
+  "сеть, большие площади, много точек": [
+    "tarmoq, katta maydonlar, ko‘p nuqta",
+    "chain, large areas, many locations"
+  ],
+  "Всё из «Бизнес»": [
+    "«Biznes»dagi hammasi",
+    "Everything in “Business”"
+  ],
+  "Тепло-навигатор включён": [
+    "Issiqlik-navigator kiritilgan",
+    "Heat navigator included"
+  ],
+  "Неограниченно точек и сотрудников": [
+    "Cheksiz nuqta va xodimlar",
+    "Unlimited locations & staff"
+  ],
+  "Приоритетная поддержка": [
+    "Ustuvor qo‘llab-quvvatlash",
+    "Priority support"
+  ],
+  "Персональный менеджер": [
+    "Shaxsiy menejer",
+    "Personal manager"
+  ],
+  "Обсудить «Премиум»": [
+    "«Premium»ni muhokama qilish",
+    "Discuss “Premium”"
+  ],
+  "➕ Доп. модуль: датчик «Тепло-навигатор»": [
+    "➕ Qo‘shimcha modul: «Issiqlik-navigator» datchigi",
+    "➕ Add-on: “Heat navigator” sensor"
+  ],
+  "Подключается к камере и превращает обычный трекинг в тепловую карту зала. Доступен к тарифам «Старт» и «Бизнес», в «Премиум» уже входит бесплатно.": [
+    "Kameraga ulanadi va oddiy kuzatuvni zal issiqlik xaritasiga aylantiradi. «Start» va «Biznes» tariflariga mavjud, «Premium»ga bepul kiradi.",
+    "Connects to the camera and turns basic tracking into a hall heat map. Available for “Start” and “Business”, free in “Premium”."
+  ],
+  "В «Премиум» — включён": [
+    "«Premium»da — kiritilgan",
+    "Included in “Premium”"
+  ],
+  "Как начать": [
+    "Qanday boshlash",
+    "How to start"
+  ],
+  "Запуск за 4 простых шага": [
+    "4 oddiy qadamda ishga tushirish",
+    "Launch in 4 simple steps"
+  ],
+  "Заявка": [
+    "Ariza",
+    "Request"
+  ],
+  "Оставляете заявку на демо — мы связываемся и показываем систему.": [
+    "Demoga ariza qoldirasiz — biz bog‘lanamiz va tizimni ko‘rsatamiz.",
+    "You leave a demo request — we get in touch and show the system."
+  ],
+  "Настройка": [
+    "Sozlash",
+    "Setup"
+  ],
+  "Заносим меню, столы и сотрудников, подключаем оборудование.": [
+    "Menyu, stollar va xodimlarni kiritamiz, jihozlarni ulaymiz.",
+    "We add the menu, tables and staff, connect the hardware."
+  ],
+  "Обучение": [
+    "O‘qitish",
+    "Training"
+  ],
+  "Быстро обучаем команду — интерфейс простой и на русском.": [
+    "Jamoani tez o‘rgatamiz — interfeys oddiy.",
+    "We train the team fast — the interface is simple."
+  ],
+  "Работа": [
+    "Ishlash",
+    "Work"
+  ],
+  "Продаёте и сразу видите аналитику. Мы рядом 24/7.": [
+    "Sotasiz va analitikani darhol ko‘rasiz. Biz 24/7 yoningizdamiz.",
+    "You sell and instantly see analytics. We’re with you 24/7."
+  ],
+  "Частые вопросы": [
+    "Ko‘p beriladigan savollar",
+    "Frequently asked questions"
+  ],
+  "Чем OSHBOARD отличается от обычной кассы?": [
+    "OSHBOARD oddiy kassadan nimasi bilan farq qiladi?",
+    "How is OSHBOARD different from a plain register?"
+  ],
+  "Обычная касса просто принимает заказы. OSHBOARD дополнительно анализирует продажи, сотрудников, гостей и блюда, собирает бухгалтерский отчёт и подсказывает решения через AI-ассистента.": [
+    "Oddiy kassa faqat buyurtma qabul qiladi. OSHBOARD qo‘shimcha ravishda savdo, xodimlar, mehmonlar va taomlarni tahlil qiladi, buxgalteriya hisobotini yig‘adi va AI-yordamchi orqali yechim taklif qiladi.",
+    "A plain register just takes orders. OSHBOARD additionally analyzes sales, staff, guests and dishes, builds an accounting report and suggests decisions via an AI assistant."
+  ],
+  "Что такое тепло-навигатор?": [
+    "Issiqlik-navigator nima?",
+    "What is the heat navigator?"
+  ],
+  "Это датчик, который подключается к вашей камере и строит тепловую карту зала: видно загрузку столов и зон. В «Премиум» включён, к остальным тарифам докупается.": [
+    "Bu kameringizga ulanadigan va zal issiqlik xaritasini quradigan datchik: stollar va zonalar bandligi ko‘rinadi. «Premium»da kiritilgan, boshqa tariflarga qo‘shimcha olinadi.",
+    "It’s a sensor that connects to your camera and builds a hall heat map: you see table and zone occupancy. Included in “Premium”, an add-on for other plans."
+  ],
+  "Нужен ли интернет для работы кассы?": [
+    "Kassa ishlashi uchun internet kerakmi?",
+    "Do you need internet for the register?"
+  ],
+  "POS-касса работает и без интернета — данные синхронизируются с аналитикой, как только связь появится.": [
+    "POS-kassa internetsiz ham ishlaydi — aloqa paydo bo‘lishi bilan ma’lumotlar analitika bilan sinxronlanadi.",
+    "The POS register works offline too — data syncs with analytics as soon as the connection returns."
+  ],
+  "Сколько стоит и есть ли скрытые платежи?": [
+    "Narxi qancha va yashirin to‘lovlar bormi?",
+    "How much is it and are there hidden fees?"
+  ],
+  "Цена зависит от тарифа и размера заведения. Ежемесячный техосмотр и поддержка 24/7 входят в стоимость — без доплат.": [
+    "Narx tarif va muassasa o‘lchamiga bog‘liq. Oylik texnik ko‘rik va 24/7 qo‘llab-quvvatlash narxga kiradi — qo‘shimcha to‘lovsiz.",
+    "The price depends on the plan and venue size. Monthly check-ups and 24/7 support are included — no extra fees."
+  ],
+  "Вы работаете в Самарканде и по Узбекистану?": [
+    "Siz Samarqand va O‘zbekiston bo‘ylab ishlaysizmi?",
+    "Do you work in Samarkand and across Uzbekistan?"
+  ],
+  "Да. Мы из Самарканда и подключаем заведения по всему Узбекистану. Интерфейс и поддержка — на русском.": [
+    "Ha. Biz Samarqanddanmiz va butun O‘zbekiston bo‘ylab muassasalarni ulaymiz. Interfeys va qo‘llab-quvvatlash uch tilda.",
+    "Yes. We’re from Samarkand and connect venues across Uzbekistan. The interface and support are multilingual."
+  ],
+  "Готовы навести порядок в цифрах?": [
+    "Raqamlarni tartibga solishga tayyormisiz?",
+    "Ready to put your numbers in order?"
+  ],
+  "Оставьте заявку — покажем OSHBOARD на вашем меню и рассчитаем точную цену под ваше заведение.": [
+    "Ariza qoldiring — OSHBOARD’ni menyungizda ko‘rsatamiz va muassasangiz uchun aniq narxni hisoblaymiz.",
+    "Leave a request — we’ll show OSHBOARD on your menu and calculate an exact price for your venue."
+  ],
+  "Бесплатная демонстрация на вашем меню": [
+    "Menyungizda bepul namoyish",
+    "A free demo on your menu"
+  ],
+  "Перезвоним в течение 15 минут": [
+    "15 daqiqa ichida qo‘ng‘iroq qilamiz",
+    "We’ll call back within 15 minutes"
+  ],
+  "Поможем с запуском и обучением команды": [
+    "Ishga tushirish va jamoani o‘qitishda yordam beramiz",
+    "We’ll help with launch and team training"
+  ],
+  "Ваше имя": [
+    "Ismingiz",
+    "Your name"
+  ],
+  "Телефон": [
+    "Telefon",
+    "Phone"
+  ],
+  "Название заведения": [
+    "Muassasa nomi",
+    "Venue name"
+  ],
+  "Тип заведения": [
+    "Muassasa turi",
+    "Venue type"
+  ],
+  "Ресторан": [
+    "Restoran",
+    "Restaurant"
+  ],
+  "Кофейня": [
+    "Qahvaxona",
+    "Coffee shop"
+  ],
+  "Чайхана": [
+    "Choyxona",
+    "Teahouse"
+  ],
+  "Другое": [
+    "Boshqa",
+    "Other"
+  ],
+  "Отправить заявку": [
+    "Ariza yuborish",
+    "Send request"
+  ],
+  "Нажимая кнопку, вы соглашаетесь на обработку данных. Без спама.": [
+    "Tugmani bosish orqali ma’lumotlarni qayta ishlashga rozilik bildirasiz. Spamsiz.",
+    "By clicking, you agree to data processing. No spam."
+  ],
+  "✓ Спасибо! Заявка принята — свяжемся с вами очень скоро.": [
+    "✓ Rahmat! Ariza qabul qilindi — tez orada bog‘lanamiz.",
+    "✓ Thank you! Your request is received — we’ll contact you very soon."
+  ],
+  "Азиз": [
+    "Aziz",
+    "Aziz"
+  ],
+  "Напр. Chaykhana Registon": [
+    "Masalan, Registon Choyxona",
+    "e.g. Registon Teahouse"
+  ],
+  "Умная система для ресторанов: POS-касса, аналитика и AI-ассистент в одном приложении. Самарканд, Узбекистан.": [
+    "Restoranlar uchun aqlli tizim: POS-kassa, analitika va AI-yordamchi bitta ilovada. Samarqand, O‘zbekiston.",
+    "A smart system for restaurants: POS register, analytics and an AI assistant in one app. Samarkand, Uzbekistan."
+  ],
+  "Продукт": [
+    "Mahsulot",
+    "Product"
+  ],
+  "Компания": [
+    "Kompaniya",
+    "Company"
+  ],
+  "О нас": [
+    "Biz haqimizda",
+    "About"
+  ],
+  "Блог": [
+    "Blog",
+    "Blog"
+  ],
+  "Демо": [
+    "Demo",
+    "Demo"
+  ],
+  "Контакты": [
+    "Kontaktlar",
+    "Contacts"
+  ],
+  "© 2026 OSHBOARD. Все права защищены.": [
+    "© 2026 OSHBOARD. Barcha huquqlar himoyalangan.",
+    "© 2026 OSHBOARD. All rights reserved."
+  ],
+  "Сделано в Самарканде 🧡": [
+    "Samarqandda yaratilgan 🧡",
+    "Made in Samarkand 🧡"
+  ],
+  "Новости": [
+    "Yangiliklar",
+    "News"
+  ],
+  "Новости и обновления": [
+    "Yangiliklar va yangilanishlar",
+    "News & updates"
+  ],
+  "Написать нам": [
+    "Bizga yozing",
+    "Message us"
+  ],
+  "Три уклада": [
+    "Uch turdagi ish",
+    "Three business kinds"
+  ],
+  "Знайте о своём деле": [
+    "Ishingizni biling",
+    "Know your business"
+  ],
+  "OSHBOARD — касса, склад, персонал и отчёты в одной программе. Три готовых уклада: ресторан и кафе, магазин и аптека, клининговая компания. Работает без интернета, говорит по-русски, по-узбекски и по-английски.": [
+    "OSHBOARD — kassa, ombor, xodimlar va hisobotlar bitta dasturda. Uchta tayyor turi: restoran va kafe, doʻkon va dorixona, klining kompaniyasi. Internetsiz ishlaydi, rus, oʻzbek va ingliz tillarida gapiradi.",
+    "OSHBOARD is your register, stock, staff and reports in one program. Three ready set-ups: restaurant and café, shop and pharmacy, cleaning company. Works without internet, speaks Russian, Uzbek and English."
+  ],
+  "3 дела": [
+    "3 tur",
+    "3 kinds"
+  ],
+  "ресторан, магазин, клининг": [
+    "restoran, doʻkon, klining",
+    "restaurant, shop, cleaning"
+  ],
+  "Без сети": [
+    "Tarmoqsiz",
+    "No network"
+  ],
+  "касса не встанет": [
+    "kassa toʻxtamaydi",
+    "the register keeps going"
+  ],
+  "3 языка": [
+    "3 til",
+    "3 languages"
+  ],
+  "12,4 млн": [
+    "12,4 mln",
+    "12.4M"
+  ],
+  "OSHBOARD — программа учёта для ресторана, магазина и клининга. Самарканд": [
+    "OSHBOARD — restoran, doʻkon va klining uchun hisob dasturi. Samarqand",
+    "OSHBOARD — bookkeeping software for restaurants, shops and cleaning firms. Samarkand"
+  ],
+  "Одна программа вместо тетради, таблицы в телефоне и трёх разных касс": [
+    "Daftar, telefondagi jadval va uchta har xil kassa oʻrniga bitta dastur",
+    "One program instead of a notebook, a spreadsheet on the phone and three different registers"
+  ],
+  "🛒 Продуктовые": [
+    "🛒 Oziq-ovqat doʻkonlari",
+    "🛒 Grocery shops"
+  ],
+  "💊 Аптеки": [
+    "💊 Dorixonalar",
+    "💊 Pharmacies"
+  ],
+  "👕 Одежда": [
+    "👕 Kiyim doʻkonlari",
+    "👕 Clothing shops"
+  ],
+  "🔧 Стройматериалы": [
+    "🔧 Qurilish mollari",
+    "🔧 Hardware stores"
+  ],
+  "🧹 Клининг": [
+    "🧹 Klining",
+    "🧹 Cleaning firms"
+  ],
+  "Деньги уходят там, куда не смотрят": [
+    "Pul eʼtibor berilmagan joydan ketadi",
+    "Money leaves where nobody looks"
+  ],
+  "Пока учёт лежит в тетради и в голове, решения принимаются на ощупь. И беда не в том, что цифр нет совсем, — беда в том, что они есть, но неверные.": [
+    "Hisob daftarda va boshda turar ekan, qarorlar paypaslab qabul qilinadi. Yomoni raqamlar yoʻqligida emas — yomoni ular bor, lekin notoʻgʻri.",
+    "While the books live in a notebook and in your head, decisions are made by feel. The trouble is not that there are no numbers — the trouble is that there are, and they are wrong."
+  ],
+  "Наценка": [
+    "Ustama",
+    "Mark-up"
+  ],
+  "вместо прибыли": [
+    "foyda oʻrniga",
+    "instead of profit"
+  ],
+  "Кажется, что заработали": [
+    "Ishlab topganday koʻrinadi",
+    "It looks like you earned"
+  ],
+  "Касса показывает выручку минус закупку и называет это прибылью. Аренда, свет и зарплаты в счёт не идут — и месяц, закрытый в минус, выглядит удачным.": [
+    "Kassa tushumdan xaridni ayirib, buni foyda deb ataydi. Ijara, chiroq va ish haqi hisobga kirmaydi — va zarar bilan yopilgan oy muvaffaqiyatli koʻrinadi.",
+    "The register shows revenue minus purchases and calls it profit. Rent, electricity and wages are not counted — and a month closed at a loss looks like a good one."
+  ],
+  "Остатки": [
+    "Qoldiqlar",
+    "Stock"
+  ],
+  "только на бумаге": [
+    "faqat qogʻozda",
+    "only on paper"
+  ],
+  "Кажется, что товар есть": [
+    "Tovar borday koʻrinadi",
+    "It looks like the goods are there"
+  ],
+  "Продали, но не списали; списали, но не записали. К инвентаризации сходится далеко не всё, а разницу списывают на «усушку».": [
+    "Sotildi — hisobdan chiqarilmadi; chiqarildi — yozilmadi. Inventarizatsiyada hammasi ham toʻgʻri kelmaydi, farqni esa «qurib qolgan» deb yozib qoʻyishadi.",
+    "Sold but not written off; written off but not recorded. At stocktaking far from everything adds up, and the gap is blamed on “shrinkage”."
+  ],
+  "Зарплаты": [
+    "Ish haqi",
+    "Wages"
+  ],
+  "в отдельной тетради": [
+    "alohida daftarda",
+    "in a separate notebook"
+  ],
+  "Кажется, что расходы известны": [
+    "Xarajatlar maʼlumday koʻrinadi",
+    "It looks like you know your costs"
+  ],
+  "Людям платят каждый месяц, а в отчёте этих денег нет. Самая большая трата фирмы оказывается единственной, которую никто не считает.": [
+    "Odamlarga har oy toʻlanadi, hisobotda esa bu pul yoʻq. Firmaning eng katta xarajati hech kim sanamaydigan yagona xarajat boʻlib chiqadi.",
+    "People are paid every month, yet that money is missing from the report. The firm's biggest cost turns out to be the only one nobody counts."
+  ],
+  "Одна программа, но говорит на языке вашего дела": [
+    "Bitta dastur, lekin sizning ishingiz tilida gapiradi",
+    "One program that speaks the language of your trade"
+  ],
+  "Это не универсальная касса, в которой ресторан и магазин видят одни и те же кнопки. При заведении вы выбираете вид дела — и программа перестраивается целиком: разделы, слова, отчёты и даже названия должностей.": [
+    "Bu restoran ham, doʻkon ham bir xil tugmalarni koʻradigan universal kassa emas. Muassasani ochayotganda ish turini tanlaysiz — va dastur butunlay qayta quriladi: boʻlimlar, soʻzlar, hisobotlar va hatto lavozim nomlari.",
+    "This is not a one-size-fits-all register where a restaurant and a shop see the same buttons. When you set up a business you pick its kind — and the whole program rebuilds itself: sections, wording, reports, even job titles."
+  ],
+  "Ресторан и кафе": [
+    "Restoran va kafe",
+    "Restaurant and cafe"
+  ],
+  "План зала со столами, касса официанта, экран кухни, счета и разделение чека, бронь, QR-меню и онлайн-заказы. Тех-карты считают себестоимость блюда, фудкост показывает, что готовить невыгодно.": [
+    "Stollar bilan zal chizmasi, ofitsiant kassasi, oshxona ekrani, hisoblar va chekni boʻlish, bron, QR-menyu va onlayn buyurtmalar. Texnologik kartalar taom tannarxini hisoblaydi, fudkost esa qaysi taom foydasizligini koʻrsatadi.",
+    "A floor plan with tables, a waiter register, a kitchen screen, bills and bill splitting, bookings, a QR menu and online orders. Recipe cards work out the cost of each dish, and food cost shows what is not worth cooking."
+  ],
+  "Магазин, аптека, одежда": [
+    "Doʻkon, dorixona, kiyim",
+    "Shop, pharmacy, clothing"
+  ],
+  "Касса со сканером штрихкодов, приёмка, инвентаризация, печать ценников, сроки годности для аптеки, размеры и модели для одежды. Кассовая смена с пересчётом денег в ящике.": [
+    "Shtrix-kod skaneri bilan kassa, qabul, inventarizatsiya, narx yorliqlarini chop etish, dorixona uchun yaroqlilik muddati, kiyim uchun oʻlcham va modellar. Kassa smenasi — qutidagi pulni sanab topshirish bilan.",
+    "A register with a barcode scanner, goods receiving, stocktaking, price-tag printing, expiry dates for pharmacies, sizes and models for clothing. A till shift that ends with counting the cash in the drawer."
+  ],
+  "Клининговая компания": [
+    "Klining kompaniyasi",
+    "Cleaning company"
+  ],
+  "Заявки и маршрут дня, договоры на постоянные объекты, воронка клиентов, акт с подписью на экране. Бригады с закреплённым инвентарём и вечерней перекличкой вещей, расход материалов, оплата труда бригад.": [
+    "Buyurtmalar va kun marshruti, doimiy obyektlarga shartnomalar, mijozlar voronkasi, ekranda imzolanadigan dalolatnoma. Biriktirilgan inventarga ega brigadalar va kechki buyum tekshiruvi, material sarfi, brigadalar mehnatiga haq.",
+    "Jobs and the route of the day, contracts for regular sites, a client funnel, an act signed on the screen. Crews with their own kit and an evening roll-call of items, materials used, and crew pay."
+  ],
+  "Одна учётная запись — сколько угодно заведений разного вида. Переключение сверху, в одно нажатие: утром смотрите ресторан, днём магазин.": [
+    "Bitta hisob — turli xildagi istalgancha muassasa. Yuqoridan bir bosishda almashtiriladi: ertalab restoranni, kunduzi doʻkonni koʻrasiz.",
+    "One account, as many businesses of different kinds as you like. Switch at the top in one tap: look at the restaurant in the morning, the shop at midday."
+  ],
+  "Всё, чем живёт заведение — в одной программе": [
+    "Muassasa yashaydigan hamma narsa — bitta dasturda",
+    "Everything a business runs on, in one program"
+  ],
+  "Касса, склад, люди, деньги и отчёты связаны между собой. Пробили чек — уменьшился остаток на складе, посчиталась себестоимость, изменилась прибыль в отчёте. Ничего не нужно переносить руками.": [
+    "Kassa, ombor, odamlar, pul va hisobotlar bir-biriga bogʻlangan. Chek urildi — omborda qoldiq kamaydi, tannarx hisoblandi, hisobotdagi foyda oʻzgardi. Hech narsani qoʻlda koʻchirish kerak emas.",
+    "The register, the stock, the people, the money and the reports are tied together. Ring up a sale and stock goes down, cost is worked out, profit in the report changes. Nothing has to be copied by hand."
+  ],
+  "Касса, которая не встанет": [
+    "Toʻxtamaydigan kassa",
+    "A register that does not stop"
+  ],
+  "В зале — план столов и счета, в магазине — сканер штрихкодов и денежный ящик. Пропал интернет: касса продолжает пробивать чеки и запоминает их, а когда связь вернётся — сама догонит. Дважды одна продажа при этом не спишется.": [
+    "Zalda — stollar chizmasi va hisoblar, doʻkonda — shtrix-kod skaneri va pul qutisi. Internet uzildi: kassa chek urishda davom etadi va ularni oʻzida saqlaydi, aloqa tiklanganda esa oʻzi yetkazadi. Bitta sotuv ikki marta yozilmaydi.",
+    "In the dining room, a table plan and bills; in the shop, a barcode scanner and a cash drawer. The internet drops: the register keeps ringing up sales and holds them, then catches up on its own when the line is back. No sale is recorded twice."
+  ],
+  "Отчёт, которому можно верить": [
+    "Ishonsa boʻladigan hisobot",
+    "A report you can trust"
+  ],
+  "Чистая прибыль считается после всего: выручка минус себестоимость проданного, минус расходы, минус зарплаты. Каждый вычет стоит отдельной строкой — итог можно проверить сложением, а не принимать на веру.": [
+    "Sof foyda hammasidan keyin hisoblanadi: tushumdan sotilganning tannarxi, xarajatlar va ish haqi ayiriladi. Har bir ayiruv alohida qatorda turadi — natijani qoʻshib tekshirsa boʻladi, koʻr-koʻrona ishonish shart emas.",
+    "Net profit is worked out after everything: revenue minus the cost of what was sold, minus expenses, minus wages. Every deduction has its own line, so you can check the bottom line by adding up instead of taking it on faith."
+  ],
+  "Для бухгалтера — таблицей": [
+    "Buxgalter uchun — jadval",
+    "For your accountant, as a table"
+  ],
+  "Приход и расход по дням, расходы по статьям, зарплаты за период. Выгрузка в Excel и печать. Это не декларация — это понятная таблица с расшифровкой, которую бухгалтер переносит куда ему нужно.": [
+    "Kunlar boʻyicha kirim va chiqim, moddalar boʻyicha xarajatlar, davr uchun ish haqi. Excelga yuklash va chop etish. Bu deklaratsiya emas — bu buxgalter oʻziga kerakli joyga koʻchiradigan, izohli tushunarli jadval.",
+    "Money in and out by day, costs by category, wages for the period. Export to Excel and print. This is not a tax return: it is a clear table with a breakdown that your accountant moves wherever they need it."
+  ],
+  "Склад и себестоимость": [
+    "Ombor va tannarx",
+    "Stock and cost"
+  ],
+  "Приёмка, остатки, инвентаризация, списания и потери. Тех-карты считают себестоимость блюда по ингредиентам, фудкост показывает, что готовить невыгодно. Магазину — приёмка по накладной и печать ценников.": [
+    "Qabul, qoldiqlar, inventarizatsiya, hisobdan chiqarish va yoʻqotishlar. Texnologik kartalar taom tannarxini masalliqlar boʻyicha hisoblaydi, fudkost qaysi taom foydasizligini koʻrsatadi. Doʻkon uchun — hujjat boʻyicha qabul va narx yorliqlari.",
+    "Receiving, stock levels, stocktaking, write-offs and losses. Recipe cards work out a dish cost from its ingredients; food cost shows what is not worth cooking. For shops, receiving against a delivery note and price-tag printing."
+  ],
+  "Люди, смены и зарплата": [
+    "Odamlar, smenalar va ish haqi",
+    "People, shifts and pay"
+  ],
+  "Кто на смене, кто опоздал, план смен на месяц. Оклад, ставка за смену или процент; авансы и выплаты. В клининге в зарплатах стоят и те, у кого нет входа в программу — уборщицы и мойщики окон.": [
+    "Kim smenada, kim kechikdi, oyga smenalar rejasi. Maosh, smena uchun stavka yoki foiz; avanslar va toʻlovlar. Kliningda ish haqida dasturga kirmaydiganlar ham turadi — farroshlar va oyna yuvuvchilar.",
+    "Who is on shift, who came late, the shift plan for the month. Salary, a rate per shift or a percentage; advances and payouts. In cleaning, the payroll also holds people with no login at all: cleaners and window washers."
+  ],
+  "Когда приходят гости": [
+    "Mehmonlar qachon keladi",
+    "When customers come"
+  ],
+  "Видно, в какие часы и дни поток большой, а когда пусто. По этим цифрам ставят смены и запускают акции не наугад. У магазина — то же самое по чекам, у клининга — загруженность бригад по дням.": [
+    "Qaysi soat va kunlarda oqim koʻp, qachon boʻsh — koʻrinib turadi. Shu raqamlarga qarab smena qoʻyiladi va aksiya taxminan emas, bilib boshlanadi. Doʻkonda — cheklar boʻyicha, kliningda — brigadalarning kunlik bandligi.",
+    "You can see which hours and days are busy and when it is empty. Shifts and promotions are set from those numbers, not from guesswork. For shops the same by receipts; for cleaning, how loaded the crews are day by day."
+  ],
+  "Что продаётся, а что лежит": [
+    "Nima sotiladi, nima yotibdi",
+    "What sells and what sits"
+  ],
+  "Хиты и аутсайдеры, наценка по каждой позиции. Понятно, что убрать из меню, а что поставить на видное место. Для магазина отдельно видно, сколько денег лежит на складе по себестоимости.": [
+    "Yaxshi ketayotgan va yotib qolgan pozitsiyalar, har biri boʻyicha ustama. Menyudan nimani olib tashlash, nimani koʻzga koʻringan joyga qoʻyish aniq. Doʻkon uchun alohida: omborda tannarx boʻyicha qancha pul yotgani koʻrinadi.",
+    "Best sellers and dead weight, the mark-up on each line. It is clear what to drop from the menu and what to put in plain sight. For shops there is also how much money is sitting in stock at cost."
+  ],
+  "Telegram-уведомления": [
+    "Telegram xabarnomalari",
+    "Telegram notifications"
+  ],
+  "Сотрудник получает новую заявку прямо в Telegram, руководитель — сводку за день. Не нужно держать программу открытой, чтобы не пропустить срочное.": [
+    "Xodim yangi buyurtmani toʻgʻridan-toʻgʻri Telegramda oladi, rahbar esa kunlik xulosani. Shoshilinch narsani oʻtkazib yubormaslik uchun dasturni ochiq tutish shart emas.",
+    "An employee gets a new job straight in Telegram; the owner gets the summary for the day. You do not have to keep the program open so as not to miss something urgent."
+  ],
+  "QR-меню и онлайн-заказы": [
+    "QR-menyu va onlayn buyurtmalar",
+    "QR menu and online orders"
+  ],
+  "Гость наводит телефон на наклейку и видит меню с фотографиями. Заказ на доставку или самовывоз приходит сразу в программу. Магазину — каталог товаров по такой же ссылке.": [
+    "Mehmon telefonini stikerga toʻgʻrilaydi va suratli menyuni koʻradi. Yetkazib berish yoki olib ketishga buyurtma toʻgʻridan-toʻgʻri dasturga tushadi. Doʻkon uchun — xuddi shunday havola orqali tovarlar katalogi.",
+    "A guest points their phone at the sticker and sees the menu with photos. A delivery or pickup order lands straight in the program. For shops, a product catalogue behind the same kind of link."
+  ],
+  "Камеры и тепловая карта": [
+    "Kameralar va issiqlik xaritasi",
+    "Cameras and a heat map"
+  ],
+  "Камеры зала в одном окне с программой. Тепло-навигатор показывает, где гости сидят охотнее, а какие столы простаивают.": [
+    "Zal kameralari dastur bilan bitta oynada. Issiqlik-navigator mehmonlar qaysi joyda koʻproq oʻtirishini va qaysi stollar boʻsh turishini koʻrsatadi.",
+    "The dining-room cameras in the same window as the program. The heat navigator shows where guests prefer to sit and which tables stand idle."
+  ],
+  "AI-помощник": [
+    "AI-yordamchi",
+    "AI assistant"
+  ],
+  "Спрашиваете обычными словами: «почему упала выручка на этой неделе», «какие блюда убрать», «сколько фирма должна вернуть сотрудникам» — и получаете ответ по своим цифрам.": [
+    "Oddiy soʻzlar bilan soʻraysiz: «bu hafta tushum nega tushdi», «qaysi taomlarni olib tashlash kerak», «firma xodimlarga qancha qaytarishi kerak» — va oʻz raqamlaringiz boʻyicha javob olasiz.",
+    "You ask in plain words: why did takings fall this week, which dishes should go, how much does the firm owe its staff. The answer comes from your own numbers."
+  ],
+  "На телефоне и на компьютере": [
+    "Telefonda ham, kompyuterda ham",
+    "On the phone and on the computer"
+  ],
+  "Ставится значком на телефон — как обычное приложение, без магазина приложений. Для кассы есть отдельная программа под Windows: своё окно, свой значок, можно в автозапуск.": [
+    "Telefonga oddiy ilova kabi belgi boʻlib oʻrnatiladi — ilovalar doʻkonisiz. Kassa uchun Windows ostida alohida dastur bor: oʻz oynasi, oʻz belgisi, avtoishga qoʻyish mumkin.",
+    "It installs on the phone as an icon, like a normal app, with no app store involved. For the till there is a separate Windows program: its own window, its own icon, and it can start with the computer."
+  ],
+  "Кому это подходит": [
+    "Bu kimlarga mos",
+    "Who it suits"
+  ],
+  "От чайханы на десять столов до сети магазинов и клининговой фирмы с бригадами. Уклад выбирается при заведении — и дальше человек видит только то, что нужно его делу.": [
+    "Oʻn stolli choyxonadan tortib doʻkonlar tarmogʻi va brigadali klining firmasigacha. Ish turi muassasa ochilganda tanlanadi — keyin odam faqat oʻz ishiga keraklisini koʻradi.",
+    "From a ten-table teahouse to a chain of shops or a cleaning firm with crews. The kind of business is chosen at set-up, and after that a person only sees what their trade needs."
+  ],
+  "Рестораны и чайханы": [
+    "Restoran va choyxonalar",
+    "Restaurants and teahouses"
+  ],
+  "Зал, кухня, официанты, банкеты": [
+    "Zal, oshxona, ofitsiantlar, ziyofatlar",
+    "Dining room, kitchen, waiters, banquets"
+  ],
+  "Кофейни и фастфуд": [
+    "Qahvaxona va fastfud",
+    "Coffee shops and fast food"
+  ],
+  "Скорость на кассе и анализ блюд": [
+    "Kassadagi tezlik va taomlar tahlili",
+    "Speed at the till and dish analysis"
+  ],
+  "Магазины и аптеки": [
+    "Doʻkon va dorixonalar",
+    "Shops and pharmacies"
+  ],
+  "Штрихкоды, остатки, сроки годности": [
+    "Shtrix-kodlar, qoldiqlar, yaroqlilik muddati",
+    "Barcodes, stock, expiry dates"
+  ],
+  "Клининговые фирмы": [
+    "Klining firmalari",
+    "Cleaning firms"
+  ],
+  "Заявки, бригады, инвентарь, акты": [
+    "Buyurtmalar, brigadalar, inventar, dalolatnomalar",
+    "Jobs, crews, kit, acts"
+  ],
+  "уклада: ресторан, магазин, клининг": [
+    "tur: restoran, doʻkon, klining",
+    "kinds: restaurant, shop, cleaning"
+  ],
+  "языка: русский, узбекский, английский": [
+    "til: rus, oʻzbek, ingliz",
+    "languages: Russian, Uzbek, English"
+  ],
+  "проверок перед каждой выкладкой": [
+    "har bir yangilanish oldidan tekshiruv",
+    "checks before every release"
+  ],
+  "Почему выбирают OSHBOARD": [
+    "Nega OSHBOARD tanlanadi",
+    "Why people choose OSHBOARD"
+  ],
+  "Программу делают здесь, в Самарканде, под то, как дело ведут в Узбекистане: с перебоями связи, с наличными, на трёх языках и без дорогого оборудования.": [
+    "Dastur shu yerda, Samarqandda, Oʻzbekistonda ish yuritish tarziga moslab qilinadi: aloqa uzilishlari bilan, naqd pul bilan, uch tilda va qimmat jihozsiz.",
+    "The program is made here in Samarkand, for the way business is actually run in Uzbekistan: with patchy connections, with cash, in three languages and without expensive equipment."
+  ],
+  "Интернет пропал — работа нет": [
+    "Internet yoʻq — ish bor",
+    "Internet gone, work goes on"
+  ],
+  "Касса продолжает пробивать чеки и запоминает их у себя. Связь вернулась — всё догоняется само, и ни одна продажа не спишется дважды.": [
+    "Kassa chek urishda davom etadi va ularni oʻzida saqlaydi. Aloqa tiklandi — hammasi oʻzi yetkaziladi va bironta sotuv ikki marta yozilmaydi.",
+    "The register keeps ringing up sales and holds them itself. When the line is back everything catches up on its own, and no sale is recorded twice."
+  ],
+  "Прибыль без самообмана": [
+    "Oʻzini aldamaydigan foyda",
+    "Profit without self-deception"
+  ],
+  "Из выручки вычитается себестоимость проданного, расходы и зарплаты. Многие программы называют прибылью наценку — и владелец считает себя богаче, чем есть.": [
+    "Tushumdan sotilganning tannarxi, xarajatlar va ish haqi ayiriladi. Koʻp dasturlar ustamani foyda deb ataydi — va ega oʻzini bor-yoʻgʻidan boyroq deb hisoblaydi.",
+    "The cost of what was sold, the expenses and the wages all come out of revenue. Many programs call the mark-up profit, and the owner thinks he is richer than he is."
+  ],
+  "Три языка целиком": [
+    "Uch til toʻliq",
+    "Three languages, all the way through"
+  ],
+  "Не только меню, но и каждая ошибка, каждая подсказка, каждая строка отчёта. Кассир-узбек работает по-узбекски, а не догадывается по кнопкам.": [
+    "Faqat menyu emas, har bir xatolik, har bir izoh, hisobotning har bir qatori ham. Oʻzbek kassir oʻzbekchada ishlaydi, tugmalarga qarab taxmin qilmaydi.",
+    "Not only the menu, but every error, every hint, every line of a report. An Uzbek cashier works in Uzbek instead of guessing from the buttons."
+  ],
+  "445 проверок перед выкладкой": [
+    "Yangilanish oldidan 445 tekshiruv",
+    "445 checks before every release"
+  ],
+  "Каждое обновление прогоняется через автоматические проверки: не разошлись ли отчёты, не потерялись ли деньги. Не прошло — не выкладывается.": [
+    "Har bir yangilanish avtomatik tekshiruvlardan oʻtadi: hisobotlar bir-biridan farq qilmadimi, pul yoʻqolmadimi. Oʻtmadi — chiqarilmaydi.",
+    "Every update goes through automatic checks: have the reports drifted apart, has money gone missing. If it does not pass, it does not ship."
+  ],
+  "Спрашиваете обычными словами о своих цифрах — отвечает по вашим данным, а не общими советами из интернета.": [
+    "Oʻz raqamlaringiz haqida oddiy soʻzlar bilan soʻraysiz — u internetdagi umumiy maslahatlar bilan emas, sizning maʼlumotlaringiz boʻyicha javob beradi.",
+    "You ask about your own numbers in plain words, and it answers from your data rather than with general advice off the internet."
+  ],
+  "Поддержка на месте": [
+    "Yordam shu yerda",
+    "Support on the ground"
+  ],
+  "Мы в Самарканде. Не колл-центр в другой стране и не переписка на чужом языке — приедем и покажем.": [
+    "Biz Samarqanddamiz. Boshqa mamlakatdagi qoʻngʻiroq markazi ham, begona tildagi yozishma ham emas — kelamiz va koʻrsatamiz.",
+    "We are in Samarkand. Not a call centre in another country, not a chat in a language you do not speak: we come over and show you."
+  ],
+  "Приём оплаты и печать чека": [
+    "Toʻlovni qabul qilish va chek chiqarish",
+    "Taking payment and printing a receipt"
+  ],
+  "Работает, когда пропал интернет": [
+    "Internet uzilganda ishlaydi",
+    "Works when the internet is gone"
+  ],
+  "Остатки на складе меняются сами": [
+    "Ombordagi qoldiqlar oʻzi oʻzgaradi",
+    "Stock levels change by themselves"
+  ],
+  "Себестоимость проданного в прибыли": [
+    "Foydada sotilganning tannarxi",
+    "Cost of goods sold counted in profit"
+  ],
+  "Зарплаты и авансы внутри отчёта": [
+    "Hisobot ichida ish haqi va avanslar",
+    "Wages and advances inside the report"
+  ],
+  "Готовая таблица для бухгалтера": [
+    "Buxgalter uchun tayyor jadval",
+    "A ready table for the accountant"
+  ],
+  "Маржа по каждому блюду и товару": [
+    "Har bir taom va tovar boʻyicha ustama",
+    "Margin on every dish and product"
+  ],
+  "Три языка целиком, а не только меню": [
+    "Faqat menyu emas, uch til toʻliq",
+    "Three languages throughout, not just the menu"
+  ],
+  "Ресторан, магазин и клининг в одном входе": [
+    "Restoran, doʻkon va klining bitta kirishda",
+    "Restaurant, shop and cleaning under one login"
+  ],
+  "Приложение на телефон и программу под Windows": [
+    "Telefon uchun ilova va Windows uchun dastur",
+    "A phone app and a Windows program"
+  ],
+  "AI-помощник по своим цифрам": [
+    "Oʻz raqamlaringiz boʻyicha AI-yordamchi",
+    "An AI assistant on your own numbers"
+  ],
+  "Тепловая карта зала через камеру": [
+    "Kamera orqali zal issiqlik xaritasi",
+    "A heat map of the room through a camera"
+  ],
+  "Тариф под размер вашего дела": [
+    "Ishingiz hajmiga mos tarif",
+    "A plan that fits the size of your business"
+  ],
+  "Цены ориентировочные. Точную стоимость считаем под ваше дело: сколько точек, сколько людей, нужны ли камеры. Для магазинов и клининга подбираем отдельно — там счёт идёт не по площади. Оставьте заявку, посчитаем.": [
+    "Narxlar taxminiy. Aniq narxni ishingizga qarab hisoblaymiz: nechta nuqta, nechta odam, kamera kerakmi. Doʻkon va klining uchun alohida tanlaymiz — u yerda hisob maydon boʻyicha emas. Ariza qoldiring, hisoblab beramiz.",
+    "Prices are indicative. We work out the exact figure for your business: how many outlets, how many people, whether you need cameras. For shops and cleaning firms we price separately, since floor area is not the measure there. Leave a request and we will do the sums."
+  ],
+  "Одна точка: кафе, магазин у дома, малая бригада": [
+    "Bitta nuqta: kafe, uy yonidagi doʻkon, kichik brigada",
+    "One outlet: a cafe, a corner shop, a small crew"
+  ],
+  "До двух точек: ресторан, сеть лавок, клининг": [
+    "Ikkitagacha nuqta: restoran, doʻkonlar tarmogʻi, klining",
+    "Up to two outlets: a restaurant, a few shops, a cleaning firm"
+  ],
+  "Сеть точек, большие площади, много бригад": [
+    "Nuqtalar tarmogʻi, katta maydonlar, koʻp brigada",
+    "A chain of outlets, large floors, many crews"
+  ],
+  "небольшое дело, одна точка": [
+    "kichik ish, bitta nuqta",
+    "a small business, one outlet"
+  ],
+  "среднее дело, до двух точек": [
+    "oʻrtacha ish, ikkitagacha nuqta",
+    "a mid-size business, up to two outlets"
+  ],
+  "сеть, много точек и людей": [
+    "tarmoq, koʻp nuqta va odam",
+    "a chain, many outlets and people"
+  ],
+  "от 690 000": [
+    "690 000 dan",
+    "from 690,000"
+  ],
+  "от 1 190 000": [
+    "1 190 000 dan",
+    "from 1,190,000"
+  ],
+  "Перенос": [
+    "Koʻchirish",
+    "Moving your data"
+  ],
+  "Оставляете заявку — связываемся и показываем программу на ваших цифрах, а не на выдуманном примере.": [
+    "Ariza qoldirasiz — bogʻlanamiz va dasturni oʻylab topilgan misolda emas, sizning raqamlaringizda koʻrsatamiz.",
+    "You leave a request, we get in touch and show the program on your own numbers, not on a made-up example."
+  ],
+  "Заносим то, что у вас уже есть: меню или товары, столы или объекты, людей и их оклады. Тетрадь переписывать не придётся.": [
+    "Sizda bor narsani kiritamiz: menyu yoki tovarlar, stollar yoki obyektlar, odamlar va ularning maoshi. Daftarni qayta koʻchirishga toʻgʻri kelmaydi.",
+    "We enter what you already have: the menu or the goods, the tables or the sites, the people and their pay. You will not have to copy out the notebook."
+  ],
+  "Показываем команде на её же языке. Кассиру хватает получаса: экран кассы сделан так, чтобы в него не надо было вчитываться.": [
+    "Jamoaga oʻz tilida koʻrsatamiz. Kassirga yarim soat yetadi: kassa ekrani unga tikilib oʻqish kerak boʻlmaydigan qilib ishlangan.",
+    "We show the team in their own language. Half an hour is enough for a cashier: the till screen is built so you do not have to read into it."
+  ],
+  "Работаете и видите цифры сразу. Мы рядом: вопросы решаем без выходных, раз в месяц смотрим, всё ли в порядке.": [
+    "Ishlaysiz va raqamlarni darrov koʻrasiz. Biz yonimizdamiz: savollarni dam olish kunlarisiz hal qilamiz, oyiga bir marta hammasi joyidami deb qaraymiz.",
+    "You work and see the numbers straight away. We are close by: questions are answered any day of the week, and once a month we check that all is well."
+  ],
+  "Подойдёт ли для магазина или клининга, а не для ресторана?": [
+    "Restoran uchun emas, doʻkon yoki klining uchun ham mos keladimi?",
+    "Will it suit a shop or a cleaning firm, not a restaurant?"
+  ],
+  "Да. При заведении вы выбираете вид дела, и программа перестраивается целиком: у магазина появляется сканер штрихкодов и приёмка, у клининга — заявки, бригады и акты. Слова и отчёты тоже меняются: в клининге это «объект» и «заявка», а не «стол» и «заказ».": [
+    "Ha. Muassasani ochayotganda ish turini tanlaysiz va dastur butunlay qayta quriladi: doʻkonda shtrix-kod skaneri va qabul paydo boʻladi, kliningda — buyurtmalar, brigadalar va dalolatnomalar. Soʻzlar va hisobotlar ham oʻzgaradi: kliningda bu «obyekt» va «buyurtma», «stol» va «zakaz» emas.",
+    "Yes. When you set up a business you pick its kind and the whole program rebuilds: a shop gets a barcode scanner and goods receiving, a cleaning firm gets jobs, crews and acts. The wording and the reports change too: in cleaning it is a site and a job, not a table and an order."
+  ],
+  "Что будет, если пропадёт интернет?": [
+    "Internet uzilsa nima boʻladi?",
+    "What happens if the internet goes down?"
+  ],
+  "Касса продолжит работать. Чеки пробиваются и складываются у неё, а когда связь вернётся — уходят на сервер сами. Одна и та же продажа при этом не спишется дважды: у каждой есть свой признак, по которому сервер узнаёт повтор.": [
+    "Kassa ishlashda davom etadi. Cheklar urilib, oʻzida saqlanadi, aloqa tiklanganda esa serverga oʻzi ketadi. Bitta sotuv ikki marta yozilmaydi: har birining oʻz belgisi bor, server takrorni shu orqali taniydi.",
+    "The register keeps working. Sales are rung up and held there, and when the line is back they go to the server by themselves. The same sale is never recorded twice: each one carries a mark by which the server recognises a repeat."
+  ],
+  "Нужно ли покупать дорогое оборудование?": [
+    "Qimmat jihoz sotib olish kerakmi?",
+    "Do I need to buy expensive equipment?"
+  ],
+  "Нет. Достаточно обычного компьютера или планшета. Программа ставится значком из браузера — как приложение, без магазина приложений. Для кассы есть отдельная программа под Windows. Сканер штрихкодов и принтер чеков — если они вам нужны, подойдут обычные.": [
+    "Yoʻq. Oddiy kompyuter yoki planshet yetarli. Dastur brauzerdan belgi boʻlib oʻrnatiladi — ilova kabi, ilovalar doʻkonisiz. Kassa uchun Windows ostida alohida dastur bor. Shtrix-kod skaneri va chek printeri kerak boʻlsa — oddiylari mos keladi.",
+    "No. An ordinary computer or tablet is enough. The program installs from the browser as an icon, like an app, with no app store. For the till there is a separate Windows program. If you need a barcode scanner and a receipt printer, ordinary ones will do."
+  ],
+  "Мои сотрудники плохо знают русский. Смогут работать?": [
+    "Xodimlarim rus tilini yaxshi bilmaydi. Ishlay oladimi?",
+    "My staff do not speak Russian well. Will they manage?"
+  ],
+  "Да. Программа переведена целиком на узбекский и английский — не только меню, но и каждая подсказка, каждое сообщение об ошибке, каждая строка отчёта. Человек нажимает флажок вверху и видит всё на своём языке.": [
+    "Ha. Dastur oʻzbek va ingliz tillariga toʻliq tarjima qilingan — faqat menyu emas, har bir izoh, har bir xatolik xabari, hisobotning har bir qatori ham. Odam yuqoridagi bayroqchani bosadi va hammasini oʻz tilida koʻradi.",
+    "Yes. The program is fully translated into Uzbek and English: not only the menu, but every hint, every error message, every line of a report. A person taps the flag at the top and sees it all in their own language."
+  ],
+  "Кто увидит мои деньги?": [
+    "Mening pulimni kim koʻradi?",
+    "Who gets to see my money?"
+  ],
+  "Вы решаете сами. Кассир видит только кассу, менеджер — работу без финансов, а полные отчёты открыты вам. В клининге есть управляющий — он видит фирму как вы, но не может назначать других управляющих и не может тронуть ваш вход.": [
+    "Oʻzingiz hal qilasiz. Kassir faqat kassani koʻradi, menejer — moliyasiz ishni, toʻliq hisobotlar esa sizga ochiq. Kliningda boshqaruvchi bor — u firmani siz kabi koʻradi, lekin boshqa boshqaruvchi tayinlay olmaydi va sizning kirishingizga tegolmaydi.",
+    "You decide. A cashier sees only the till, a manager sees the work without the money, and the full reports are yours. In cleaning there is a head manager: he sees the firm as you do, but cannot appoint other head managers and cannot touch your own login."
+  ],
+  "Чем ваш отчёт лучше того, что показывает касса?": [
+    "Sizning hisobotingiz kassanikidan nimasi bilan yaxshi?",
+    "How is your report better than what a till shows?"
+  ],
+  "Тем, что в нём вычтено всё. Из выручки уходит себестоимость проданного, расходы и зарплаты — и каждый вычет стоит отдельной строкой, чтобы итог можно было проверить сложением. Многие программы называют прибылью наценку, и владелец считает себя богаче, чем есть.": [
+    "Unda hammasi ayirilgani bilan. Tushumdan sotilganning tannarxi, xarajatlar va ish haqi chiqadi — har bir ayiruv alohida qatorda, natijani qoʻshib tekshirish uchun. Koʻp dasturlar ustamani foyda deb ataydi va ega oʻzini bor-yoʻgʻidan boyroq deb hisoblaydi.",
+    "Because everything has been taken out of it. Revenue loses the cost of what was sold, the expenses and the wages, and each deduction has its own line so the total can be checked by adding up. Many programs call the mark-up profit, and the owner believes he is richer than he is."
+  ],
+  "Он подключается к вашей камере и строит тепловую карту зала: видно, где гости садятся охотнее, а какие столы простаивают. В тарифе «Премиум» включён, к остальным докупается.": [
+    "U kameraga ulanadi va zalning issiqlik xaritasini tuzadi: mehmonlar qayerga koʻproq oʻtirishi va qaysi stollar boʻsh turishi koʻrinadi. «Premium» tarifiga kiradi, qolganlariga alohida sotib olinadi.",
+    "It connects to your camera and builds a heat map of the room: you see where guests prefer to sit and which tables stand idle. Included in the Premium plan, bought separately with the others."
+  ],
+  "Мои данные никуда не денутся?": [
+    "Maʼlumotlarim yoʻqolib qolmaydimi?",
+    "Will my data stay safe?"
+  ],
+  "База хранится на защищённом сервере, копии снимаются регулярно. Каждое обновление проходит 445 автоматических проверок — в том числе на то, не разошлись ли отчёты и не потерялись ли деньги. Не прошло проверки — не выкладывается.": [
+    "Baza himoyalangan serverda saqlanadi, nusxalar muntazam olinadi. Har bir yangilanish 445 ta avtomatik tekshiruvdan oʻtadi — jumladan, hisobotlar bir-biridan farq qilmadimi va pul yoʻqolmadimi. Tekshiruvdan oʻtmagani chiqarilmaydi.",
+    "The database sits on a protected server and copies are taken regularly. Every update passes 445 automatic checks, including whether the reports have drifted apart and whether money has gone missing. What fails the checks does not ship."
+  ],
+  "Цена зависит от тарифа и размера дела. Поддержка и ежемесячный техосмотр входят в стоимость. Отдельно оплачивается только тепло-навигатор — и то лишь в тарифах «Старт» и «Бизнес».": [
+    "Narx tarifga va ish hajmiga bogʻliq. Yordam va oylik texnik koʻrik narxga kiradi. Alohida faqat issiqlik-navigator toʻlanadi — u ham «Start» va «Biznes» tariflarida.",
+    "The price depends on the plan and the size of the business. Support and the monthly check-up are included. Only the heat navigator is paid for separately, and then only on the Start and Business plans."
+  ],
+  "Вы работаете по всему Узбекистану?": [
+    "Butun Oʻzbekiston boʻylab ishlaysizmi?",
+    "Do you work across Uzbekistan?"
+  ],
+  "Да. Мы из Самарканда, подключаем по всей стране. Это наше, местное: мы знаем, что связь бывает плохой, что платят наличными и что в зале говорят по-узбекски.": [
+    "Ha. Biz Samarqanddanmiz, butun mamlakat boʻylab ulaymiz. Bu bizning, mahalliy ishimiz: aloqa yomon boʻlishini, naqd toʻlanishini va zalda oʻzbekcha gapirilishini bilamiz.",
+    "Yes. We are from Samarkand and connect businesses all over the country. This is ours, made locally: we know the line can be bad, that people pay cash, and that the dining room speaks Uzbek."
+  ]
 }

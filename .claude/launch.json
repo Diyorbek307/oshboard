@@ -1,11 +1,6 @@
 {
   "version": "0.0.1",
   "configurations": [
-    {
-      "name": "oshboard",
-      "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "5500"],
-      "port": 5500
-    }
+    { "name": "oshboard-site", "runtimeExecutable": "npm", "runtimeArgs": ["start"], "port": 3000 }
   ]
 }

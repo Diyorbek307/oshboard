@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OSHBOARD — умная система для ресторанов: POS + аналитика + AI</title>
-<meta name="description" content="OSHBOARD — POS-система и глубокая аналитика для ресторанов в одном приложении. Трекинг сотрудников, анализ продаж, гостей, блюд, бухгалтерские отчёты, AI-ассистент и тепло-навигатор зала. Самарканд.">
+<title>OSHBOARD — программа учёта для ресторана, магазина и клининга. Самарканд</title>
+<meta name="description" content="OSHBOARD — касса, склад, персонал и отчёты в одной программе. Три уклада: ресторан и кафе, магазин и аптека, клининговая компания. Работает без интернета, на русском, узбекском и английском. Сделано в Самарканде.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://images.unsplash.com">
@@ -28,9 +28,8 @@
   <div class="wrap nav-in">
     <a href="#top" class="logo"><span class="mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 4-6"/></svg></span>OSHBOARD</a>
     <nav class="nav-links" id="navLinks">
+<a href="#kinds">Три уклада</a>
       <a href="#features">Возможности</a>
-      <a href="#heat">Тепло-навигатор</a>
-      <a href="#whom">Для кого</a>
       <a href="#pricing">Тарифы</a>
       <a href="#faq">FAQ</a>
     </nav>
@@ -59,16 +58,16 @@
   <div class="wrap hero-in">
     <div class="reveal">
       <span class="eyebrow">🇺🇿 Сделано в Самарканде</span>
-      <h1>Управляйте рестораном <span class="grad-text">по цифрам</span>, а не на глаз</h1>
-      <p class="lead">OSHBOARD — POS-касса и глубокая аналитика в одном приложении. Трекинг сотрудников, анализ продаж, гостей и блюд, готовый бухгалтерский отчёт для руководителя и AI-ассистент, который подсказывает решения.</p>
+      <h1>Знайте о своём деле <span class="grad-text">по цифрам</span>, а не на глаз</h1>
+      <p class="lead">OSHBOARD — касса, склад, персонал и отчёты в одной программе. Три готовых уклада: ресторан и кафе, магазин и аптека, клининговая компания. Работает без интернета, говорит по-русски, по-узбекски и по-английски.</p>
       <div class="hero-cta">
         <a href="#lead" class="btn btn-primary btn-lg">Получить демо</a>
         <a href="#features" class="btn btn-ghost btn-lg">Смотреть возможности</a>
       </div>
       <div class="hero-stats">
-        <div class="st"><b>2 в 1</b><span>POS + аналитика</span></div>
-        <div class="st"><b>24/7</b><span>тех. поддержка</span></div>
-        <div class="st"><b>AI</b><span>умный ассистент</span></div>
+        <div class="st"><b>3 дела</b><span>ресторан, магазин, клининг</span></div>
+        <div class="st"><b>Без сети</b><span>касса не встанет</span></div>
+        <div class="st"><b>3 языка</b><span>RU · UZ · EN</span></div>
       </div>
     </div>
 
@@ -95,9 +94,9 @@
 
 <!-- MARQUEE -->
 <div class="marquee">
-  <div class="cap">Одна система вместо табличек, тетрадей и десятка приложений</div>
+  <div class="cap">Одна программа вместо тетради, таблицы в телефоне и трёх разных касс</div>
   <div class="mq-track" id="mq">
-    <span>🍽 Рестораны</span><span>☕ Кофейни</span><span>🍢 Чайханы</span><span>🍕 Пиццерии</span><span>🥡 Фастфуд</span><span>🏨 Отели</span><span>🍰 Кондитерские</span><span>🍔 Бургерные</span>
+    <span>🍽 Рестораны</span><span>☕ Кофейни</span><span>🍢 Чайханы</span><span>🛒 Продуктовые</span><span>💊 Аптеки</span><span>👕 Одежда</span><span>🔧 Стройматериалы</span><span>🧹 Клининг</span><span>🥡 Фастфуд</span><span>🍰 Кондитерские</span>
   </div>
 </div>
 
@@ -106,13 +105,46 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Проблема</span>
-      <h2>Рестораны теряют деньги там, где не смотрят</h2>
-      <p>Без точных данных решения принимаются «на глаз». В итоге — воровство, слабые смены и блюда, которые работают в минус.</p>
+      <h2>Деньги уходят там, куда не смотрят</h2>
+      <p>Пока учёт лежит в тетради и в голове, решения принимаются на ощупь. И беда не в том, что цифр нет совсем, — беда в том, что они есть, но неверные.</p>
     </div>
     <div class="prob stagger">
-      <div class="pcard"><div class="big" data-count="20" data-suffix="%">0%</div><h3>уходит мимо кассы</h3><p>Ошибки, недосписания и человеческий фактор без контроля продаж.</p></div>
-      <div class="pcard"><div class="big" data-count="30" data-suffix="%">0%</div><h3>блюд в меню — балласт</h3><p>Позиции, которые почти не заказывают или приносят убыток.</p></div>
-      <div class="pcard"><div class="big" data-count="7" data-suffix=" ч">0 ч</div><h3>в неделю на отчёты</h3><p>Ручная сборка цифр вместо автоматического отчёта для босса.</p></div>
+      <div class="pcard"><div class="big">Наценка<br>вместо прибыли</div><h3>Кажется, что заработали</h3><p>Касса показывает выручку минус закупку и называет это прибылью. Аренда, свет и зарплаты в счёт не идут — и месяц, закрытый в минус, выглядит удачным.</p></div>
+      <div class="pcard"><div class="big">Остатки<br>только на бумаге</div><h3>Кажется, что товар есть</h3><p>Продали, но не списали; списали, но не записали. К инвентаризации сходится далеко не всё, а разницу списывают на «усушку».</p></div>
+      <div class="pcard"><div class="big">Зарплаты<br>в отдельной тетради</div><h3>Кажется, что расходы известны</h3><p>Людям платят каждый месяц, а в отчёте этих денег нет. Самая большая трата фирмы оказывается единственной, которую никто не считает.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ТРИ ДЕЛА -->
+<section class="sec" id="kinds">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Три уклада</span>
+      <h2>Одна программа, но говорит на языке вашего дела</h2>
+      <p>Это не универсальная касса, в которой ресторан и магазин видят одни и те же кнопки. При заведении вы выбираете вид дела — и программа перестраивается целиком: разделы, слова, отчёты и даже названия должностей.</p>
+    </div>
+
+    <div class="fgrid stagger">
+      <div class="fcard">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 3v8a3 3 0 0 0 6 0V3M7 11v10"/><path d="M17 3c-1.5 2-2 4-2 6s.5 3 2 3 2-1 2-3-.5-4-2-6zM17 12v9"/></svg></div>
+        <h3>Ресторан и кафе</h3>
+        <p>План зала со столами, касса официанта, экран кухни, счета и разделение чека, бронь, QR-меню и онлайн-заказы. Тех-карты считают себестоимость блюда, фудкост показывает, что готовить невыгодно.</p>
+      </div>
+      <div class="fcard">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l1.5-5h15L21 9M3 9h18v11H3zM8 13h8"/></svg></div>
+        <h3>Магазин, аптека, одежда</h3>
+        <p>Касса со сканером штрихкодов, приёмка, инвентаризация, печать ценников, сроки годности для аптеки, размеры и модели для одежды. Кассовая смена с пересчётом денег в ящике.</p>
+      </div>
+      <div class="fcard">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h16M7 20V9l5-5 5 5v11M10 20v-5h4v5"/></svg></div>
+        <h3>Клининговая компания</h3>
+        <p>Заявки и маршрут дня, договоры на постоянные объекты, воронка клиентов, акт с подписью на экране. Бригады с закреплённым инвентарём и вечерней перекличкой вещей, расход материалов, оплата труда бригад.</p>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:22px">
+      <p class="muted-note">Одна учётная запись — сколько угодно заведений разного вида. Переключение сверху, в одно нажатие: утром смотрите ресторан, днём магазин.</p>
     </div>
   </div>
 </section>
@@ -122,16 +154,22 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Возможности</span>
-      <h2>Всё для контроля ресторана — в одном месте</h2>
-      <p>Мы объединили удобную POS-кассу и мощную аналитику: вы видите не только сколько заработали, но и <b>почему</b>.</p>
+      <h2>Всё, чем живёт заведение — в одной программе</h2>
+      <p>Касса, склад, люди, деньги и отчёты связаны между собой. Пробили чек — уменьшился остаток на складе, посчиталась себестоимость, изменилась прибыль в отчёте. Ничего не нужно переносить руками.</p>
     </div>
     <div class="fgrid stagger">
-      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg></div><h3>POS-касса</h3><p>Быстрые заказы, столы, разделение счёта, кухонные тикеты, приём оплаты. Работает даже без интернета.</p></div>
-      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M17 11l2 2 4-4"/></svg></div><h3>Трекинг сотрудников</h3><p>Кто открыл смену, сколько продал каждый официант, скорость обслуживания и KPI по всей команде.</p></div>
-      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 13l3-3 3 2 5-6"/></svg></div><h3>Анализ продаж</h3><p>Выручка по дням, сменам и точкам. Динамика, средний чек, план/факт — в реальном времени.</p></div>
-      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Анализ гостей по времени</h3><p>Видно, в какие часы и дни поток большой, а когда пусто — чтобы правильно ставить смены и запускать акции.</p></div>
-      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h3>Анализ блюд</h3><p>Хиты и аутсайдеры меню, маржа по каждой позиции. Понятно, что убрать, а что продвигать.</p></div>
-      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></div><h3>Бухгалтерский отчёт боссу</h3><p>Точный и понятный отчёт для руководителя — доходы, расходы, прибыль. Красиво и без ручной сборки.</p></div>
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg></div><h3>Касса, которая не встанет</h3><p>В зале — план столов и счета, в магазине — сканер штрихкодов и денежный ящик. Пропал интернет: касса продолжает пробивать чеки и запоминает их, а когда связь вернётся — сама догонит. Дважды одна продажа при этом не спишется.</p></div>
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 13l3-3 3 2 5-6"/></svg></div><h3>Отчёт, которому можно верить</h3><p>Чистая прибыль считается после всего: выручка минус себестоимость проданного, минус расходы, минус зарплаты. Каждый вычет стоит отдельной строкой — итог можно проверить сложением, а не принимать на веру.</p></div>
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></div><h3>Для бухгалтера — таблицей</h3><p>Приход и расход по дням, расходы по статьям, зарплаты за период. Выгрузка в Excel и печать. Это не декларация — это понятная таблица с расшифровкой, которую бухгалтер переносит куда ему нужно.</p></div>
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-9M14 17H5M4 7h3M17 17h3"/><circle cx="9" cy="7" r="2"/><circle cx="15" cy="17" r="2"/></svg></div><h3>Склад и себестоимость</h3><p>Приёмка, остатки, инвентаризация, списания и потери. Тех-карты считают себестоимость блюда по ингредиентам, фудкост показывает, что готовить невыгодно. Магазину — приёмка по накладной и печать ценников.</p></div>
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M17 11l2 2 4-4"/></svg></div><h3>Люди, смены и зарплата</h3><p>Кто на смене, кто опоздал, план смен на месяц. Оклад, ставка за смену или процент; авансы и выплаты. В клининге в зарплатах стоят и те, у кого нет входа в программу — уборщицы и мойщики окон.</p></div>
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Когда приходят гости</h3><p>Видно, в какие часы и дни поток большой, а когда пусто. По этим цифрам ставят смены и запускают акции не наугад. У магазина — то же самое по чекам, у клининга — загруженность бригад по дням.</p></div>
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h3>Что продаётся, а что лежит</h3><p>Хиты и аутсайдеры, наценка по каждой позиции. Понятно, что убрать из меню, а что поставить на видное место. Для магазина отдельно видно, сколько денег лежит на складе по себестоимости.</p></div>
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v12H5.2L4 18z"/><path d="M8 9h8M8 12h5"/></svg></div><h3>Telegram-уведомления</h3><p>Сотрудник получает новую заявку прямо в Telegram, руководитель — сводку за день. Не нужно держать программу открытой, чтобы не пропустить срочное.</p></div>
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div><h3>QR-меню и онлайн-заказы</h3><p>Гость наводит телефон на наклейку и видит меню с фотографиями. Заказ на доставку или самовывоз приходит сразу в программу. Магазину — каталог товаров по такой же ссылке.</p></div>
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3z"/></svg></div><h3>Камеры и тепловая карта</h3><p>Камеры зала в одном окне с программой. Тепло-навигатор показывает, где гости сидят охотнее, а какие столы простаивают.</p></div>
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9z"/><path d="M5 19l.9 2 .9-2 2-.9-2-.9-.9-2-.9 2-2 .9z"/></svg></div><h3>AI-помощник</h3><p>Спрашиваете обычными словами: «почему упала выручка на этой неделе», «какие блюда убрать», «сколько фирма должна вернуть сотрудникам» — и получаете ответ по своим цифрам.</p></div>
+      <div class="fcard"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 18h.01M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></svg></div><h3>На телефоне и на компьютере</h3><p>Ставится значком на телефон — как обычное приложение, без магазина приложений. Для кассы есть отдельная программа под Windows: своё окно, свой значок, можно в автозапуск.</p></div>
 
       <div class="fcard feature-big">
         <div class="txt">
@@ -196,14 +234,14 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Для кого</span>
-      <h2>Подходит любому заведению</h2>
-      <p>От маленькой кофейни до большой сети — система масштабируется под вас.</p>
+      <h2>Кому это подходит</h2>
+      <p>От чайханы на десять столов до сети магазинов и клининговой фирмы с бригадами. Уклад выбирается при заведении — и дальше человек видит только то, что нужно его делу.</p>
     </div>
     <div class="whom stagger">
-      <div class="wcard"><img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=600&q=80" alt="Ресторан" loading="lazy"><div class="lab"><h3>Рестораны</h3><p>Полный контроль зала, кухни и выручки</p></div></div>
-      <div class="wcard"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80" alt="Кофейня" loading="lazy"><div class="lab"><h3>Кофейни</h3><p>Быстрые заказы и аналитика потока</p></div></div>
-      <div class="wcard"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Чайхана" loading="lazy"><div class="lab"><h3>Чайханы</h3><p>Учёт больших залов и банкетов</p></div></div>
-      <div class="wcard"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&q=80" alt="Фастфуд" loading="lazy"><div class="lab"><h3>Фастфуд</h3><p>Высокая скорость и анализ блюд</p></div></div>
+      <div class="wcard"><img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=600&q=80" alt="Ресторан и чайхана" loading="lazy"><div class="lab"><h3>Рестораны и чайханы</h3><p>Зал, кухня, официанты, банкеты</p></div></div>
+      <div class="wcard"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80" alt="Кофейня и фастфуд" loading="lazy"><div class="lab"><h3>Кофейни и фастфуд</h3><p>Скорость на кассе и анализ блюд</p></div></div>
+      <div class="wcard"><img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600&q=80" alt="Магазин" loading="lazy"><div class="lab"><h3>Магазины и аптеки</h3><p>Штрихкоды, остатки, сроки годности</p></div></div>
+      <div class="wcard"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Клининговая компания" loading="lazy"><div class="lab"><h3>Клининговые фирмы</h3><p>Заявки, бригады, инвентарь, акты</p></div></div>
     </div>
   </div>
 </section>
@@ -212,10 +250,10 @@
 <section class="sec results">
   <div class="wrap">
     <div class="res-grid stagger">
-      <div class="r"><b data-count="18" data-suffix="%">0%</b><span>рост выручки в среднем</span></div>
-      <div class="r"><b data-count="7" data-suffix=" ч">0 ч</b><span>экономии на отчётах / нед.</span></div>
+      <div class="r"><b data-count="3" data-suffix="">0</b><span>уклада: ресторан, магазин, клининг</span></div>
+      <div class="r"><b data-count="3" data-suffix="">0</b><span>языка: русский, узбекский, английский</span></div>
+      <div class="r"><b data-count="445" data-suffix="">0</b><span>проверок перед каждой выкладкой</span></div>
       <div class="r"><b data-count="24" data-suffix="/7">0/7</b><span>поддержка без выходных</span></div>
-      <div class="r"><b data-count="1" data-suffix=" день">0 дней</b><span>на запуск и обучение</span></div>
     </div>
   </div>
 </section>
@@ -225,14 +263,16 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Почему мы</span>
-      <h2>Главные плюсы OSHBOARD</h2>
-      <p>Мы объединили лучшее из аналитики и POS — и сделали это доступным для ресторанов любого размера.</p>
+      <h2>Почему выбирают OSHBOARD</h2>
+      <p>Программу делают здесь, в Самарканде, под то, как дело ведут в Узбекистане: с перебоями связи, с наличными, на трёх языках и без дорогого оборудования.</p>
     </div>
     <div class="adv stagger">
-      <div class="acard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>Доступная цена</h3><p>Дешевле аналогов — сильная аналитика по цене обычной кассы.</p></div>
-      <div class="acard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9z"/></svg></div><h3>AI-ассистент</h3><p>Умный помощник анализирует данные и подсказывает решения.</p></div>
-      <div class="acard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 1 1-4-7.2L21 5"/><path d="M12 7v5l3 2"/></svg></div><h3>Поддержка 24/7</h3><p>Технические вопросы решаем в любое время, без выходных.</p></div>
-      <div class="acard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>Бесплатный техосмотр</h3><p>Каждый месяц — бесплатная проверка и обзор системы. Всё включено.</p></div>
+      <div class="acard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 1l22 22M16.7 16.7A10 10 0 0 1 12 18M5 12.5a10 10 0 0 1 3.5-2.3M2 8.8a16 16 0 0 1 5-3.2M12 21h.01"/></svg></div><h3>Интернет пропал — работа нет</h3><p>Касса продолжает пробивать чеки и запоминает их у себя. Связь вернулась — всё догоняется само, и ни одна продажа не спишется дважды.</p></div>
+      <div class="acard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 13l3-3 3 2 5-6"/></svg></div><h3>Прибыль без самообмана</h3><p>Из выручки вычитается себестоимость проданного, расходы и зарплаты. Многие программы называют прибылью наценку — и владелец считает себя богаче, чем есть.</p></div>
+      <div class="acard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14M5 8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8M10 12h4"/></svg></div><h3>Три языка целиком</h3><p>Не только меню, но и каждая ошибка, каждая подсказка, каждая строка отчёта. Кассир-узбек работает по-узбекски, а не догадывается по кнопкам.</p></div>
+      <div class="acard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>445 проверок перед выкладкой</h3><p>Каждое обновление прогоняется через автоматические проверки: не разошлись ли отчёты, не потерялись ли деньги. Не прошло — не выкладывается.</p></div>
+      <div class="acard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9z"/></svg></div><h3>AI-помощник</h3><p>Спрашиваете обычными словами о своих цифрах — отвечает по вашим данным, а не общими советами из интернета.</p></div>
+      <div class="acard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 1 1-4-7.2L21 5"/><path d="M12 7v5l3 2"/></svg></div><h3>Поддержка на месте</h3><p>Мы в Самарканде. Не колл-центр в другой стране и не переписка на чужом языке — приедем и покажем.</p></div>
     </div>
   </div>
 </section>
@@ -251,15 +291,18 @@
         <div class="cmp-old">Обычная касса</div>
         <div class="cmp-new">OSHBOARD</div>
       </div>
-      <div class="cmp-row"><div class="cmp-feat">Приём заказов и оплата</div><div class="cmp-old"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
-      <div class="cmp-row"><div class="cmp-feat">Аналитика продаж в реальном времени</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
-      <div class="cmp-row"><div class="cmp-feat">Трекинг сотрудников и KPI</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
-      <div class="cmp-row"><div class="cmp-feat">Анализ гостей по времени</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
-      <div class="cmp-row"><div class="cmp-feat">Маржа и рейтинг по каждому блюду</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
-      <div class="cmp-row"><div class="cmp-feat">Бухгалтерский отчёт для руководителя</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
-      <div class="cmp-row"><div class="cmp-feat">AI-ассистент с рекомендациями</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
-      <div class="cmp-row"><div class="cmp-feat">Тепло-навигатор загрузки зала</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
-      <div class="cmp-row"><div class="cmp-feat">Поддержка 24/7 и бесплатный техосмотр</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Приём оплаты и печать чека</div><div class="cmp-old"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Работает, когда пропал интернет</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Остатки на складе меняются сами</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Себестоимость проданного в прибыли</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Зарплаты и авансы внутри отчёта</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Готовая таблица для бухгалтера</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Маржа по каждому блюду и товару</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Три языка целиком, а не только меню</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Ресторан, магазин и клининг в одном входе</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Приложение на телефон и программу под Windows</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">AI-помощник по своим цифрам</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Тепловая карта зала через камеру</div><div class="cmp-old"><span class="no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></span></div><div class="cmp-new"><span class="ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span></div></div>
     </div>
   </div>
 </section>
@@ -269,13 +312,13 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Тарифы</span>
-      <h2>Тариф под размер вашего заведения</h2>
-      <p>Цены указаны ориентировочно — точную стоимость подберём под ваше меню и количество точек. Оставьте заявку на демо.</p>
+      <h2>Тариф под размер вашего дела</h2>
+      <p>Цены ориентировочные. Точную стоимость считаем под ваше дело: сколько точек, сколько людей, нужны ли камеры. Для магазинов и клининга подбираем отдельно — там счёт идёт не по площади. Оставьте заявку, посчитаем.</p>
     </div>
     <div class="plans stagger">
       <div class="plan-card">
-        <h3>Старт</h3><div class="area">Рестораны 150–200 м²</div>
-        <div class="price">от 690 000<small> сум/мес</small></div><div class="price-note">небольшое заведение, одна точка</div>
+        <h3>Старт</h3><div class="area">Одна точка: кафе, магазин у дома, малая бригада</div>
+        <div class="price">от 690 000<small> сум/мес</small></div><div class="price-note">небольшое дело, одна точка</div>
         <ul>
           <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> POS-касса и заказы</li>
           <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> Анализ продаж и блюд</li>
@@ -286,8 +329,8 @@
         <a href="#lead" class="btn btn-ghost">Выбрать «Старт»</a>
       </div>
       <div class="plan-card pop">
-        <h3>Бизнес</h3><div class="area">Рестораны до 400 м²</div>
-        <div class="price">от 1 190 000<small> сум/мес</small></div><div class="price-note">среднее заведение, до 2 точек</div>
+        <h3>Бизнес</h3><div class="area">До двух точек: ресторан, сеть лавок, клининг</div>
+        <div class="price">от 1 190 000<small> сум/мес</small></div><div class="price-note">среднее дело, до двух точек</div>
         <ul>
           <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> Всё из «Старт»</li>
           <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> Анализ гостей по времени</li>
@@ -298,8 +341,8 @@
         <a href="#lead" class="btn btn-primary">Выбрать «Бизнес»</a>
       </div>
       <div class="plan-card">
-        <h3>Премиум</h3><div class="area">Без ограничений по площади</div>
-        <div class="price">Индивидуально</div><div class="price-note">сеть, большие площади, много точек</div>
+        <h3>Премиум</h3><div class="area">Сеть точек, большие площади, много бригад</div>
+        <div class="price">Индивидуально</div><div class="price-note">сеть, много точек и людей</div>
         <ul>
           <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> Всё из «Бизнес»</li>
           <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg> <b>Тепло-навигатор включён</b></li>
@@ -322,10 +365,10 @@
   <div class="wrap">
     <div class="sec-head reveal"><span class="eyebrow">Как начать</span><h2>Запуск за 4 простых шага</h2></div>
     <div class="steps stagger">
-      <div class="step"><h3>Заявка</h3><p>Оставляете заявку на демо — мы связываемся и показываем систему.</p></div>
-      <div class="step"><h3>Настройка</h3><p>Заносим меню, столы и сотрудников, подключаем оборудование.</p></div>
-      <div class="step"><h3>Обучение</h3><p>Быстро обучаем команду — интерфейс простой и на русском.</p></div>
-      <div class="step"><h3>Работа</h3><p>Продаёте и сразу видите аналитику. Мы рядом 24/7.</p></div>
+      <div class="step"><h3>Заявка</h3><p>Оставляете заявку — связываемся и показываем программу на ваших цифрах, а не на выдуманном примере.</p></div>
+      <div class="step"><h3>Перенос</h3><p>Заносим то, что у вас уже есть: меню или товары, столы или объекты, людей и их оклады. Тетрадь переписывать не придётся.</p></div>
+      <div class="step"><h3>Обучение</h3><p>Показываем команде на её же языке. Кассиру хватает получаса: экран кассы сделан так, чтобы в него не надо было вчитываться.</p></div>
+      <div class="step"><h3>Работа</h3><p>Работаете и видите цифры сразу. Мы рядом: вопросы решаем без выходных, раз в месяц смотрим, всё ли в порядке.</p></div>
     </div>
   </div>
 </section>
@@ -335,11 +378,16 @@
   <div class="wrap">
     <div class="sec-head reveal"><span class="eyebrow">FAQ</span><h2>Частые вопросы</h2></div>
     <div class="faq">
-      <details class="qa reveal"><summary>Чем OSHBOARD отличается от обычной кассы?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Обычная касса просто принимает заказы. OSHBOARD дополнительно анализирует продажи, сотрудников, гостей и блюда, собирает бухгалтерский отчёт и подсказывает решения через AI-ассистента.</div></details>
-      <details class="qa reveal"><summary>Что такое тепло-навигатор?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Это датчик, который подключается к вашей камере и строит тепловую карту зала: видно загрузку столов и зон. В «Премиум» включён, к остальным тарифам докупается.</div></details>
-      <details class="qa reveal"><summary>Нужен ли интернет для работы кассы?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">POS-касса работает и без интернета — данные синхронизируются с аналитикой, как только связь появится.</div></details>
-      <details class="qa reveal"><summary>Сколько стоит и есть ли скрытые платежи?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Цена зависит от тарифа и размера заведения. Ежемесячный техосмотр и поддержка 24/7 входят в стоимость — без доплат.</div></details>
-      <details class="qa reveal"><summary>Вы работаете в Самарканде и по Узбекистану?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Да. Мы из Самарканда и подключаем заведения по всему Узбекистану. Интерфейс и поддержка — на русском.</div></details>
+      <details class="qa reveal"><summary>Подойдёт ли для магазина или клининга, а не для ресторана?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Да. При заведении вы выбираете вид дела, и программа перестраивается целиком: у магазина появляется сканер штрихкодов и приёмка, у клининга — заявки, бригады и акты. Слова и отчёты тоже меняются: в клининге это «объект» и «заявка», а не «стол» и «заказ».</div></details>
+      <details class="qa reveal"><summary>Что будет, если пропадёт интернет?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Касса продолжит работать. Чеки пробиваются и складываются у неё, а когда связь вернётся — уходят на сервер сами. Одна и та же продажа при этом не спишется дважды: у каждой есть свой признак, по которому сервер узнаёт повтор.</div></details>
+      <details class="qa reveal"><summary>Нужно ли покупать дорогое оборудование?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Нет. Достаточно обычного компьютера или планшета. Программа ставится значком из браузера — как приложение, без магазина приложений. Для кассы есть отдельная программа под Windows. Сканер штрихкодов и принтер чеков — если они вам нужны, подойдут обычные.</div></details>
+      <details class="qa reveal"><summary>Мои сотрудники плохо знают русский. Смогут работать?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Да. Программа переведена целиком на узбекский и английский — не только меню, но и каждая подсказка, каждое сообщение об ошибке, каждая строка отчёта. Человек нажимает флажок вверху и видит всё на своём языке.</div></details>
+      <details class="qa reveal"><summary>Кто увидит мои деньги?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Вы решаете сами. Кассир видит только кассу, менеджер — работу без финансов, а полные отчёты открыты вам. В клининге есть управляющий — он видит фирму как вы, но не может назначать других управляющих и не может тронуть ваш вход.</div></details>
+      <details class="qa reveal"><summary>Чем ваш отчёт лучше того, что показывает касса?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Тем, что в нём вычтено всё. Из выручки уходит себестоимость проданного, расходы и зарплаты — и каждый вычет стоит отдельной строкой, чтобы итог можно было проверить сложением. Многие программы называют прибылью наценку, и владелец считает себя богаче, чем есть.</div></details>
+      <details class="qa reveal"><summary>Что такое тепло-навигатор?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Он подключается к вашей камере и строит тепловую карту зала: видно, где гости садятся охотнее, а какие столы простаивают. В тарифе «Премиум» включён, к остальным докупается.</div></details>
+      <details class="qa reveal"><summary>Мои данные никуда не денутся?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">База хранится на защищённом сервере, копии снимаются регулярно. Каждое обновление проходит 445 автоматических проверок — в том числе на то, не разошлись ли отчёты и не потерялись ли деньги. Не прошло проверки — не выкладывается.</div></details>
+      <details class="qa reveal"><summary>Сколько стоит и есть ли скрытые платежи?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Цена зависит от тарифа и размера дела. Поддержка и ежемесячный техосмотр входят в стоимость. Отдельно оплачивается только тепло-навигатор — и то лишь в тарифах «Старт» и «Бизнес».</div></details>
+      <details class="qa reveal"><summary>Вы работаете по всему Узбекистану?<span class="x"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Да. Мы из Самарканда, подключаем по всей стране. Это наше, местное: мы знаем, что связь бывает плохой, что платят наличными и что в зале говорят по-узбекски.</div></details>
     </div>
   </div>
 </section>
