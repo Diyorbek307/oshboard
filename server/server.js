@@ -133,8 +133,26 @@ app.get('/api/health', (req, res) => {
 });
 
 /* ==================== Аутентификация ==================== */
-const ADMIN_USER = process.env.ADMIN_USER || 'admin';
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'oshboard2026';
+/*
+  ВСТРОЕННОГО ПАРОЛЯ БОЛЬШЕ НЕТ.
+
+  Здесь стояло `process.env.ADMIN_PASSWORD || 'oshboard2026'`. Задумано как
+  удобство для первого запуска, но сайт стоит в интернете: пока пароль не
+  задан на сервере, в админку заходил кто угодно — логин и пароль лежали
+  прямо в открытом коде на GitHub.
+
+  Предупреждение в README тут не помогает: оно объясняет, а не защищает.
+  Теперь пароль не задан — вход просто не работает, и в журнал пишется
+  почему. Пустой пароль в переменной тоже считается «не задан».
+*/
+const ADMIN_USER = (process.env.ADMIN_USER || '').trim();
+const ADMIN_PASSWORD = (process.env.ADMIN_PASSWORD || '').trim();
+const ADMIN_READY = ADMIN_USER.length > 0 && ADMIN_PASSWORD.length >= 8;
+
+if (!ADMIN_READY) {
+  console.warn('[admin] Вход в админку ВЫКЛЮЧЕН: не заданы ADMIN_USER и ADMIN_PASSWORD '
+    + '(пароль — не короче 8 знаков). Задайте их в server/.env или в панели Render.');
+}
 
 function requireAuth(req, res, next) {
   if (req.session && req.session.admin) return next();
@@ -142,6 +160,9 @@ function requireAuth(req, res, next) {
 }
 
 app.post('/api/admin/login', (req, res) => {
+  if (!ADMIN_READY) {
+    return res.status(503).json({ ok: false, error: 'Вход в админку ещё не настроен' });
+  }
   const { username, password } = req.body || {};
   if (username === ADMIN_USER && password === ADMIN_PASSWORD) {
     req.session.admin = true;

@@ -8,8 +8,10 @@ services:
     buildCommand: npm install
     startCommand: npm start
     envVars:
+      # Логин тоже НЕ пишем здесь: этот файл лежит в открытом репозитории,
+      # и половина пары «логин-пароль» подсказывала бы, что подбирать.
       - key: ADMIN_USER
-        value: admin
+        sync: false          # задаётся вручную в панели Render
       - key: ADMIN_PASSWORD
         sync: false          # задаётся вручную в панели Render (секрет)
       - key: SESSION_SECRET

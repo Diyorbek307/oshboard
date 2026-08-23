@@ -308,6 +308,7 @@
     'Написать нам': ['Bizga yozing', 'Message us'],
 
     /* ---- ПЕРЕПИСАННЫЙ САЙТ: три уклада, честные обещания ---- */
+    "Программа учёта для ресторана, магазина и клининговой фирмы: касса, склад, персонал и отчёты в одном месте. Самарканд, Узбекистан.": ["Restoran, doʻkon va klining firmasi uchun hisob dasturi: kassa, ombor, xodimlar va hisobotlar bir joyda. Samarqand, Oʻzbekiston.", "Bookkeeping software for a restaurant, a shop or a cleaning firm: register, stock, staff and reports in one place. Samarkand, Uzbekistan."],
     "12,4 млн": ["12,4 mln", "12.4M"],
     "3 дела": ["3 tur", "3 kinds"],
     "3 языка": ["3 til", "3 languages"],

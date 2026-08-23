@@ -1,6 +1,14 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "oshboard-site", "runtimeExecutable": "npm", "runtimeArgs": ["start"], "port": 3000 }
+    {
+      "name": "site3100",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "start"
+      ],
+      "port": 3100,
+      "autoPort": true
+    }
   ]
 }
