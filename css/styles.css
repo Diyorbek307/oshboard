@@ -408,3 +408,6 @@ footer{border-top:1px solid var(--border);background:var(--bg-soft);padding:56px
   .fab{padding:15px;right:16px;bottom:16px}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal,.stagger>*{opacity:1!important;transform:none!important}}
+
+/* Приписка под карточками: тише основного текста, по центру */
+.muted-note{color:var(--text-muted);font-size:15px;line-height:1.6;text-align:center;max-width:760px;margin:0 auto}

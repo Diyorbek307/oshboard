@@ -444,7 +444,23 @@
     "💊 Аптеки": ["💊 Dorixonalar", "💊 Pharmacies"],
     "🔧 Стройматериалы": ["🔧 Qurilish mollari", "🔧 Hardware stores"],
     "🛒 Продуктовые": ["🛒 Oziq-ovqat doʻkonlari", "🛒 Grocery shops"],
-    "🧹 Клининг": ["🧹 Klining", "🧹 Cleaning firms"]
+    "🧹 Клининг": ["🧹 Klining", "🧹 Cleaning firms"],
+    "AI-помощник и Telegram-уведомления": ["AI-yordamchi va Telegram xabarnomalari", "The AI assistant and Telegram alerts"],
+    "Касса и работа без интернета": ["Kassa va internetsiz ish", "The till, working with no internet"],
+    "Несколько заведений в одном входе": ["Bitta kirishda bir nechta muassasa", "Several businesses under one login"],
+    "Отчёт с настоящей прибылью": ["Haqiqiy foyda koʻrsatiladigan hisobot", "A report with real profit in it"],
+    "Поддержка вне очереди": ["Navbatsiz yordam", "Support that jumps the queue"],
+    "Склад, остатки, себестоимость": ["Ombor, qoldiqlar, tannarx", "Stock, levels, cost"],
+    "Сколько угодно точек и людей": ["Istalgancha nuqta va odam", "As many outlets and people as you like"],
+    "Смены, явка и зарплаты": ["Smenalar, davomat va ish haqi", "Shifts, attendance and pay"],
+    "Таблица для бухгалтера и Excel": ["Buxgalter uchun jadval va Excel", "A table for the accountant, and Excel"],
+    "Аптека": ["Dorixona", "Pharmacy"],
+    "Вид дела": ["Ish turi", "Kind of business"],
+    "Магазин одежды": ["Kiyim doʻkoni", "Clothing shop"],
+    "Название дела": ["Ish nomi", "Business name"],
+    "Напр. Chaykhana Registon или «Дилноза» на Дагбитской": ["Masalan, Chaykhana Registon yoki Dagʻbit koʻchasidagi «Dilnoza»", "e.g. Chaykhana Registon, or Dilnoza on Dagbitskaya"],
+    "Продуктовый магазин": ["Oziq-ovqat doʻkoni", "Grocery shop"],
+    "Стройматериалы": ["Qurilish mollari", "Hardware store"]
   };
 
   var OVERRIDES = {};   // правки из админки: { "<ru>": { ru, uz, en } }

@@ -1298,5 +1298,69 @@
   "Программа учёта для ресторана, магазина и клининговой фирмы: касса, склад, персонал и отчёты в одном месте. Самарканд, Узбекистан.": [
     "Restoran, doʻkon va klining firmasi uchun hisob dasturi: kassa, ombor, xodimlar va hisobotlar bir joyda. Samarqand, Oʻzbekiston.",
     "Bookkeeping software for a restaurant, a shop or a cleaning firm: register, stock, staff and reports in one place. Samarkand, Uzbekistan."
+  ],
+  "Касса и работа без интернета": [
+    "Kassa va internetsiz ish",
+    "The till, working with no internet"
+  ],
+  "Склад, остатки, себестоимость": [
+    "Ombor, qoldiqlar, tannarx",
+    "Stock, levels, cost"
+  ],
+  "Смены, явка и зарплаты": [
+    "Smenalar, davomat va ish haqi",
+    "Shifts, attendance and pay"
+  ],
+  "Отчёт с настоящей прибылью": [
+    "Haqiqiy foyda koʻrsatiladigan hisobot",
+    "A report with real profit in it"
+  ],
+  "Таблица для бухгалтера и Excel": [
+    "Buxgalter uchun jadval va Excel",
+    "A table for the accountant, and Excel"
+  ],
+  "Несколько заведений в одном входе": [
+    "Bitta kirishda bir nechta muassasa",
+    "Several businesses under one login"
+  ],
+  "AI-помощник и Telegram-уведомления": [
+    "AI-yordamchi va Telegram xabarnomalari",
+    "The AI assistant and Telegram alerts"
+  ],
+  "Сколько угодно точек и людей": [
+    "Istalgancha nuqta va odam",
+    "As many outlets and people as you like"
+  ],
+  "Поддержка вне очереди": [
+    "Navbatsiz yordam",
+    "Support that jumps the queue"
+  ],
+  "Вид дела": [
+    "Ish turi",
+    "Kind of business"
+  ],
+  "Название дела": [
+    "Ish nomi",
+    "Business name"
+  ],
+  "Напр. Chaykhana Registon или «Дилноза» на Дагбитской": [
+    "Masalan, Chaykhana Registon yoki Dagʻbit koʻchasidagi «Dilnoza»",
+    "e.g. Chaykhana Registon, or Dilnoza on Dagbitskaya"
+  ],
+  "Продуктовый магазин": [
+    "Oziq-ovqat doʻkoni",
+    "Grocery shop"
+  ],
+  "Аптека": [
+    "Dorixona",
+    "Pharmacy"
+  ],
+  "Магазин одежды": [
+    "Kiyim doʻkoni",
+    "Clothing shop"
+  ],
+  "Стройматериалы": [
+    "Qurilish mollari",
+    "Hardware store"
   ]
 }

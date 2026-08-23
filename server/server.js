@@ -60,10 +60,33 @@ function rateLimit(req, res, next) {
   next();
 }
 
+/*
+  ВИДЫ ДЕЛА В ЗАЯВКЕ.
+
+  Список закрытый: всё, чего в нём нет, сервер записывает как «Другое».
+  Пока здесь стоял один общепит, владелец магазина выбирал на сайте
+  «Продуктовый магазин», а в заявку попадало «Другое» — и мы не знали, кому
+  перезваниваем и какой тариф считать.
+
+  Список идёт на трёх языках: человек выбирает на своём, а приходит то,
+  что он видел на экране.
+
+  Меняете список на сайте — поменяйте и здесь, иначе новый вид молча
+  превратится в «Другое».
+*/
 const TYPES = [
-  'Ресторан', 'Кофейня', 'Чайхана', 'Фастфуд', 'Другое',        // ru
-  'Restoran', 'Qahvaxona', 'Choyxona', 'Fastfud', 'Boshqa',      // uz
-  'Restaurant', 'Coffee shop', 'Teahouse', 'Fast food', 'Other', // en
+  // ресторан и кафе
+  'Ресторан', 'Кофейня', 'Чайхана', 'Фастфуд',
+  'Restoran', 'Qahvaxona', 'Choyxona', 'Fastfud',
+  'Restaurant', 'Coffee shop', 'Teahouse', 'Fast food',
+  // магазин, аптека, одежда, стройматериалы
+  'Продуктовый магазин', 'Аптека', 'Магазин одежды', 'Стройматериалы',
+  'Oziq-ovqat doʻkoni', 'Dorixona', 'Kiyim doʻkoni', 'Qurilish mollari',
+  'Grocery shop', 'Pharmacy', 'Clothing shop', 'Hardware store',
+  // клининг
+  'Клининговая компания', 'Klining kompaniyasi', 'Cleaning company',
+  // остальное
+  'Другое', 'Boshqa', 'Other',
 ];
 function validateLead(body) {
   const name = String(body.name || '').trim();
