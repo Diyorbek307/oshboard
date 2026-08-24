@@ -8,6 +8,10 @@ services:
     buildCommand: npm install
     startCommand: npm start
     envVars:
+      # Боевой режим: включает secure-печенье (только по https), заголовок
+      # HSTS и защиту входа в админку от подбора пароля.
+      - key: NODE_ENV
+        value: production
       # Логин тоже НЕ пишем здесь: этот файл лежит в открытом репозитории,
       # и половина пары «логин-пароль» подсказывала бы, что подбирать.
       - key: ADMIN_USER

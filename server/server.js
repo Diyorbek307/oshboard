@@ -39,6 +39,31 @@ const UPLOAD_DIR = path.join(ROOT, 'assets', 'uploads');
 if (!fs.existsSync(UPLOAD_DIR)) fs.mkdirSync(UPLOAD_DIR, { recursive: true });
 
 app.set('trust proxy', true);
+app.disable('x-powered-by'); // не сообщаем, чем написан сервер
+
+/*
+  ЗАЩИТНЫЕ ЗАГОЛОВКИ.
+
+  Ставим руками, без сторонней библиотеки — сайту хватает четырёх строк:
+
+  • X-Content-Type-Options — браузер не будет «угадывать» тип файла и
+    выполнять картинку как скрипт;
+  • X-Frame-Options — сайт нельзя открыть внутри рамки на чужой странице и
+    обманом заставить нажать (кликджекинг);
+  • Referrer-Policy — при переходе наружу не отдаём полный адрес страницы;
+  • HSTS (только на боевом, только по https) — браузер запоминает, что сюда
+    ходят по https, и в следующий раз не пробует открытый канал.
+*/
+app.use((req, res, next) => {
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  if (process.env.NODE_ENV === 'production') {
+    res.setHeader('Strict-Transport-Security', 'max-age=15552000; includeSubDomains');
+  }
+  next();
+});
+
 app.use(express.json({ limit: '1mb' }));
 app.use(express.urlencoded({ extended: true, limit: '1mb' }));
 app.use(session({
@@ -182,15 +207,64 @@ function requireAuth(req, res, next) {
   res.status(401).json({ ok: false, error: 'Требуется вход' });
 }
 
+
+/*
+  ЗАЩИТА ОТ ПОДБОРА ПАРОЛЯ В АДМИНКУ.
+
+  Вход был без ограничений: пароль можно было пробовать сколько угодно и как
+  угодно быстро — за ночь машина перебирает миллионы вариантов. Теперь после
+  пяти неудач подряд с одного адреса вход с него запирается на 15 минут.
+
+  Память, не база: сайт небольшой, перезапуск сбрасывает счётчик — и это
+  нестрашно, злоумышленник теряет накопленные попытки вместе с нами. Удачный
+  вход обнуляет счётчик, чтобы свой человек, вспомнивший пароль с шестого
+  раза, не ждал впустую.
+*/
+const ПОПЫТКИ = new Map(); // ip -> { счёт, до }
+const МАКС = 5;
+const ЗАПЕРТО_МС = 15 * 60 * 1000;
+
+function ключИП(req) {
+  return (req.headers['x-forwarded-for'] || req.socket.remoteAddress || 'неизвестно')
+    .toString().split(',')[0].trim();
+}
+function заперто(req) {
+  const з = ПОПЫТКИ.get(ключИП(req));
+  return з && з.до > Date.now() && з.счёт >= МАКС;
+}
+function отметитьНеудачу(req) {
+  const ip = ключИП(req);
+  const з = ПОПЫТКИ.get(ip) || { счёт: 0, до: 0 };
+  з.счёт += 1;
+  з.до = Date.now() + ЗАПЕРТО_МС;
+  ПОПЫТКИ.set(ip, з);
+}
+function сброс(req) {
+  ПОПЫТКИ.delete(ключИП(req));
+}
+// Раз в полчаса убираем протухшие записи, чтобы карта не росла без предела
+setInterval(() => {
+  const t = Date.now();
+  for (const [ip, з] of ПОПЫТКИ) if (з.до < t) ПОПЫТКИ.delete(ip);
+}, 30 * 60 * 1000).unref();
+
 app.post('/api/admin/login', (req, res) => {
   if (!ADMIN_READY) {
     return res.status(503).json({ ok: false, error: 'Вход в админку ещё не настроен' });
   }
+  if (заперто(req)) {
+    return res.status(429).json({
+      ok: false,
+      error: 'Слишком много попыток. Подождите 15 минут и попробуйте снова.',
+    });
+  }
   const { username, password } = req.body || {};
   if (username === ADMIN_USER && password === ADMIN_PASSWORD) {
+    сброс(req);
     req.session.admin = true;
     return res.json({ ok: true });
   }
+  отметитьНеудачу(req);
   res.status(401).json({ ok: false, error: 'Неверный логин или пароль' });
 });
 
