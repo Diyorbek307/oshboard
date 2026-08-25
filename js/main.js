@@ -282,6 +282,21 @@ function countUp(el) {
     // --- contact settings → footer + floating button ---
     var s = d.settings || {};
 
+    /*
+      ИЗВЕСТНЫЕ ЗАГЛУШКИ НЕ ПОКАЗЫВАЕМ.
+
+      В настройках сайта могли остаться выдуманные контакты — их сеяли при
+      создании: +998 90 000-00-00, hello@oshboard.uz, t.me/oshboard, «#».
+      Показать клиенту фальшивый номер хуже, чем не показать ничего: по нему
+      позвонят в никуда. Пока владелец не вписал настоящие, гасим заглушки,
+      чтобы они не всплыли ни из старых настроек, ни откуда-то ещё.
+    */
+    var ЗАГЛУШКИ = ['+998 90 000-00-00', '+998900000000', 'hello@oshboard.uz',
+                    'https://t.me/oshboard', 't.me/oshboard', '#', ''];
+    ['phone', 'email', 'telegram', 'instagram'].forEach(function (k) {
+      if (ЗАГЛУШКИ.indexOf((s[k] || '').trim()) !== -1) s[k] = '';
+    });
+
     // logo (text + optional image) in nav and footer
     if (s.logoText) {
       document.querySelectorAll('.logo').forEach(function (logo) {
