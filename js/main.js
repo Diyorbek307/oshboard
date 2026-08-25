@@ -88,8 +88,16 @@
     });
     if (!ok) { var bad = f.querySelector('.err'); if (bad) bad.focus(); return; }
 
+    // Когда пришла заявка — местное время (Ташкент/Самарканд, +5),
+    // не по часам сервера или посетителя. Формат: 25.08.2026, 20:03
+    var когда = new Date().toLocaleString('ru-RU', {
+      timeZone: 'Asia/Tashkent',
+      day: '2-digit', month: '2-digit', year: 'numeric',
+      hour: '2-digit', minute: '2-digit'
+    });
+
     var subject = 'Заявка на демо OSHBOARD';
-    var body = 'Имя: ' + name + '\nТелефон: ' + phone + '\nЗаведение: ' + place + '\nТип: ' + type;
+    var body = 'Имя: ' + name + '\nТелефон: ' + phone + '\nЗаведение: ' + place + '\nТип: ' + type + '\nКогда: ' + когда;
 
     showSuccess();
 
@@ -101,7 +109,8 @@
         access_key: WEB3FORMS_KEY,
         subject: subject,
         from_name: 'Сайт OSHBOARD',
-        'Имя': name, 'Телефон': phone, 'Заведение': place, 'Тип': type
+        'Имя': name, 'Телефон': phone, 'Заведение': place, 'Тип': type,
+        'Когда': когда
       })
     }).then(function (r) { return r.json(); })
       .then(function (d) { if (!d.success) throw new Error(d.message || 'web3forms'); });
