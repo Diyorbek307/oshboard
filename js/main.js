@@ -55,7 +55,7 @@
 (function () {
   var f = document.getElementById('leadForm');
   if (!f) return;
-  var MAIL = 'diyorbekmustafaev7@gmail.com'; // запасной канал (mailto), если ничего не сработало
+  var MAIL = 'oshboard.application@mail.ru'; // запасной канал (mailto), если ничего не сработало
   var API = '/api/lead';                      // бэкенд: сохраняет заявку как резерв
   // Публичный ключ Web3Forms — на бесплатном плане отправка идёт из браузера (это нормально и безопасно).
   var WEB3FORMS_KEY = '029b18fb-4549-46cb-82a8-ef5626d6a85b';
