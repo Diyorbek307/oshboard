@@ -439,3 +439,47 @@ footer{border-top:1px solid var(--border);background:var(--bg-soft);padding:56px
   /* Логотип — тоже ссылка «наверх», и по ней бьют пальцем */
   .logo { min-height: 44px; display: inline-flex; align-items: center; }
 }
+
+/* ==================== ГЛОБУС В HERO ==================== */
+.globe-stage{
+  position:relative;height:440px;border-radius:26px;overflow:hidden;isolation:isolate;
+  border:1px solid var(--border);
+  background:
+    radial-gradient(120% 120% at 50% 12%, rgba(249,115,22,.16), transparent 55%),
+    radial-gradient(90% 90% at 70% 90%, rgba(234,88,12,.12), transparent 60%),
+    var(--card);
+  box-shadow:var(--shadow), inset 0 0 90px -30px rgba(249,115,22,.35);
+  cursor:grab;
+}
+.globe-stage:active{cursor:grabbing}
+.globe-stage canvas{display:block;width:100%;height:100%;touch-action:none}
+/* мягкое кольцо-виньетка, чтобы глобус «сидел» в карточке */
+.globe-stage::after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:2;
+  background:radial-gradient(130% 130% at 50% 50%, transparent 58%, rgba(0,0,0,.28));
+}
+.globe-hint{
+  position:absolute;left:14px;bottom:12px;z-index:3;display:inline-flex;align-items:center;gap:6px;
+  font-size:11.5px;font-weight:600;letter-spacing:.02em;color:var(--text-muted);
+  background:var(--glass);backdrop-filter:blur(10px);border:1px solid var(--border-strong);
+  padding:6px 11px;border-radius:100px;transition:opacity .5s var(--ease);
+}
+.globe-hint.gone{opacity:0}
+html[data-theme="light"] .globe-stage{
+  background:
+    radial-gradient(120% 120% at 50% 10%, rgba(249,115,22,.14), transparent 55%),
+    radial-gradient(90% 90% at 70% 92%, rgba(253,186,116,.20), transparent 60%),
+    #0E0B09;                /* глобус красивее на тёмном фоне и в светлой теме */
+  box-shadow:var(--shadow), inset 0 0 90px -30px rgba(249,115,22,.4);
+}
+
+/* Больше жизни в фоновых пятнах hero */
+.aurora b:nth-child(1){animation:float1 16s ease-in-out infinite}
+.aurora b:nth-child(2){animation:float2 20s ease-in-out infinite}
+.aurora b:nth-child(3){animation:float1 13s ease-in-out infinite, hue 24s linear infinite}
+@keyframes hue{to{filter:hue-rotate(24deg)}}
+
+/* На узких экранах глобус чуть ниже */
+@media(max-width:760px){
+  .globe-stage{height:340px}
+}
