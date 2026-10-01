@@ -203,7 +203,7 @@ function countUp(el) {
 
 /* Cursor-follow glow on feature cards (uses each card's own ::before) */
 (function () {
-  document.querySelectorAll('.fcard').forEach(function (c) {
+  document.querySelectorAll('.fcard, .tile').forEach(function (c) {
     c.addEventListener('pointermove', function (e) {
       var r = c.getBoundingClientRect();
       c.style.setProperty('--mx', (e.clientX - r.left) + 'px');
