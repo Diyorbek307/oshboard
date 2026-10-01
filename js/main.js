@@ -1,7 +1,7 @@
 /* ============================================================
    OSHBOARD — landing interactions
    Loaded with `defer`, so the DOM is ready when this runs.
-   Three.js (hero background) is loaded before this file.
+   Без внешних библиотек.
    ============================================================ */
 
 /* Theme toggle (initial theme is applied inline in <head> to avoid flash) */
@@ -156,55 +156,54 @@ function countUp(el) {
   requestAnimationFrame(step);
 }
 
-/* 3D tilt on hero visual — restrained, professional depth */
+/* Виды дела — вкладки (ресторан / магазин / гостиница / клининг).
+   Стрелками влево-вправо тоже переключаются, как положено вкладкам. */
 (function () {
-  var v = document.querySelector('.hero-visual');
-  if (!v || matchMedia('(pointer:coarse)').matches) return;
-  var raf;
-  v.addEventListener('pointermove', function (e) {
-    var r = v.getBoundingClientRect();
-    var px = (e.clientX - r.left) / r.width - .5, py = (e.clientY - r.top) / r.height - .5;
-    cancelAnimationFrame(raf);
-    raf = requestAnimationFrame(function () {
-      v.style.transform = 'perspective(1100px) rotateY(' + (px * 6) + 'deg) rotateX(' + (-py * 6) + 'deg)';
+  var tabs = [].slice.call(document.querySelectorAll('.tabs [role="tab"]'));
+  if (!tabs.length) return;
+  function show(t, focus) {
+    tabs.forEach(function (x) {
+      var on = x === t;
+      x.classList.toggle('on', on);
+      x.setAttribute('aria-selected', on ? 'true' : 'false');
+      x.tabIndex = on ? 0 : -1;
+      var p = document.getElementById(x.getAttribute('aria-controls'));
+      if (p) {
+        p.hidden = !on;
+        // панели не исчезают, а прячутся (держат высоту) — анимацию появления запускаем заново сами
+        if (on) { p.style.animation = 'none'; void p.offsetHeight; p.style.animation = ''; }
+      }
+    });
+    if (focus) t.focus();
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { show(t); });
+    t.addEventListener('keydown', function (e) {
+      var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if (!d) return;
+      e.preventDefault();
+      show(tabs[(i + d + tabs.length) % tabs.length], true);
     });
   });
-  v.addEventListener('pointerleave', function () { v.style.transform = ''; });
 })();
 
-/* Live mini-chart in the revenue card — gentle, data-like fluctuation */
+/* «Выручка по часам» в окне программы — столбики слегка дышат, как живые */
 (function () {
-  var bars = document.querySelectorAll('.fc-1 .mini-bars span');
+  var bars = document.querySelectorAll('.hm-bars span');
   if (!bars.length || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
-  var base = [40, 60, 48, 80, 100, 72];
+  var base = [].map.call(bars, function (b) { return parseFloat(b.style.height) || 50; });
   setInterval(function () {
     if (document.hidden) return;
     bars.forEach(function (b, i) {
-      var h = Math.max(28, Math.min(100, base[i] + (Math.random() * 22 - 11)));
+      var h = Math.max(14, Math.min(100, base[i] + (Math.random() * 18 - 9)));
       b.style.height = h + '%';
     });
-  }, 1300);
+  }, 1500);
 })();
 
 /* Cursor-follow glow on feature cards (uses each card's own ::before) */
 (function () {
   document.querySelectorAll('.fcard').forEach(function (c) {
-    c.addEventListener('pointermove', function (e) {
-      var r = c.getBoundingClientRect();
-      c.style.setProperty('--mx', (e.clientX - r.left) + 'px');
-      c.style.setProperty('--my', (e.clientY - r.top) + 'px');
-    });
-  });
-})();
-
-/* Universal cursor-follow glow for the other cards (injected overlay) */
-(function () {
-  var sel = '.pcard, .acard, .step, .plan-card, .gcard, .wcard';
-  document.querySelectorAll(sel).forEach(function (c) {
-    c.classList.add('glowable');
-    var g = document.createElement('span');
-    g.className = 'c-glow';
-    c.insertBefore(g, c.firstChild);
     c.addEventListener('pointermove', function (e) {
       var r = c.getBoundingClientRect();
       c.style.setProperty('--mx', (e.clientX - r.left) + 'px');
@@ -244,16 +243,6 @@ function countUp(el) {
       else { faqs.forEach(function (o) { if (o !== d && o.open) collapse(o); }); expand(d); }
     });
   });
-})();
-
-/* Subtle parallax on the hero aurora */
-(function () {
-  var a = document.querySelector('.aurora');
-  if (!a || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
-  addEventListener('scroll', function () {
-    var y = scrollY;
-    if (y < 900) a.style.transform = 'translateY(' + (y * .18) + 'px)';
-  }, { passive: true });
 })();
 
 /* Reveal / stagger on scroll + trigger counters */
@@ -362,120 +351,3 @@ function countUp(el) {
   }).catch(function () { /* сервер не запущен — не критично */ });
 })();
 
-/* ------------------------------------------------------------
-   Hero 3D — a rotating crystal inside a drifting data-particle
-   network. Requires Three.js (loaded before this file).
-   ------------------------------------------------------------ */
-(function () {
-  var cv = document.getElementById('hero3d');
-  if (!cv || typeof THREE === 'undefined') return;
-  var reduce = matchMedia('(prefers-reduced-motion:reduce)').matches;
-  var host = cv.parentElement;
-  var W = host.clientWidth, H = host.clientHeight;
-
-  var scene = new THREE.Scene();
-  var camera = new THREE.PerspectiveCamera(55, W / H, 0.1, 100);
-  camera.position.z = 15;
-
-  var renderer = new THREE.WebGLRenderer({ canvas: cv, alpha: true, antialias: true });
-  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-  renderer.setSize(W, H, false);
-
-  function accent() {
-    return getComputedStyle(document.documentElement).getPropertyValue('--primary').trim() || '#F97316';
-  }
-  var col = new THREE.Color(accent());
-
-  // central crystal (the "model")
-  var group = new THREE.Group(); scene.add(group);
-  var geo = new THREE.IcosahedronGeometry(3.1, 0);
-  var solid = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({
-    color: col, metalness: .55, roughness: .25, flatShading: true, transparent: true, opacity: .28
-  }));
-  var wire = new THREE.LineSegments(new THREE.EdgesGeometry(geo),
-    new THREE.LineBasicMaterial({ color: col, transparent: true, opacity: .55 }));
-  group.add(solid); group.add(wire);
-  scene.add(new THREE.AmbientLight(0xffffff, .6));
-  var key = new THREE.PointLight(col.getHex(), 1.4, 60); key.position.set(8, 6, 12); scene.add(key);
-  var rim = new THREE.DirectionalLight(0xffffff, .4); rim.position.set(-6, 4, 3); scene.add(rim);
-
-  // particle data-network
-  var N = window.innerWidth < 760 ? 60 : 110, pos = new Float32Array(N * 3), vel = [];
-  for (var i = 0; i < N; i++) {
-    pos[i * 3] = (Math.random() - .5) * 26;
-    pos[i * 3 + 1] = (Math.random() - .5) * 16;
-    pos[i * 3 + 2] = (Math.random() - .5) * 14;
-    vel.push({ x: (Math.random() - .5) * .006, y: (Math.random() - .5) * .006, z: (Math.random() - .5) * .006 });
-  }
-  var pGeo = new THREE.BufferGeometry();
-  pGeo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
-  var points = new THREE.Points(pGeo, new THREE.PointsMaterial({
-    color: col, size: .13, transparent: true, opacity: .9, sizeAttenuation: true
-  }));
-  scene.add(points);
-  var lineGeo = new THREE.BufferGeometry();
-  var lineMat = new THREE.LineBasicMaterial({ color: col, transparent: true, opacity: .16 });
-  var lines = new THREE.LineSegments(lineGeo, lineMat); scene.add(lines);
-  var linePos = new Float32Array(N * N * 3);
-  var lineAttr = new THREE.BufferAttribute(linePos, 3); lineAttr.setUsage(THREE.DynamicDrawUsage);
-  lineGeo.setAttribute('position', lineAttr);
-
-  // pointer parallax
-  var mx = 0, my = 0, tmx = 0, tmy = 0;
-  host.addEventListener('pointermove', function (e) {
-    var r = host.getBoundingClientRect();
-    tmx = (e.clientX - r.left) / r.width - .5;
-    tmy = (e.clientY - r.top) / r.height - .5;
-  }, { passive: true });
-
-  function rebuildLines() {
-    var p = pGeo.attributes.position.array, k = 0, MAX = 4.6;
-    for (var a = 0; a < N; a++) for (var b = a + 1; b < N; b++) {
-      var dx = p[a * 3] - p[b * 3], dy = p[a * 3 + 1] - p[b * 3 + 1], dz = p[a * 3 + 2] - p[b * 3 + 2];
-      if (dx * dx + dy * dy + dz * dz < MAX * MAX) {
-        linePos[k++] = p[a * 3]; linePos[k++] = p[a * 3 + 1]; linePos[k++] = p[a * 3 + 2];
-        linePos[k++] = p[b * 3]; linePos[k++] = p[b * 3 + 1]; linePos[k++] = p[b * 3 + 2];
-      }
-    }
-    lineAttr.needsUpdate = true;
-    lineGeo.setDrawRange(0, k / 3);
-  }
-
-  function resize() {
-    W = host.clientWidth; H = host.clientHeight;
-    camera.aspect = W / H; camera.updateProjectionMatrix();
-    renderer.setSize(W, H, false);
-  }
-  addEventListener('resize', resize, { passive: true });
-
-  // keep colours in sync with the theme toggle
-  new MutationObserver(function () {
-    var c = new THREE.Color(accent());
-    solid.material.color = c; wire.material.color = c; points.material.color = c;
-    lineMat.color = c; key.color = c;
-  }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
-
-  function frame() {
-    mx += (tmx - mx) * .05; my += (tmy - my) * .05;
-    group.rotation.y += .0026; group.rotation.x += .0011;
-    group.rotation.y += mx * .02; group.rotation.x += my * .02;
-    points.rotation.y += .0004;
-    var p = pGeo.attributes.position.array;
-    for (var i = 0; i < N; i++) {
-      p[i * 3] += vel[i].x; p[i * 3 + 1] += vel[i].y; p[i * 3 + 2] += vel[i].z;
-      if (Math.abs(p[i * 3]) > 13) vel[i].x *= -1;
-      if (Math.abs(p[i * 3 + 1]) > 8) vel[i].y *= -1;
-      if (Math.abs(p[i * 3 + 2]) > 7) vel[i].z *= -1;
-    }
-    pGeo.attributes.position.needsUpdate = true;
-    rebuildLines();
-    camera.position.x += (mx * 4 - camera.position.x) * .05;
-    camera.position.y += (-my * 3 - camera.position.y) * .05;
-    camera.lookAt(0, 0, 0);
-    renderer.render(scene, camera);
-    if (!reduce) requestAnimationFrame(frame);
-  }
-  rebuildLines();
-  frame();
-  if (reduce) renderer.render(scene, camera);
-})();
