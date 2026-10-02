@@ -1,15 +1,7 @@
 {
-  "Виды дела": [
-    "Ish turlari",
-    "Business types"
-  ],
   "Возможности": [
     "Imkoniyatlar",
     "Features"
-  ],
-  "Гид": [
-    "Gid",
-    "Guide"
   ],
   "Тарифы": [
     "Tariflar",
@@ -19,17 +11,13 @@
     "Savollar",
     "FAQ"
   ],
+  "Сменить тему": [
+    "Mavzuni almashtirish",
+    "Switch theme"
+  ],
   "Получить демо": [
     "Demo olish",
     "Get a demo"
-  ],
-  "Новое: гостиницы и гид-приложение": [
-    "Yangi: mehmonxonalar va gid-ilova",
-    "New: hotels and the guide app"
-  ],
-  "Всё ваше дело —": [
-    "Butun ishingiz —",
-    "Your whole business —"
   ],
   "в одной программе": [
     "bitta dasturda",
@@ -38,10 +26,6 @@
   "Касса, склад, сотрудники, зарплаты и отчёты — связаны между собой и считают честную прибыль. Для ресторанов, магазинов, гостиниц и клининговых компаний.": [
     "Kassa, ombor, xodimlar, ish haqi va hisobotlar — bir-biriga bogʻlangan va halol foydani hisoblaydi. Restoranlar, doʻkonlar, mehmonxonalar va klining kompaniyalari uchun.",
     "Till, stock, staff, payroll and reports — all linked together and counting honest profit. For restaurants, shops, hotels and cleaning companies."
-  ],
-  "Смотреть, что умеет": [
-    "Nimalar qila olishini koʻrish",
-    "See what it does"
   ],
   "Касса работает без интернета": [
     "Kassa internetsiz ishlaydi",
@@ -123,14 +107,6 @@
     "kassa ishlayapti, 3 ta chek aloqani kutmoqda",
     "the till keeps working, 3 receipts waiting to sync"
   ],
-  "Новая бронь из гида": [
-    "Giddan yangi bron",
-    "New booking from the guide"
-  ],
-  "Стандарт · 2 ночи": [
-    "Standart · 2 kecha",
-    "Standard · 2 nights"
-  ],
   "Рестораны": [
     "Restoranlar",
     "Restaurants"
@@ -138,10 +114,6 @@
   "Кофейни": [
     "Qahvaxonalar",
     "Coffee shops"
-  ],
-  "Чайханы": [
-    "Choyxonalar",
-    "Teahouses"
   ],
   "Фастфуд": [
     "Fastfud",
@@ -223,18 +195,6 @@
     "Odamlarga har oy toʻlanadi, hisobotda esa bu pul yoʻq. Firmaning eng katta xarajati hech kim sanamaydigan yagona xarajat boʻlib chiqadi.",
     "People are paid every month, yet that money is missing from the report. The firm's biggest cost turns out to be the only one nobody counts."
   ],
-  "Четыре уклада": [
-    "Toʻrtta yoʻnalish",
-    "Four setups"
-  ],
-  "Одна программа, но говорит на языке вашего дела": [
-    "Bitta dastur, lekin sizning ishingiz tilida gapiradi",
-    "One program that speaks the language of your trade"
-  ],
-  "При заведении вы выбираете вид дела — и программа перестраивается целиком: разделы, слова, отчёты и даже названия должностей.": [
-    "Muassasa qoʻshishda ish turini tanlaysiz — va dastur butunlay moslashadi: boʻlimlar, soʻzlar, hisobotlar va hatto lavozim nomlari ham.",
-    "When you add a business you pick its type — and the whole app adapts: sections, wording, reports and even job titles."
-  ],
   "Ресторан и кафе": [
     "Restoran va kafe",
     "Restaurant and cafe"
@@ -266,10 +226,6 @@
   "Заявки, бригады, акты": [
     "Arizalar, brigadalar, dalolatnomalar",
     "Jobs, crews, reports"
-  ],
-  "Ресторан, кафе, чайхана": [
-    "Restoran, kafe, choyxona",
-    "Restaurant, café, teahouse"
   ],
   "Зал, кухня и склад связаны между собой. Официант пробил блюдо — повар увидел его на экране, продукты списались по тех-карте, себестоимость попала в отчёт.": [
     "Zal, oshxona va ombor bir-biriga bogʻlangan. Ofitsiant taomni urdi — oshpaz uni ekranda koʻrdi, mahsulotlar texnologik karta boʻyicha hisobdan chiqdi, tannarx hisobotga tushdi.",
@@ -475,10 +431,6 @@
     "Bandlik, oʻrtacha narx va xonaga toʻgʻri keladigan daromad — faqat egasiga",
     "Occupancy, average rate and revenue per room — for the owner only"
   ],
-  "Брони из гид-приложения приходят сами": [
-    "Gid-ilovadan bronlar oʻzi keladi",
-    "Bookings from the guide app arrive by themselves"
-  ],
   "Шахматка": [
     "Shaxmatka",
     "Room chart"
@@ -486,10 +438,6 @@
   "Живут": [
     "Yashamoqda",
     "In house"
-  ],
-  "Из гида": [
-    "Giddan",
-    "From guide"
   ],
   "Пн": [
     "Du",
@@ -674,10 +622,6 @@
   "Возвраты сразу уменьшают доход": [
     "Qaytarishlar darhol daromadni kamaytiradi",
     "Refunds reduce income right away"
-  ],
-  "И всё, что нужно каждому делу": [
-    "Va har bir ishga kerak boʻlgan hamma narsa",
-    "And everything every business needs"
   ],
   "Касса, склад, люди, деньги и отчёты связаны между собой. Пробили чек — уменьшился остаток на складе, посчиталась себестоимость, изменилась прибыль в отчёте. Ничего не нужно переносить руками.": [
     "Kassa, ombor, odamlar, pul va hisobotlar bir-biriga bogʻlangan. Chek urildi — omborda qoldiq kamaydi, tannarx hisoblandi, hisobotdagi foyda oʻzgardi. Hech narsani qoʻlda koʻchirish kerak emas.",
@@ -911,89 +855,21 @@
     "Yuqoridan, bir bosishda almashtirish",
     "Switch at the top in one tap"
   ],
-  "Новое · гид-приложение": [
-    "Yangi · gid-ilova",
-    "New · guide app"
-  ],
-  "Гости находят вас сами — через гид": [
-    "Mehmonlar sizni oʻzlari topadi — gid orqali",
-    "Guests find you themselves — through the guide"
-  ],
-  "OSHBOARD подключается к гид-приложению по городу. Гид показывает людям, где сейчас есть свободный номер или стол, и сам оформляет бронь — а она сразу появляется у вас.": [
-    "OSHBOARD shahar boʻyicha gid-ilovaga ulanadi. Gid odamlarga hozir qayerda boʻsh xona yoki stol borligini koʻrsatadi va bronni oʻzi rasmiylashtiradi — u esa darhol sizda paydo boʻladi.",
-    "OSHBOARD connects to a city guide app. The guide shows people where a room or table is free right now and makes the booking itself — and it appears in your system at once."
-  ],
-  "Свободные номера и столы видны в гиде прямо сейчас": [
-    "Boʻsh xonalar va stollar gidda hozirning oʻzida koʻrinadi",
-    "Free rooms and tables show in the guide in real time"
-  ],
-  "Бронь сразу попадает на ресепшен и в шахматку с пометкой «Гид»": [
-    "Bron darhol resepshn va shaxmatkaga «Gid» belgisi bilan tushadi",
-    "The booking lands on the front desk and room chart at once, marked “Guide”"
-  ],
-  "Номер не продастся дважды — проверяется каждая ночь": [
-    "Xona ikki marta sotilmaydi — har bir kecha tekshiriladi",
-    "A room is never sold twice — every night is checked"
-  ],
-  "Включает только владелец — одной кнопкой в настройках": [
-    "Faqat egasi yoqadi — sozlamalarda bitta tugma bilan",
-    "Only the owner turns it on — one switch in settings"
-  ],
-  "Гид не видит ваши деньги, сотрудников и других гостей": [
-    "Gid sizning pulingiz, xodimlaringiz va boshqa mehmonlarni koʻrmaydi",
-    "The guide never sees your money, staff or other guests"
-  ],
-  "Гостиница «Бахор»": [
-    "«Bahor» mehmonxonasi",
-    "Hotel Bahor"
-  ],
-  "Свободно: 3 номера": [
-    "Boʻsh: 3 ta xona",
-    "Available: 3 rooms"
-  ],
   "Стандарт": [
     "Standart",
     "Standard"
-  ],
-  "300 000 сум за ночь": [
-    "bir kecha 300 000 soʻm",
-    "300,000 sum per night"
-  ],
-  "12 окт": [
-    "12-okt",
-    "Oct 12"
   ],
   "14 окт": [
     "14-okt",
     "Oct 14"
   ],
-  "Забронировать": [
-    "Bron qilish",
-    "Book now"
-  ],
   "Новая бронь": [
     "Yangi bron",
     "New booking"
   ],
-  "Свободно на все ночи": [
-    "Barcha kechalarga boʻsh",
-    "Free for every night"
-  ],
-  "Записано в журнал действий": [
-    "Harakatlar jurnaliga yozildi",
-    "Recorded in the activity log"
-  ],
   "Почему мы": [
     "Nega biz",
     "Why us"
-  ],
-  "Сделано под то, как работают здесь": [
-    "Bu yerda qanday ishlashlariga moslab yaratilgan",
-    "Built for how business works here"
-  ],
-  "Программу делают здесь, в Самарканде, под то, как дело ведут в Узбекистане: с перебоями связи, с наличными, на трёх языках и без дорогого оборудования.": [
-    "Dastur shu yerda, Samarqandda, Oʻzbekistonda ish yuritish tarziga moslab qilinadi: aloqa uzilishlari bilan, naqd pul bilan, uch tilda va qimmat jihozsiz.",
-    "The program is made here in Samarkand, for the way business is actually run in Uzbekistan: with patchy connections, with cash, in three languages and without expensive equipment."
   ],
   "Телефон и планшет": [
     "Telefon va planshet",
@@ -1026,10 +902,6 @@
   "Мы в Самарканде. Не колл-центр в другой стране и не переписка на чужом языке — приедем и покажем.": [
     "Biz Samarqanddamiz. Boshqa mamlakatdagi qoʻngʻiroq markazi ham, begona tildagi yozishma ham emas — kelamiz va koʻrsatamiz.",
     "We are in Samarkand. Not a call centre in another country, not a chat in a language you do not speak: we come over and show you."
-  ],
-  "вида дела: ресторан, магазин, гостиница, клининг": [
-    "ish turi: restoran, doʻkon, mehmonxona, klining",
-    "business types: restaurant, shop, hotel, cleaning"
   ],
   "языка: русский, узбекский, английский": [
     "til: rus, oʻzbek, ingliz",
@@ -1095,25 +967,9 @@
     "Faqat menyu emas, uch til toʻliq",
     "Three languages throughout, not just the menu"
   ],
-  "Ресторан, магазин, гостиница и клининг в одном входе": [
-    "Restoran, doʻkon, mehmonxona va klining bitta kirishda",
-    "Restaurant, shop, hotel and cleaning under one login"
-  ],
-  "Брони из гид-приложения": [
-    "Gid-ilovadan bronlar",
-    "Bookings from the guide app"
-  ],
   "AI-помощник по своим цифрам": [
     "Oʻz raqamlaringiz boʻyicha AI-yordamchi",
     "An AI assistant on your own numbers"
-  ],
-  "Тариф под размер вашего дела": [
-    "Ishingiz hajmiga mos tarif",
-    "A plan that fits the size of your business"
-  ],
-  "Цены ориентировочные. Точную стоимость считаем под ваше дело: сколько точек, сколько людей, нужны ли камеры. Оставьте заявку — посчитаем.": [
-    "Narxlar taxminiy. Aniq narxni ishingizga qarab hisoblaymiz: nechta nuqta, nechta odam, kameralar kerakmi. Ariza qoldiring — hisoblab beramiz.",
-    "Prices are approximate. We work out the exact cost for your business: how many outlets, how many people, whether you need cameras. Leave a request — we’ll calculate it."
   ],
   "Старт": [
     "Start",
@@ -1130,10 +986,6 @@
   "сум/мес": [
     "so‘m/oy",
     "UZS/mo"
-  ],
-  "небольшое дело, одна точка": [
-    "kichik ish, bitta nuqta",
-    "a small business, one outlet"
   ],
   "Касса и работа без интернета": [
     "Kassa va internetsiz ish",
@@ -1170,10 +1022,6 @@
   "от 1 190 000": [
     "1 190 000 dan",
     "from 1,190,000"
-  ],
-  "среднее дело, до двух точек": [
-    "oʻrtacha ish, ikkitagacha nuqta",
-    "a mid-size business, up to two outlets"
   ],
   "Всё из «Старт»": [
     "«Start»dagi hammasi",
@@ -1279,10 +1127,6 @@
     "Restoran emas, doʻkon, mehmonxona yoki klining uchun ham mos keladimi?",
     "Will it suit a shop, hotel or cleaning firm, not just a restaurant?"
   ],
-  "Да. При заведении вы выбираете вид дела, и программа перестраивается целиком: у магазина появляется сканер штрихкодов и приёмка, у гостиницы — шахматка и ресепшен, у клининга — заявки, бригады и акты. Слова и отчёты тоже меняются: в клининге это «объект» и «заявка», а не «стол» и «заказ».": [
-    "Ha. Muassasa qoʻshishda ish turini tanlaysiz va dastur butunlay moslashadi: doʻkonda shtrix-kod skaneri va qabul qilish, mehmonxonada — shaxmatka va resepshn, kliningda — arizalar, brigadalar va dalolatnomalar paydo boʻladi. Soʻzlar va hisobotlar ham oʻzgaradi: kliningda bu «stol» va «buyurtma» emas, «obyekt» va «ariza».",
-    "Yes. When you add a business you pick its type and the whole app adapts: a shop gets a barcode scanner and receiving, a hotel gets a room chart and front desk, a cleaning firm gets jobs, crews and completion reports. Wording and reports change too: in cleaning it’s “site” and “job”, not “table” and “order”."
-  ],
   "Что будет, если пропадёт интернет?": [
     "Internet uzilsa nima boʻladi?",
     "What happens if the internet goes down?"
@@ -1298,14 +1142,6 @@
   "Ресепшен видит, кто сегодня заезжает и выезжает, шахматка показывает все номера на календаре, горничная — какие номера убрать. Оплаты гостя записываются в день оплаты, поэтому доход в отчёте сходится с кассой. Номер не продастся дважды: программа проверяет каждую ночь брони.": [
     "Resepshn bugun kim kelishi va ketishini koʻradi, shaxmatka barcha xonalarni taqvimda koʻrsatadi, xizmatchi — qaysi xonalarni tozalashni. Mehmon toʻlovlari toʻlov kunida yoziladi, shuning uchun hisobotdagi daromad kassa bilan mos keladi. Xona ikki marta sotilmaydi: dastur bronning har bir kechasini tekshiradi.",
     "The front desk sees who checks in and out today, the room chart shows every room on a calendar, the housekeeper sees which rooms to clean. Guest payments are recorded on the day they’re paid, so income in the report matches the till. A room is never sold twice: the app checks every night of a booking."
-  ],
-  "Что такое гид-приложение и что оно увидит?": [
-    "Gid-ilova nima va u nimani koʻradi?",
-    "What is the guide app and what will it see?"
-  ],
-  "Гид показывает людям свободные номера и столы и сам оформляет брони. Ваше заведение появится там, только если вы сами включите это в настройках. Гид видит лишь свободные места и цены — ни денег, ни сотрудников, ни других гостей.": [
-    "Gid odamlarga boʻsh xonalar va stollarni koʻrsatadi va bronlarni oʻzi rasmiylashtiradi. Muassasangiz u yerda faqat sozlamalarda oʻzingiz yoqsangiz paydo boʻladi. Gid faqat boʻsh joylar va narxlarni koʻradi — na pulni, na xodimlarni, na boshqa mehmonlarni.",
-    "The guide shows people free rooms and tables and makes bookings itself. Your business appears there only if you turn it on in settings. The guide sees only free places and prices — no money, no staff, no other guests."
   ],
   "Нужно ли покупать дорогое оборудование?": [
     "Qimmat jihoz sotib olish kerakmi?",
@@ -1359,10 +1195,6 @@
     "Narxi qancha va yashirin to‘lovlar bormi?",
     "How much is it and are there hidden fees?"
   ],
-  "Цена зависит от тарифа и размера дела. Поддержка и ежемесячный техосмотр входят в стоимость. Скрытых платежей нет.": [
-    "Narx tarif va ish hajmiga bogʻliq. Yordam va oylik texnik koʻrik narxga kiradi. Yashirin toʻlovlar yoʻq.",
-    "The price depends on the plan and the size of your business. Support and a monthly check-up are included. No hidden fees."
-  ],
   "Вы работаете по всему Узбекистану?": [
     "Butun Oʻzbekiston boʻylab ishlaysizmi?",
     "Do you work across Uzbekistan?"
@@ -1382,10 +1214,6 @@
   "Готовы навести порядок в цифрах?": [
     "Raqamlarni tartibga solishga tayyormisiz?",
     "Ready to put your numbers in order?"
-  ],
-  "Оставьте заявку — покажем OSHBOARD на примере вашего дела и посчитаем точную цену.": [
-    "Ariza qoldiring — OSHBOARDni oʻz ishingiz misolida koʻrsatamiz va aniq narxni hisoblaymiz.",
-    "Leave a request — we’ll show OSHBOARD on your own business and work out the exact price."
   ],
   "Бесплатная демонстрация на ваших данных": [
     "Sizning maʼlumotlaringizda bepul namoyish",
@@ -1407,14 +1235,6 @@
     "Telefon",
     "Phone"
   ],
-  "Название дела": [
-    "Ish nomi",
-    "Business name"
-  ],
-  "Вид дела": [
-    "Ish turi",
-    "Kind of business"
-  ],
   "Ресторан": [
     "Restoran",
     "Restaurant"
@@ -1422,10 +1242,6 @@
   "Кофейня": [
     "Qahvaxona",
     "Coffee shop"
-  ],
-  "Чайхана": [
-    "Choyxona",
-    "Teahouse"
   ],
   "Продуктовый магазин": [
     "Oziq-ovqat doʻkoni",
@@ -1455,10 +1271,6 @@
     "Rahmat! Ariza qabul qilindi — tez orada siz bilan bogʻlanamiz.",
     "Thank you! Your request is in — we’ll be in touch very soon."
   ],
-  "Программа учёта для ресторана, магазина, гостиницы и клининговой фирмы: касса, склад, персонал и отчёты в одном месте. Самарканд, Узбекистан.": [
-    "Restoran, doʻkon, mehmonxona va klining firmasi uchun hisob dasturi: kassa, ombor, xodimlar va hisobotlar bir joyda. Samarqand, Oʻzbekiston.",
-    "Business software for restaurants, shops, hotels and cleaning firms: till, stock, staff and reports in one place. Samarkand, Uzbekistan."
-  ],
   "Продукт": [
     "Mahsulot",
     "Product"
@@ -1487,8 +1299,132 @@
     "Aziz",
     "Aziz"
   ],
-  "Напр. Chaykhana Registon или «Дилноза» на Дагбитской": [
-    "Masalan, Chaykhana Registon yoki Dagʻbit koʻchasidagi «Dilnoza»",
-    "e.g. Chaykhana Registon, or Dilnoza on Dagbitskaya"
+  "Направления": [
+    "Yoʻnalishlar",
+    "Industries"
+  ],
+  "Прибыль": [
+    "Foyda",
+    "Profit"
+  ],
+  "Новое: программа для гостиниц": [
+    "Yangi: mehmonxonalar uchun dastur",
+    "New: software for hotels"
+  ],
+  "Весь ваш бизнес —": [
+    "Butun biznesingiz —",
+    "Your whole business —"
+  ],
+  "Посмотреть возможности": [
+    "Imkoniyatlarni koʻrish",
+    "Explore features"
+  ],
+  "Итог дня — в Telegram": [
+    "Kun yakuni — Telegramda",
+    "Day summary in Telegram"
+  ],
+  "выручка 12 400 000 сум": [
+    "tushum 12 400 000 soʻm",
+    "revenue 12,400,000 UZS"
+  ],
+  "Кафе": [
+    "Kafe",
+    "Café"
+  ],
+  "Четыре направления": [
+    "Toʻrt yoʻnalish",
+    "Four industries"
+  ],
+  "Одна программа — под специфику вашего бизнеса": [
+    "Bitta dastur — biznesingiz xususiyatlariga moslashadi",
+    "One app, tailored to your type of business"
+  ],
+  "При подключении вы выбираете направление, и программа перестраивается под него: разделы, термины, отчёты и даже названия должностей.": [
+    "Ulanishda yoʻnalishni tanlaysiz va dastur unga moslashadi: boʻlimlar, atamalar, hisobotlar va hatto lavozim nomlari.",
+    "When you sign up, you pick your industry and the app adapts to it: sections, terms, reports and even job titles."
+  ],
+  "Ресторан, кафе, кофейня": [
+    "Restoran, kafe, qahvaxona",
+    "Restaurant, café, coffee shop"
+  ],
+  "Роли: администратор ресепшена и горничная": [
+    "Rollar: resepshn administratori va xizmatchi ayol",
+    "Roles: front-desk administrator and housekeeper"
+  ],
+  "Выехал": [
+    "Chiqib ketgan",
+    "Checked out"
+  ],
+  "Тимур А.": [
+    "Temur A.",
+    "Timur A."
+  ],
+  "Камола Н.": [
+    "Kamola N.",
+    "Kamola N."
+  ],
+  "И всё, что нужно для работы": [
+    "Va ish uchun kerak boʻlgan hamma narsa",
+    "And everything you need to run it"
+  ],
+  "Создано для бизнеса в Узбекистане": [
+    "Oʻzbekistondagi biznes uchun yaratilgan",
+    "Built for business in Uzbekistan"
+  ],
+  "Программу создают в Самарканде — с учётом того, как ведут бизнес в Узбекистане: перебои связи, расчёты наличными, три языка и никакого дорогого оборудования.": [
+    "Dastur Samarqandda, Oʻzbekistonda biznes qanday yuritilishini hisobga olib yaratiladi: aloqa uzilishlari, naqd hisob-kitob, uch til va qimmat uskunalarsiz.",
+    "The app is built in Samarkand around how business works in Uzbekistan: patchy connectivity, cash payments, three languages and no expensive hardware."
+  ],
+  "направления: ресторан, магазин, гостиница, клининг": [
+    "yoʻnalish: restoran, doʻkon, mehmonxona, klining",
+    "industries: restaurant, shop, hotel, cleaning"
+  ],
+  "Ресторан, магазин, гостиница и клининг в одном аккаунте": [
+    "Restoran, doʻkon, mehmonxona va klining bitta akkauntda",
+    "Restaurant, shop, hotel and cleaning in one account"
+  ],
+  "Тариф под масштаб вашего бизнеса": [
+    "Biznesingiz koʻlamiga mos tarif",
+    "A plan that fits the size of your business"
+  ],
+  "Цены ориентировочные. Точную стоимость рассчитываем индивидуально: сколько точек, сколько сотрудников, нужны ли камеры. Оставьте заявку — посчитаем.": [
+    "Narxlar taxminiy. Aniq narxni alohida hisoblaymiz: nechta nuqta, nechta xodim, kameralar kerakmi. Ariza qoldiring — hisoblab beramiz.",
+    "Prices are approximate. We quote each business individually: how many locations, how many staff, whether you need cameras. Leave a request and we'll calculate it."
+  ],
+  "малый бизнес, одна точка": [
+    "kichik biznes, bitta nuqta",
+    "small business, one location"
+  ],
+  "средний бизнес, до двух точек": [
+    "oʻrta biznes, ikkitagacha nuqta",
+    "mid-sized business, up to two locations"
+  ],
+  "Да. При подключении вы выбираете направление, и программа перестраивается под него: у магазина появляется сканер штрихкодов и приёмка, у гостиницы — шахматка и ресепшен, у клининга — заявки, бригады и акты. Слова и отчёты тоже меняются: в клининге это «объект» и «заявка», а не «стол» и «заказ».": [
+    "Ha. Ulanishda yoʻnalishni tanlaysiz va dastur unga moslashadi: doʻkonda shtrix-kod skaneri va qabul qilish, mehmonxonada shaxmatka va resepshn, klining kompaniyasida esa arizalar, brigadalar va dalolatnomalar paydo boʻladi. Soʻzlar va hisobotlar ham oʻzgaradi: kliningda bu «stol» va «buyurtma» emas, «obyekt» va «ariza».",
+    "Yes. When you sign up, you pick your industry and the app adapts: a shop gets a barcode scanner and goods receiving, a hotel gets the booking grid and front desk, a cleaning company gets jobs, crews and sign-off sheets. Wording and reports change too: in cleaning it's a “site” and a “job”, not a “table” and an “order”."
+  ],
+  "Цена зависит от тарифа и масштаба бизнеса. Поддержка и ежемесячная проверка работы программы входят в стоимость. Скрытых платежей нет.": [
+    "Narx tarif va biznes koʻlamiga bogʻliq. Qoʻllab-quvvatlash va dastur ishini oylik tekshirish narxga kiradi. Yashirin toʻlovlar yoʻq.",
+    "The price depends on the plan and the size of your business. Support and a monthly check-up of how the app runs are included. No hidden fees."
+  ],
+  "Оставьте заявку — покажем OSHBOARD на примере вашего бизнеса и рассчитаем точную цену.": [
+    "Ariza qoldiring — OSHBOARDni biznesingiz misolida koʻrsatamiz va aniq narxni hisoblaymiz.",
+    "Leave a request — we'll show OSHBOARD on your own business and work out the exact price."
+  ],
+  "Название заведения": [
+    "Muassasa nomi",
+    "Business name"
+  ],
+  "Направление": [
+    "Yoʻnalish",
+    "Industry"
+  ],
+  "Программа учёта для ресторана, магазина, гостиницы и клининговой компании: касса, склад, персонал и отчёты в одном месте. Самарканд, Узбекистан.": [
+    "Restoran, doʻkon, mehmonxona va klining kompaniyasi uchun hisob dasturi: kassa, ombor, xodimlar va hisobotlar bir joyda. Samarqand, Oʻzbekiston.",
+    "Accounting software for restaurants, shops, hotels and cleaning companies: till, stock, staff and reports in one place. Samarkand, Uzbekistan."
+  ],
+  "Например, ресторан «Регистан»": [
+    "Masalan, «Registon» restorani",
+    "e.g. Registan Restaurant"
   ]
 }

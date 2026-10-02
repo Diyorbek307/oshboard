@@ -9,11 +9,15 @@
   var root = document.documentElement, key = 'oshboard-theme';
   var btn = document.getElementById('themeBtn');
   if (!btn) return;
-  btn.addEventListener('click', function () {
+  function toggle() {
     var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', next);
-    localStorage.setItem(key, next);
-  });
+    try { localStorage.setItem(key, next); } catch (e) {}
+  }
+  btn.addEventListener('click', toggle);
+  // на узком телефоне кнопка темы живёт в меню
+  var mt = document.getElementById('menuTheme');
+  if (mt) mt.addEventListener('click', toggle);
 })();
 
 /* Mobile menu */
@@ -171,10 +175,26 @@ function countUp(el) {
       if (p) {
         p.hidden = !on;
         // панели не исчезают, а прячутся (держат высоту) — анимацию появления запускаем заново сами
-        if (on) { p.style.animation = 'none'; void p.offsetHeight; p.style.animation = ''; }
+        p.classList.remove('play');
+        if (on) { p.style.animation = 'none'; void p.offsetHeight; p.style.animation = ''; p.classList.add('play'); }
       }
     });
     if (focus) t.focus();
+  }
+  // «Новое: программа для гостиниц» сразу открывает нужную вкладку
+  document.querySelectorAll('[data-open-tab]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      var t = document.getElementById(a.getAttribute('data-open-tab'));
+      if (t) show(t);
+    });
+  });
+  // первая панель тоже собирается анимацией — когда до неё долистали
+  var first = document.querySelector('.kind:not([hidden])');
+  if (first && 'IntersectionObserver' in window) {
+    var fo = new IntersectionObserver(function (es) {
+      if (es[0].isIntersecting) { first.classList.add('play'); fo.disconnect(); }
+    }, { threshold: .2 });
+    fo.observe(first);
   }
   tabs.forEach(function (t, i) {
     t.addEventListener('click', function () { show(t); });
@@ -351,3 +371,92 @@ function countUp(el) {
   }).catch(function () { /* сервер не запущен — не критично */ });
 })();
 
+
+/* ===== Движение ===== */
+var REDUCE = matchMedia('(prefers-reduced-motion:reduce)').matches;
+var FINE = matchMedia('(pointer:fine)').matches;
+
+/* Окно программы на первом экране выпрямляется по мере прокрутки,
+   фон отстаёт, плашки чуть следуют за мышью. */
+(function () {
+  var stage = document.querySelector('.hero-stage'), bg = document.querySelector('.hero-bg'), hero = document.querySelector('.hero');
+  if (!stage) return;
+  if (REDUCE) { stage.style.setProperty('--p', 1); return; }
+  var ticking = false;
+  function upd() {
+    ticking = false;
+    var vh = innerHeight, top = stage.getBoundingClientRect().top;
+    var p = Math.max(0, Math.min(1, 1 - (top - vh * .2) / (vh * .55)));
+    stage.style.setProperty('--p', p.toFixed(3));
+    if (bg && scrollY < vh * 1.5) bg.style.setProperty('--hy', (scrollY * .35).toFixed(1) + 'px');
+  }
+  addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(upd); } }, { passive: true });
+  addEventListener('resize', upd);
+  upd();
+  if (!FINE || !hero) return;
+  var chips = stage.querySelectorAll('.chip');
+  hero.addEventListener('pointermove', function (e) {
+    var dx = e.clientX / innerWidth - .5, dy = e.clientY / innerHeight - .5;
+    chips.forEach(function (c, i) {
+      var k = i ? -1 : 1;
+      c.style.setProperty('--cx', (dx * 26 * k).toFixed(1) + 'px');
+      c.style.setProperty('--cy', (dy * 18 * k).toFixed(1) + 'px');
+    });
+  });
+})();
+
+/* Карточки слегка наклоняются за мышью — как настоящая карточка в руке. */
+(function () {
+  if (REDUCE || !FINE) return;
+  document.querySelectorAll('.pcard, .acard, .plan-card, .tile, .tab').forEach(function (c) {
+    var raf = 0;
+    c.classList.add('tilt');
+    c.addEventListener('pointermove', function (e) {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(function () {
+        var r = c.getBoundingClientRect();
+        var x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+        var max = r.width > 500 ? 3 : 7;   // широкие плитки качаются меньше
+        c.classList.add('tilting');
+        c.style.transform = 'perspective(900px) rotateX(' + (-y * max).toFixed(2) + 'deg) rotateY(' + (x * max).toFixed(2) + 'deg) translateY(-4px)';
+      });
+    });
+    c.addEventListener('pointerleave', function () {
+      cancelAnimationFrame(raf);
+      c.classList.remove('tilting');
+      c.style.transform = '';
+    });
+  });
+})();
+
+/* Главные кнопки «притягиваются» к курсору. */
+(function () {
+  if (REDUCE || !FINE) return;
+  document.querySelectorAll('.btn-lg, .nav-cta').forEach(function (b) {
+    b.classList.add('magnet');
+    b.addEventListener('pointermove', function (e) {
+      var r = b.getBoundingClientRect();
+      b.style.setProperty('--bx', ((e.clientX - r.left - r.width / 2) * .22).toFixed(1) + 'px');
+      b.style.setProperty('--by', ((e.clientY - r.top - r.height / 2) * .3).toFixed(1) + 'px');
+    });
+    b.addEventListener('pointerleave', function () { b.style.setProperty('--bx', '0px'); b.style.setProperty('--by', '0px'); });
+  });
+})();
+
+/* Зал ресторана живёт: столы сами меняют состояние — пришли гости, попросили счёт, ушли. */
+(function () {
+  var hall = document.querySelector('.hall');
+  if (!hall || REDUCE) return;
+  var tbls = [].slice.call(hall.querySelectorAll('.tbl'));
+  var next = { 's-free': 's-busy', 's-busy': 's-bill', 's-bill': 's-free', 's-res': 's-busy' };
+  setInterval(function () {
+    if (document.hidden || hall.closest('.kind').hidden) return;
+    var r = hall.getBoundingClientRect();
+    if (r.bottom < 0 || r.top > innerHeight) return;
+    var t = tbls[Math.floor(Math.random() * tbls.length)];
+    var cur = Object.keys(next).filter(function (k) { return t.classList.contains(k); })[0] || 's-free';
+    t.classList.remove(cur, 'flash');
+    t.classList.add(next[cur]);
+    void t.offsetWidth; t.classList.add('flash');
+  }, 2200);
+})();
