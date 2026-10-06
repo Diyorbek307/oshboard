@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OSHBOARD — программа учёта для ресторана, магазина, гостиницы и клининга. Самарканд</title>
-<meta name="description" content="OSHBOARD — касса, склад, сотрудники, зарплаты и отчёты в одной программе. Четыре направления: ресторан и кафе, магазин и аптека, гостиница, клининговая компания. Работает без интернета, на русском, узбекском и английском. Сделано в Самарканде.">
+<title>OSHBOARD — программа учёта для ресторана, магазина, гостиницы, клиники, фермы и клининга. Самарканд</title>
+<meta name="description" content="OSHBOARD — касса, склад, сотрудники, зарплаты и отчёты в одной программе. Шесть направлений: ресторан и кафе, магазин и аптека, гостиница, клиника, ферма, клининговая компания. Работает без интернета, на русском, узбекском и английском. Сделано в Самарканде.">
 <meta name="theme-color" content="#0b0d11">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e8663d' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2.5 21.5 7.5 12 12.5 2.5 7.5z'/%3E%3Cpath d='M2.5 12 12 17 21.5 12'/%3E%3Cpath d='M2.5 16.5 12 21.5 21.5 16.5'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,6 +60,8 @@
     <symbol id="i-map" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></symbol>
     <symbol id="i-forecast" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></symbol>
     <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2.5 21.5 7.5 12 12.5 2.5 7.5z"/><path d="M2.5 12 12 17 21.5 12"/><path d="M2.5 16.5 12 21.5 21.5 16.5"/></symbol>
+    <symbol id="i-steth" viewBox="0 0 24 24"><path d="M6 3v6a5 5 0 0 0 10 0V3M6 3H4M16 3h2M11 14v2a5 5 0 0 0 10 0v-2"/><circle cx="21" cy="12" r="2"/></symbol>
+    <symbol id="i-sprout" viewBox="0 0 24 24"><path d="M12 21V11M12 11c0-4-3-6-8-6 0 4 3 6 8 6zM12 11c0-5 3-8 8-8 0 5-3 8-8 8zM7 21h10"/></symbol>
     <symbol id="i-minus" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></symbol>
   </defs>
 </svg>
@@ -102,9 +104,9 @@
   <div class="hero-bg" aria-hidden="true"><b></b><b></b><b></b></div>
   <div class="wrap">
     <div class="hero-copy intro">
-      <a href="#kinds" class="announce" data-open-tab="t-hotel"><span class="dot"></span><span>Новое: программа для гостиниц</span><svg class="i"><use href="#i-arrow"/></svg></a>
+      <a href="#kinds" class="announce" data-open-tab="t-clinic"><span class="dot"></span><span>Новое: клиники и фермы</span><svg class="i"><use href="#i-arrow"/></svg></a>
       <h1><span class="h1-a">Весь ваш бизнес —</span> <span class="h1-b grad-text">в одной программе</span></h1>
-      <p class="lead">Касса, склад, сотрудники, зарплаты и отчёты — связаны между собой и считают честную прибыль. Для ресторанов, магазинов, гостиниц и клининговых компаний.</p>
+      <p class="lead">Касса, склад, сотрудники, зарплаты и отчёты — связаны между собой и считают честную прибыль. Для ресторанов, магазинов и аптек, гостиниц, клиник, ферм и клининговых компаний.</p>
       <div class="hero-cta">
         <a href="#lead" class="btn btn-primary btn-lg">Получить демо</a>
         <a href="#kinds" class="btn btn-ghost btn-lg">Посмотреть возможности</a>
@@ -167,7 +169,7 @@
 <!-- MARQUEE -->
 <div class="marquee" aria-label="Для кого">
   <div class="mq-track" id="mq">
-    <span>Рестораны</span><span>Кафе</span><span>Кофейни</span><span>Фастфуд</span><span>Продуктовые</span><span>Аптеки</span><span>Одежда</span><span>Стройматериалы</span><span>Гостиницы</span><span>Хостелы</span><span>Клининг</span>
+    <span>Рестораны</span><span>Кафе</span><span>Кофейни</span><span>Фастфуд</span><span>Продуктовые</span><span>Аптеки</span><span>Одежда</span><span>Стройматериалы</span><span>Гостиницы</span><span>Хостелы</span><span>Клиники</span><span>Медцентры</span><span>Фермы</span><span>Клининг</span>
   </div>
 </div>
 
@@ -191,7 +193,7 @@
 <section class="sec sec-soft" id="kinds">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Четыре направления</span>
+      <span class="eyebrow">Шесть направлений</span>
       <h2>Одна программа — под специфику вашего бизнеса</h2>
       <p>При подключении вы выбираете направление, и программа перестраивается под него: разделы, термины, отчёты и даже названия должностей.</p>
     </div>
@@ -199,8 +201,10 @@
     <div class="tabs reveal" role="tablist" aria-label="Направления">
       <button type="button" role="tab" class="tab on" aria-selected="true" aria-controls="k-rest" id="t-rest"><span class="t-ph"><img src="assets/img/rest.webp" alt="" loading="lazy" decoding="async" width="640" height="440"></span><span class="t-ic"><svg class="i"><use href="#i-dish"/></svg></span><span class="t-tx"><b>Ресторан и кафе</b><small>Зал, кухня, склад</small></span></button>
       <button type="button" role="tab" class="tab" aria-selected="false" aria-controls="k-shop" id="t-shop" tabindex="-1"><span class="t-ph"><img src="assets/img/shop.webp" alt="" loading="lazy" decoding="async" width="640" height="440"></span><span class="t-ic"><svg class="i"><use href="#i-shop"/></svg></span><span class="t-tx"><b>Магазин и аптека</b><small>Касса, склад, долги</small></span></button>
-      <button type="button" role="tab" class="tab" aria-selected="false" aria-controls="k-hotel" id="t-hotel" tabindex="-1"><span class="t-ph"><img src="assets/img/hotel.webp" alt="" loading="lazy" decoding="async" width="640" height="440"></span><span class="t-ic"><svg class="i"><use href="#i-hotel"/></svg></span><span class="t-tx"><b>Гостиница <em class="new">Новое</em></b><small>Ресепшен, шахматка, уборка</small></span></button>
+      <button type="button" role="tab" class="tab" aria-selected="false" aria-controls="k-hotel" id="t-hotel" tabindex="-1"><span class="t-ph"><img src="assets/img/hotel.webp" alt="" loading="lazy" decoding="async" width="640" height="440"></span><span class="t-ic"><svg class="i"><use href="#i-hotel"/></svg></span><span class="t-tx"><b>Гостиница</b><small>Ресепшен, шахматка, уборка</small></span></button>
       <button type="button" role="tab" class="tab" aria-selected="false" aria-controls="k-clean" id="t-clean" tabindex="-1"><span class="t-ph"><img src="assets/img/clean.webp" alt="" loading="lazy" decoding="async" width="640" height="440"></span><span class="t-ic"><svg class="i"><use href="#i-broom"/></svg></span><span class="t-tx"><b>Клининг</b><small>Заявки, бригады, акты</small></span></button>
+      <button type="button" role="tab" class="tab" aria-selected="false" aria-controls="k-clinic" id="t-clinic" tabindex="-1"><span class="t-ph t-ph-art t-ph-clinic"><svg class="i"><use href="#i-steth"/></svg></span><span class="t-ic"><svg class="i"><use href="#i-steth"/></svg></span><span class="t-tx"><b>Клиника <em class="new">Новое</em></b><small>Запись, врачи, медкарта</small></span></button>
+      <button type="button" role="tab" class="tab" aria-selected="false" aria-controls="k-farm" id="t-farm" tabindex="-1"><span class="t-ph t-ph-art t-ph-farm"><svg class="i"><use href="#i-sprout"/></svg></span><span class="t-ic"><svg class="i"><use href="#i-sprout"/></svg></span><span class="t-tx"><b>Ферма <em class="new">Новое</em></b><small>Стадо, надои, поля</small></span></button>
     </div>
 
     <div class="kinds">
@@ -212,7 +216,8 @@
         <ul class="ticks">
           <li><svg class="i"><use href="#i-check"/></svg>План зала со столами и счетами, разделение чека</li>
           <li><svg class="i"><use href="#i-check"/></svg>Экран кухни: заказы приходят сами, без бумажек</li>
-          <li><svg class="i"><use href="#i-check"/></svg>Бронь столов и банкеты</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Бронь столов и банкеты: свадьбы и юбилеи с задатком, меню и сметой</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Обслуживание % — само в счёте за столом, отдельной строкой в чеке</li>
           <li><svg class="i"><use href="#i-check"/></svg>QR-меню с фото и онлайн-заказы на доставку и самовывоз</li>
           <li><svg class="i"><use href="#i-check"/></svg>Тех-карты: себестоимость каждого блюда по продуктам</li>
           <li><svg class="i"><use href="#i-check"/></svg>Фудкост: видно, какое блюдо готовить невыгодно</li>
@@ -253,7 +258,9 @@
           <li><svg class="i"><use href="#i-check"/></svg>Продажа в долг и учёт долгов покупателей</li>
           <li><svg class="i"><use href="#i-check"/></svg>Приёмка по накладной, поставщики и заявки поставщику</li>
           <li><svg class="i"><use href="#i-check"/></svg>Инвентаризация, оборотная ведомость, печать ценников</li>
-          <li><svg class="i"><use href="#i-check"/></svg>Сроки годности для аптеки, размеры и модели для одежды</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Аптека: партии с серией и сроком годности, рецептурные препараты, поиск по действующему веществу</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Просрочку касса не продаст — сначала уходит то, что раньше истекает</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Размеры и модели для одежды</li>
           <li><svg class="i"><use href="#i-check"/></svg>Фискальная касса и коды ИКПУ</li>
           <li><svg class="i"><use href="#i-check"/></svg>Возврат товара — сразу и на складе, и в деньгах</li>
         </ul>
@@ -280,11 +287,11 @@
           <li><svg class="i"><use href="#i-check"/></svg>Шахматка: все номера и брони на одном календаре</li>
           <li><svg class="i"><use href="#i-check"/></svg>Ресепшен: кто сегодня заезжает и кто выезжает</li>
           <li><svg class="i"><use href="#i-check"/></svg>Заселение, выселение, ранний выезд и продление</li>
-          <li><svg class="i"><use href="#i-check"/></svg>Счёт гостя: проживание, оплаты и возвраты</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Счёт гостя: завтраки, трансфер, мини-бар и туристический сбор</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Иностранцы: паспорт и отметка о регистрации в E-mehmon</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Booking.com, Airbnb, агентства — и сколько уходит на комиссии</li>
           <li><svg class="i"><use href="#i-check"/></svg>Экран горничной: какие номера убрать — без имён гостей</li>
-          <li><svg class="i"><use href="#i-check"/></svg>Категории номеров и цены за ночь</li>
           <li><svg class="i"><use href="#i-check"/></svg>Загрузка, средняя цена и доход на номер — только владельцу</li>
-          <li><svg class="i"><use href="#i-check"/></svg>Роли: администратор ресепшена и горничная</li>
         </ul>
       </div>
       <div class="mock m-chess" aria-hidden="true">
@@ -323,6 +330,58 @@
         <div class="job"><span class="t">11:30</span><div><b>Офис, еженедельная уборка</b><small>Бригада 2 · по договору</small></div><span class="st go">В работе</span></div>
         <div class="job"><span class="t">15:00</span><div><b>Генеральная уборка дома</b><small>Бригада 1 · 4 человека</small></div><span class="st wait">Ждёт</span></div>
         <div class="sign"><svg class="i"><use href="#i-check"/></svg>Акт подписан клиентом на экране</div>
+      </div>
+    </div>
+    <!-- Клиника -->
+    <div class="kind" role="tabpanel" id="k-clinic" aria-labelledby="t-clinic" hidden>
+      <div class="kind-copy">
+        <h3>Клиника, медицинский центр, стоматология</h3>
+        <p>Регистратура, врачи и деньги в одной программе. Пациент может записаться сам на сайте клиники — запись сразу встаёт в расписание врача, а занятое время просто не показывается.</p>
+        <ul class="ticks">
+          <li><svg class="i"><use href="#i-check"/></svg>Расписание врачей: две записи на одно время не встанут</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Онлайн-запись на сайте клиники — сразу в расписание</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Очередь на сегодня: кто ждёт, кто у врача, кто ушёл</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Медкарта: жалобы, диагноз, лечение и история приёмов</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Аллергии и хронические болезни — всегда на виду у врача</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Диагнозы видят только врач и руководство, регистратура — нет</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Прайс услуг, оплата после приёма и долги пациентов</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Приёмы и выручка по каждому врачу</li>
+        </ul>
+      </div>
+      <div class="mock m-route" aria-hidden="true">
+        <div class="mock-h"><b>Очередь на сегодня</b><span class="muted">4 пациента</span></div>
+        <div class="job"><span class="t">09:00</span><div><b>Азиз К.</b><small>Терапевт · приём</small></div><span class="st ok">Принят</span></div>
+        <div class="job"><span class="t">09:30</span><div><b>Малика Р.</b><small>Педиатр · осмотр</small></div><span class="st go">У врача</span></div>
+        <div class="job"><span class="t">10:00</span><div><b>Тимур А.</b><small>Терапевт · повторный</small></div><span class="st wait">Ждёт</span></div>
+        <div class="job"><span class="t">10:30</span><div><b>Нигора С.</b><small>Кардиолог · ЭКГ</small></div><span class="st wait">Записан</span></div>
+        <div class="sign"><svg class="i"><use href="#i-check"/></svg>Нигора С. записалась сама — через сайт клиники</div>
+      </div>
+    </div>
+
+    <!-- Ферма -->
+    <div class="kind" role="tabpanel" id="k-farm" aria-labelledby="t-farm" hidden>
+      <div class="kind-copy">
+        <h3>Ферма: скот, птица, поля</h3>
+        <p>Стадо, продукция, склад и продажи — как в тетради учётчика, только без ошибок в сложении. Поголовье меняется только записью: приплод, падёж, покупка или продажа.</p>
+        <ul class="ticks">
+          <li><svg class="i"><use href="#i-check"/></svg>Стадо и птица: поголовье по журналу, ни одна голова не «потеряется»</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Приплод, падёж и прививки — с датой следующей прививки</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Надои, яйца, мёд — сразу на склад</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Поля: работы, затраты на гектар и урожай</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Склад корма и лекарств: остаток не уходит в минус</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Продажи со склада и живым скотом, в том числе в долг</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Покупка корма и животных сама попадает в расходы</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Роли: учётчик и работник фермы без доступа к деньгам</li>
+        </ul>
+      </div>
+      <div class="mock m-receipt" aria-hidden="true">
+        <div class="mock-h"><b>Ферма сегодня</b><span class="muted">Поголовье</span></div>
+        <div class="o-row"><span>Коровы дойные</span><span>42 гол.</span><b>+2 приплод</b></div>
+        <div class="o-row"><span>Овцы</span><span>120 гол.</span><b>—</b></div>
+        <div class="o-row"><span>Куры-несушки</span><span>600</span><b>—</b></div>
+        <div class="o-row tot"><span>Надой сегодня</span><span></span><b>380 л</b></div>
+        <div class="o-row"><span>Яйца</span><span></span><b>450 шт.</b></div>
+        <div class="debt"><span>Долг: молокозавод</span><b>1 200 000</b></div>
       </div>
     </div>
     </div>
@@ -423,7 +482,7 @@
         <div class="tile-tx">
           <span class="ic"><svg class="i"><use href="#i-shield"/></svg></span>
           <h3>Роли и права</h3>
-          <p>Кассир видит только кассу, менеджер — работу без финансов, а полные отчёты открыты владельцу. В гостинице свои роли: ресепшен и горничная.</p>
+          <p>Кассир видит только кассу, менеджер — работу без финансов, а полные отчёты открыты владельцу. У каждого направления свои роли: в гостинице — ресепшен и горничная, в клинике — регистратура и врач, на ферме — учётчик и работник.</p>
         </div>
         <div class="viz v-roles" aria-hidden="true">
           <span class="on">Владелец</span><span>Менеджер</span><span>Кассир</span><span>Повар</span><span>Ресепшен</span><span>Горничная</span>
@@ -458,7 +517,7 @@
       <div class="mi"><span class="ic"><svg class="i"><use href="#i-cam"/></svg></span><div><b>Камеры и события</b><small>Камеры в одном окне с программой</small></div></div>
       <div class="mi"><span class="ic"><svg class="i"><use href="#i-refresh"/></svg></span><div><b>Экраны обновляются сами</b><small>Цифры меняются без перезагрузки</small></div></div>
       <div class="mi"><span class="ic"><svg class="i"><use href="#i-lock"/></svg></span><div><b>Личные данные под защитой</b><small>Стереть данные ушедшего одной кнопкой</small></div></div>
-      <div class="mi"><span class="ic"><svg class="i"><use href="#i-db"/></svg></span><div><b>Копии базы и проверки</b><small>Больше 600 проверок перед обновлением</small></div></div>
+      <div class="mi"><span class="ic"><svg class="i"><use href="#i-db"/></svg></span><div><b>Копии базы и проверки</b><small>Больше 650 проверок перед обновлением</small></div></div>
       <div class="mi"><span class="ic"><svg class="i"><use href="#i-layers"/></svg></span><div><b>Несколько заведений в одном входе</b><small>Переключение сверху, в одно нажатие</small></div></div>
     </div>
   </div>
@@ -485,9 +544,9 @@
 <section class="results">
   <div class="wrap">
     <div class="res-grid stagger">
-      <div class="r"><b data-count="4" data-suffix="">0</b><span>направления: ресторан, магазин, гостиница, клининг</span></div>
+      <div class="r"><b data-count="6" data-suffix="">0</b><span>направлений: ресторан, магазин, гостиница, клиника, ферма, клининг</span></div>
       <div class="r"><b data-count="3" data-suffix="">0</b><span>языка: русский, узбекский, английский</span></div>
-      <div class="r"><b data-count="600" data-suffix="+">0</b><span>автоматических проверок перед каждым обновлением</span></div>
+      <div class="r"><b data-count="650" data-suffix="+">0</b><span>автоматических проверок перед каждым обновлением</span></div>
       <div class="r"><b data-count="24" data-suffix="/7">0/7</b><span>поддержка без выходных</span></div>
     </div>
   </div>
@@ -511,7 +570,7 @@
       <div class="cmp-row"><div class="cmp-feat">Готовая таблица для бухгалтера</div><div class="cmp-old"><svg class="i no"><use href="#i-x"/></svg></div><div class="cmp-new"><svg class="i ok"><use href="#i-check"/></svg></div></div>
       <div class="cmp-row"><div class="cmp-feat">Журнал действий с возвратом удалённого</div><div class="cmp-old"><svg class="i no"><use href="#i-x"/></svg></div><div class="cmp-new"><svg class="i ok"><use href="#i-check"/></svg></div></div>
       <div class="cmp-row"><div class="cmp-feat">Три языка целиком, а не только меню</div><div class="cmp-old"><svg class="i no"><use href="#i-x"/></svg></div><div class="cmp-new"><svg class="i ok"><use href="#i-check"/></svg></div></div>
-      <div class="cmp-row"><div class="cmp-feat">Ресторан, магазин, гостиница и клининг в одном аккаунте</div><div class="cmp-old"><svg class="i no"><use href="#i-x"/></svg></div><div class="cmp-new"><svg class="i ok"><use href="#i-check"/></svg></div></div>
+      <div class="cmp-row"><div class="cmp-feat">Ресторан, магазин, гостиница, клиника, ферма и клининг в одном аккаунте</div><div class="cmp-old"><svg class="i no"><use href="#i-x"/></svg></div><div class="cmp-new"><svg class="i ok"><use href="#i-check"/></svg></div></div>
       <div class="cmp-row"><div class="cmp-feat">AI-помощник по своим цифрам</div><div class="cmp-old"><svg class="i no"><use href="#i-x"/></svg></div><div class="cmp-new"><svg class="i ok"><use href="#i-check"/></svg></div></div>
     </div>
   </div>
@@ -539,7 +598,7 @@
       </div>
       <div class="plan-card pop">
         <span class="pop-badge">Рекомендуем</span>
-        <h3>Бизнес</h3><div class="area">До двух точек: ресторан, сеть лавок, гостиница, клининг</div>
+        <h3>Бизнес</h3><div class="area">До двух точек: ресторан, сеть лавок, гостиница, клиника, ферма, клининг</div>
         <div class="price">от 1 190 000<small> сум/мес</small></div><div class="price-note">средний бизнес, до двух точек</div>
         <ul>
           <li><svg class="i"><use href="#i-check"/></svg>Всё из «Старт»</li>
@@ -587,15 +646,17 @@
       <a href="#lead" class="btn btn-primary">Получить демо</a>
     </div>
     <div class="faq">
-      <details class="qa reveal"><summary>Подойдёт ли для магазина, гостиницы или клининга, а не для ресторана?<svg class="i x"><use href="#i-plus"/></svg></summary><div class="a">Да. При подключении вы выбираете направление, и программа перестраивается под него: у магазина появляется сканер штрихкодов и приёмка, у гостиницы — шахматка и ресепшен, у клининга — заявки, бригады и акты. Слова и отчёты тоже меняются: в клининге это «объект» и «заявка», а не «стол» и «заказ».</div></details>
+      <details class="qa reveal"><summary>Подойдёт ли для магазина, гостиницы, клиники, фермы или клининга, а не для ресторана?<svg class="i x"><use href="#i-plus"/></svg></summary><div class="a">Да. При подключении вы выбираете направление, и программа перестраивается под него: у магазина появляется сканер штрихкодов и приёмка, у гостиницы — шахматка и ресепшен, у клиники — запись к врачам и медкарта, у фермы — стадо, надои и поля, у клининга — заявки, бригады и акты. Слова и отчёты тоже меняются: в клининге это «объект» и «заявка», а не «стол» и «заказ».</div></details>
       <details class="qa reveal"><summary>Что будет, если пропадёт интернет?<svg class="i x"><use href="#i-plus"/></svg></summary><div class="a">Касса продолжит работать. Чеки пробиваются и складываются у неё, а когда связь вернётся — уходят на сервер сами. Одна и та же продажа при этом не спишется дважды: у каждой есть свой признак, по которому сервер узнаёт повтор.</div></details>
       <details class="qa reveal"><summary>Как работает гостиница в OSHBOARD?<svg class="i x"><use href="#i-plus"/></svg></summary><div class="a">Ресепшен видит, кто сегодня заезжает и выезжает, шахматка показывает все номера на календаре, горничная — какие номера убрать. Оплаты гостя записываются в день оплаты, поэтому доход в отчёте сходится с кассой. Номер не продастся дважды: программа проверяет каждую ночь брони.</div></details>
+      <details class="qa reveal"><summary>Как работает клиника в OSHBOARD?<svg class="i x"><use href="#i-plus"/></svg></summary><div class="a">Регистратура записывает пациента к врачу, а пациент может записаться и сам — на сайте клиники; запись сразу встаёт в расписание. Врач видит свою очередь, медкарту, аллергии и историю приёмов. Диагнозы видят только врач и руководство. Оплата после приёма сразу попадает в отчёт дня.</div></details>
+      <details class="qa reveal"><summary>А что умеет программа для фермы?<svg class="i x"><use href="#i-plus"/></svg></summary><div class="a">Поголовье по журналу: приплод, падёж, прививки, покупка и продажа. Надои и другая продукция сразу на склад, поля с работами и урожаем, продажи в долг. Покупка корма и животных сама записывается в расходы — поэтому прибыль честная.</div></details>
       <details class="qa reveal"><summary>Нужно ли покупать дорогое оборудование?<svg class="i x"><use href="#i-plus"/></svg></summary><div class="a">Нет. Достаточно обычного компьютера или планшета. Программа ставится значком из браузера — как приложение, без магазина приложений. Для кассы есть отдельная программа под Windows. Сканер штрихкодов и принтер чеков — если они вам нужны, подойдут обычные.</div></details>
       <details class="qa reveal"><summary>Мои сотрудники плохо знают русский. Смогут работать?<svg class="i x"><use href="#i-plus"/></svg></summary><div class="a">Да. Программа переведена целиком на узбекский и английский — не только меню, но и каждая подсказка, каждое сообщение об ошибке, каждая строка отчёта. Человек нажимает флажок вверху и видит всё на своём языке.</div></details>
       <details class="qa reveal"><summary>Кто увидит мои деньги?<svg class="i x"><use href="#i-plus"/></svg></summary><div class="a">Вы решаете сами. Кассир видит только кассу, менеджер — работу без финансов, а полные отчёты открыты вам. В клининге есть управляющий — он видит фирму как вы, но не может назначать других управляющих и не может тронуть ваш вход.</div></details>
       <details class="qa reveal"><summary>Что, если сотрудник что-то удалил?<svg class="i x"><use href="#i-plus"/></svg></summary><div class="a">Каждое удаление и изменение записывается в журнал действий: кто, когда и что. Удалённую запись можно вернуть оттуда же.</div></details>
       <details class="qa reveal"><summary>Чем ваш отчёт лучше того, что показывает касса?<svg class="i x"><use href="#i-plus"/></svg></summary><div class="a">Тем, что в нём вычтено всё. Из выручки уходит себестоимость проданного, расходы и зарплаты — и каждый вычет стоит отдельной строкой, чтобы итог можно было проверить сложением. Многие программы называют прибылью наценку, и владелец считает себя богаче, чем есть.</div></details>
-      <details class="qa reveal"><summary>Мои данные никуда не денутся?<svg class="i x"><use href="#i-plus"/></svg></summary><div class="a">База хранится на защищённом сервере, копии снимаются регулярно. Каждое обновление проходит больше 600 автоматических проверок — в том числе на то, не разошлись ли отчёты и не потерялись ли деньги. Не прошло проверки — не выкладывается.</div></details>
+      <details class="qa reveal"><summary>Мои данные никуда не денутся?<svg class="i x"><use href="#i-plus"/></svg></summary><div class="a">База хранится на защищённом сервере, копии снимаются регулярно. Каждое обновление проходит больше 650 автоматических проверок — в том числе на то, не разошлись ли отчёты и не потерялись ли деньги. Не прошло проверки — не выкладывается.</div></details>
       <details class="qa reveal"><summary>Сколько стоит и есть ли скрытые платежи?<svg class="i x"><use href="#i-plus"/></svg></summary><div class="a">Цена зависит от тарифа и масштаба бизнеса. Поддержка и ежемесячная проверка работы программы входят в стоимость. Скрытых платежей нет.</div></details>
       <details class="qa reveal"><summary>Вы работаете по всему Узбекистану?<svg class="i x"><use href="#i-plus"/></svg></summary><div class="a">Да. Мы из Самарканда, подключаем по всей стране. Это наше, местное: мы знаем, что связь бывает плохой, что платят наличными и что в зале говорят по-узбекски.</div></details>
     </div>
@@ -642,6 +703,8 @@
           <option value="Магазин одежды">Магазин одежды</option>
           <option value="Стройматериалы">Стройматериалы</option>
           <option value="Гостиница">Гостиница</option>
+          <option value="Клиника / медцентр">Клиника / медцентр</option>
+          <option value="Ферма">Ферма</option>
           <option value="Клининговая компания">Клининговая компания</option>
           <option value="Другое">Другое</option>
         </select></label>
@@ -661,7 +724,7 @@
     <div class="foot-grid">
       <div>
         <a href="#top" class="logo"><span class="mark"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 21.5 7.5 12 12.5 2.5 7.5z"/><path d="M2.5 12 12 17 21.5 12"/><path d="M2.5 16.5 12 21.5 21.5 16.5"/></svg></span>OSHBOARD</a>
-        <p>Программа учёта для ресторана, магазина, гостиницы и клининговой компании: касса, склад, персонал и отчёты в одном месте. Самарканд, Узбекистан.</p>
+        <p>Программа учёта для ресторана, магазина, гостиницы, клиники, фермы и клининговой компании: касса, склад, персонал и отчёты в одном месте. Самарканд, Узбекистан.</p>
       </div>
       <div class="foot-col"><h4>Продукт</h4><a href="#kinds">Направления</a><a href="#features">Возможности</a><a href="#profit">Прибыль</a></div>
       <div class="foot-col"><h4>Клиентам</h4><a href="#pricing">Тарифы</a><a href="#faq">Вопросы</a><a href="#lead">Демо</a></div>
