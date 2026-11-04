@@ -477,9 +477,12 @@ document.addEventListener('click', function (e) {
   var modal = document.getElementById('vmodal');
   var player = document.getElementById('vplayer');
   if (!modal || !player) return;
-  var DUR = { restaurant: '3:57', shop: '2:58', pharmacy: '2:15', clothing: '1:52', hotel: '2:16', clinic: '2:27', farm: '2:08', cleaning: '2:27' };
+  var DURS = {
+    ru: { restaurant: '3:57', shop: '2:58', pharmacy: '2:15', clothing: '1:52', hotel: '2:16', clinic: '2:30', farm: '2:08', cleaning: '2:27' },
+    uz: { restaurant: '3:58', shop: '3:02', pharmacy: '2:23', clothing: '1:57', hotel: '2:22', clinic: '2:39', farm: '2:07', cleaning: '2:32' }
+  };
   function lang() { try { return localStorage.getItem('oshboard-lang') || 'ru'; } catch (e) { return 'ru'; } }
-  var HAS_UZ = false; // узбекская озвучка ещё пишется — пока русская
+  var HAS_UZ = true;
   function suffix() { return HAS_UZ && lang() === 'uz' ? 'uz' : 'ru'; }
   function posters() {
     document.querySelectorAll('.vcard').forEach(function (c) {
@@ -487,7 +490,8 @@ document.addEventListener('click', function (e) {
       var img = c.querySelector('img');
       if (img) img.src = 'assets/video/' + id + '-' + suffix() + '.jpg';
       var d = c.querySelector('.vdur');
-      if (d && DUR[id]) d.textContent = DUR[id];
+      var dur = DURS[suffix()] || {};
+      if (d && dur[id]) d.textContent = dur[id];
     });
   }
   posters();
