@@ -471,3 +471,40 @@ document.addEventListener('click', function (e) {
   a.href = 'https://oshboard-web.onrender.com/demo?kind=' + a.getAttribute('data-demo') + '&lang=' + encodeURIComponent(lang);
   try { if (window.oshTrack) window.oshTrack('demo_' + a.getAttribute('data-demo')); } catch (x) {}
 }, true);
+
+// Видеоинструкции: на узбекском сайте — узбекская озвучка, иначе русская
+(function () {
+  var modal = document.getElementById('vmodal');
+  var player = document.getElementById('vplayer');
+  if (!modal || !player) return;
+  var DUR = { restaurant: '3:57', shop: '2:58', pharmacy: '2:15', clothing: '1:52', hotel: '2:16', clinic: '2:27', farm: '2:08', cleaning: '2:27' };
+  function lang() { try { return localStorage.getItem('oshboard-lang') || 'ru'; } catch (e) { return 'ru'; } }
+  var HAS_UZ = false; // узбекская озвучка ещё пишется — пока русская
+  function suffix() { return HAS_UZ && lang() === 'uz' ? 'uz' : 'ru'; }
+  function posters() {
+    document.querySelectorAll('.vcard').forEach(function (c) {
+      var id = c.getAttribute('data-video');
+      var img = c.querySelector('img');
+      if (img) img.src = 'assets/video/' + id + '-' + suffix() + '.jpg';
+      var d = c.querySelector('.vdur');
+      if (d && DUR[id]) d.textContent = DUR[id];
+    });
+  }
+  posters();
+  document.addEventListener('click', function (e) {
+    if (e.target.closest && e.target.closest('[data-lang]')) setTimeout(posters, 50);
+    var c = e.target.closest && e.target.closest('.vcard');
+    if (c) {
+      var id = c.getAttribute('data-video');
+      player.src = 'assets/video/' + id + '-' + suffix() + '.mp4';
+      player.poster = 'assets/video/' + id + '-' + suffix() + '.jpg';
+      modal.hidden = false;
+      player.play().catch(function () {});
+      try { if (window.oshTrack) window.oshTrack('video_' + id); } catch (x) {}
+      return;
+    }
+    if (e.target === modal || (e.target.closest && e.target.closest('#vclose'))) close();
+  });
+  function close() { player.pause(); player.removeAttribute('src'); player.load(); modal.hidden = true; }
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.hidden) close(); });
+})();

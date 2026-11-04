@@ -193,7 +193,7 @@
   ],
   "Ресторан и кафе": [
     "Restoran va kafe",
-    "Restaurant and cafe"
+    "Restaurant and café"
   ],
   "Зал, кухня, склад": [
     "Zal, oshxona, ombor",
@@ -1918,5 +1918,81 @@
   "Смотреть видеоинструкцию": [
     "Video yoʻriqnomani koʻrish",
     "Watch the video guide"
+  ],
+  "Видеоинструкции": [
+    "Video yoʻriqnomalar",
+    "Video guides"
+  ],
+  "Посмотрите, как это работает": [
+    "Qanday ishlashini koʻring",
+    "See how it works"
+  ],
+  "Короткие видео с озвучкой по каждому направлению — на настоящей программе, от первого заказа до прибыли.": [
+    "Har bir yoʻnalish boʻyicha ovozli qisqa videolar — haqiqiy dasturda, birinchi buyurtmadan foydagacha.",
+    "Short narrated videos for each line of business — in the real app, from the first order to profit."
+  ],
+  "мин": [
+    "daq",
+    "min"
+  ],
+  "Смотреть": [
+    "Koʻrish",
+    "Watch"
+  ],
+  "Касса, кухня, склад, банкеты и прибыль": [
+    "Kassa, oshxona, ombor, banketlar va foyda",
+    "Till, kitchen, stock, banquets and profit"
+  ],
+  "Магазин": [
+    "Doʻkon",
+    "Shop"
+  ],
+  "Касса, приёмка, долги, бонусы и отчёт": [
+    "Kassa, qabul, qarzlar, bonuslar va hisobot",
+    "Till, receiving, debts, bonuses and report"
+  ],
+  "Партии, сроки годности и рецептурные препараты": [
+    "Partiyalar, yaroqlilik muddati va retseptli dorilar",
+    "Batches, expiry dates and prescription drugs"
+  ],
+  "Одежда и обувь": [
+    "Kiyim va poyabzal",
+    "Clothing and shoes"
+  ],
+  "Модели, размеры, обмен и наценка": [
+    "Modellar, oʻlchamlar, almashtirish va ustama",
+    "Models, sizes, exchanges and markup"
+  ],
+  "Шахматка, брони, заселение и уборка": [
+    "Shaxmatka, bronlar, joylashtirish va tozalash",
+    "Room chart, bookings, check-in and housekeeping"
+  ],
+  "Регистратура, расписание врачей и медкарта": [
+    "Registratura, shifokorlar jadvali va tibbiy karta",
+    "Front desk, doctors’ schedule and medical record"
+  ],
+  "Стадо, надои, корма, поля и продажи": [
+    "Poda, sut, yem, dalalar va sotuvlar",
+    "Herd, milk yield, feed, fields and sales"
+  ],
+  "Заявки, бригады, маршрут и зарплата": [
+    "Buyurtmalar, brigadalar, marshrut va ish haqi",
+    "Jobs, crews, route and wages"
+  ],
+  "Видео": [
+    "Video",
+    "Videos"
+  ],
+  "Оставить заявку": [
+    "Ariza qoldirish",
+    "Leave a request"
+  ],
+  "Можно попробовать, не оставляя заявку?": [
+    "Ariza qoldirmasdan sinab koʻrish mumkinmi?",
+    "Can I try it without leaving a request?"
+  ],
+  "Да. Нажмите «Попробовать сразу» вверху или кнопку демо у нужного направления — откроется готовое заведение с заказами, складом, людьми и отчётами за месяц. Смотреть можно всё, а менять нельзя, чтобы демо осталось целым для следующего человека. А в разделе «Видеоинструкции» каждое направление показано с озвучкой за 3–4 минуты.": [
+    "Ha. Yuqoridagi «Hoziroq sinab koʻring» tugmasini yoki kerakli yoʻnalish yonidagi demo tugmasini bosing — buyurtmalar, ombor, xodimlar va bir oylik hisobotlari bor tayyor korxona ochiladi. Hammasini koʻrish mumkin, oʻzgartirib boʻlmaydi — demo keyingi odam uchun butun qolishi uchun. «Video yoʻriqnomalar» boʻlimida esa har bir yoʻnalish 3–4 daqiqada ovoz bilan koʻrsatilgan.",
+    "Yes. Press “Try it now” at the top or the demo button of the line of business you need — a ready-made business opens with orders, stock, people and a month of reports. You can look at everything but not change it, so the demo stays intact for the next person. And in “Video guides” each line of business is shown with narration in 3–4 minutes."
   ]
 }
