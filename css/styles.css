@@ -661,3 +661,15 @@ footer{border-top:1px solid var(--border);background:var(--bg-soft);padding:60px
   .nav-links a{min-height:44px;display:flex;align-items:center}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal,.stagger>*{opacity:1!important;transform:none!important;filter:none!important}.win{transform:none!important}.steps::before{transform:none!important}.eyebrow::before,.sec-head .eyebrow::after{width:18px!important}}
+
+/* ---------- Настоящие экраны программы ---------- */
+.shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.shot { margin: 0; }
+.shot-frame { border-radius: 14px; overflow: hidden; background: var(--card, #fff); border: 1px solid rgba(127,127,127,.28); box-shadow: 0 24px 50px -30px rgba(20,20,30,.45); }
+.shot-dots { display: flex; gap: 6px; padding: 9px 12px; background: rgba(127,127,127,.12); }
+.shot-dots i { width: 9px; height: 9px; border-radius: 50%; background: rgba(127,127,127,.45); }
+.shot-frame img { display: block; width: 100%; height: auto; }
+.shot figcaption { display: grid; gap: 2px; margin-top: 10px; }
+.shot figcaption b { font-size: 16px; }
+.shot figcaption span { opacity: .72; font-size: 14px; }
+@media (max-width: 760px) { .shots { grid-template-columns: 1fr; } }

@@ -60,7 +60,8 @@
   var f = document.getElementById('leadForm');
   if (!f) return;
   var MAIL = 'oshboard.application@mail.ru'; // запасной канал (mailto), если ничего не сработало
-  var API = '/api/lead';                      // бэкенд: сохраняет заявку как резерв
+  // бэкенд: сохраняет заявку как резерв. Статическая версия сайта шлёт её на сервер (window.OSH_API)
+  var API = (window.OSH_API || '') + '/api/lead';
   // Публичный ключ Web3Forms — на бесплатном плане отправка идёт из браузера (это нормально и безопасно).
   var WEB3FORMS_KEY = '029b18fb-4549-46cb-82a8-ef5626d6a85b';
 
@@ -287,14 +288,14 @@ function countUp(el) {
 
 /* Count this visit for the admin stats (fire-and-forget; ignored without a server) */
 (function () {
-  try { fetch('/api/track', { method: 'POST' }).catch(function () {}); } catch (e) {}
+  try { fetch((window.OSH_API || '') + '/api/track', { method: 'POST', credentials: 'include' }).catch(function () {}); } catch (e) {}
 })();
 
 /* Editable content from the backend: news + contact settings.
    Gracefully does nothing if the API isn't available (opened without server). */
 (function () {
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]; }); }
-  fetch('/api/content').then(function (r) { return r.json(); }).then(function (d) {
+  fetch(window.OSH_CONTENT || '/api/content').then(function (r) { return r.json(); }).then(function (d) {
     if (!d || !d.ok) return;
 
     // --- contact settings → footer + floating button ---

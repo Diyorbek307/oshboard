@@ -22,3 +22,13 @@ services:
         generateValue: true  # Render сгенерирует случайно
       - key: LEAD_TO
         value: diyorbekmustafaev7@gmail.com
+
+  # Статическая версия того же сайта: не засыпает (открывается сразу, а не
+  # через ~20 секунд) и не тратит бесплатные часы. В неё попадают только
+  # страница, стили, скрипты и картинки — см. scripts/build-static.js.
+  # Заявки она шлёт письмом (Web3Forms) и копией на сервис «oshboard» выше.
+  - type: web
+    name: oshboard-site
+    runtime: static
+    buildCommand: node scripts/build-static.js
+    staticPublishPath: ./dist

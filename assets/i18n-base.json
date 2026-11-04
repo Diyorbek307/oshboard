@@ -1628,8 +1628,8 @@
     "lines of business: restaurant, shop, hotel, clinic, farm, cleaning"
   ],
   "Больше 650 проверок перед обновлением": [
-    "Yangilanishdan oldin 650 dan ortiq tekshiruv",
-    "Over 650 checks before every update"
+    "Yangilanishdan oldin 900 dan ortiq tekshiruv",
+    "Over 900 checks before every update"
   ],
   "Ресторан, магазин, гостиница, клиника, ферма и клининг в одном аккаунте": [
     "Restoran, doʻkon, mehmonxona, klinika, ferma va klining — bitta akkauntda",
@@ -1671,8 +1671,208 @@
     "Restoran, doʻkon, mehmonxona, klinika, ferma va klining kompaniyasi uchun hisob dasturi: kassa, ombor, xodimlar va hisobotlar bir joyda. Samarqand, Oʻzbekiston.",
     "Accounting software for restaurants, shops, hotels, clinics, farms and cleaning companies: till, stock, staff and reports in one place. Samarkand, Uzbekistan."
   ],
-  "База хранится на защищённом сервере, копии снимаются регулярно. Каждое обновление проходит больше 650 автоматических проверок — в том числе на то, не разошлись ли отчёты и не потерялись ли деньги. Не прошло проверки — не выкладывается.": [
-    "Baza himoyalangan serverda saqlanadi, nusxalari muntazam olinadi. Har bir yangilanish 650 dan ortiq avtomatik tekshiruvdan oʻtadi — jumladan, hisobotlar mos keladimi va pul yoʻqolmadimi. Tekshiruvdan oʻtmasa — chiqarilmaydi.",
-    "The database lives on a secure server and is backed up regularly. Every update passes over 650 automatic checks — including whether the reports agree and whether any money has gone missing. If it fails, it doesn’t ship."
+  "База хранится на защищённом сервере, копии снимаются регулярно. Каждое обновление проходит больше 900 автоматических проверок — в том числе на то, не разошлись ли отчёты и не потерялись ли деньги. Не прошло проверки — не выкладывается.": [
+    "Baza himoyalangan serverda saqlanadi, nusxalari muntazam olinadi. Har bir yangilanish 900 dan ortiq avtomatik tekshiruvdan oʻtadi — jumladan, hisobotlar mos keladimi va pul yoʻqolmadimi. Tekshiruvdan oʻtmasa — chiqarilmaydi.",
+    "The database lives on a secure server and is backed up regularly. Every update passes over 900 automatic checks — including whether the reports agree and whether any money has gone missing. If it fails, it doesn’t ship."
+  ],
+  "Заявка или бронь приходит сотруднику в Telegram. Руководителю — утренняя сводка и итог дня вечером, а вопрос можно задать боту обычными словами.": [
+    "Ariza yoki bron xodimga Telegramda keladi. Rahbarga — ertalabki xulosa va kechqurun kun yakuni, botga esa oddiy soʻzlar bilan savol berish mumkin.",
+    "A request or booking reaches the employee in Telegram. The owner gets a morning summary and an evening day report, and can ask the bot questions in plain words."
+  ],
+  "Отчётный период и архив": [
+    "Hisobot davri va arxiv",
+    "Reporting period and archive"
+  ],
+  "Период закрывается сам — за неделю, месяц или квартал, можно со своего числа. Закрытый период под замком: тихо поправить старые цифры нельзя, а архив хранится 5 лет, 10 лет или навсегда.": [
+    "Davr oʻzi yopiladi — hafta, oy yoki chorak boʻyicha, oʻz sanangizdan ham. Yopilgan davr qulf ostida: eski raqamlarni jimgina tuzatib boʻlmaydi, arxiv esa 5 yil, 10 yil yoki abadiy saqlanadi.",
+    "The period closes itself — weekly, monthly or quarterly, even from your own day of the month. A closed period is locked: old figures cannot be quietly changed, and the archive is kept for 5 years, 10 years or forever."
+  ],
+  "Больше 900 проверок перед обновлением": [
+    "Yangilanishdan oldin 900 dan ortiq tekshiruv",
+    "Over 900 checks before every update"
+  ],
+  "Фискальные чеки": [
+    "Fiskal cheklar",
+    "Fiscal receipts"
+  ],
+  "Онлайн-касса — по договору с оператором": [
+    "Onlayn-kassa — operator bilan shartnoma boʻyicha",
+    "Online till — under a contract with the operator"
+  ],
+  "Утренняя сводка": [
+    "Ertalabki xulosa",
+    "Morning summary"
+  ],
+  "Вчера, что кончится и почему просела выручка": [
+    "Kecha, nima tugaydi va tushum nega tushdi",
+    "Yesterday, what runs out and why revenue dipped"
+  ],
+  "Итог дня вечером": [
+    "Kechqurun kun yakuni",
+    "Evening day report"
+  ],
+  "Отмены, скидки, опоздания и подозрительное": [
+    "Bekor qilishlar, chegirmalar, kechikishlar va shubhalilar",
+    "Cancellations, discounts, lateness and anything suspicious"
+  ],
+  "Инструменты руководителя": [
+    "Rahbar vositalari",
+    "Owner tools"
+  ],
+  "Прогноз месяца, «что если», конверты, сейф документов": [
+    "Oy prognozi, «agar», konvertlar, hujjatlar seyfi",
+    "Month forecast, what-if, envelopes, document safe"
+  ],
+  "Корзина на 30 дней": [
+    "30 kunlik savat",
+    "30-day bin"
+  ],
+  "Удалённое по ошибке вернёте сами": [
+    "Xato oʻchirilganini oʻzingiz qaytarasiz",
+    "Restore anything deleted by mistake yourself"
+  ],
+  "Темы оформления": [
+    "Bezak mavzulari",
+    "Themes"
+  ],
+  "Пять тем, включая стеклянную «Панораму»": [
+    "Beshta mavzu, shishali «Panorama» ham",
+    "Five themes, including the glass “Panorama”"
+  ],
+  "Гостю и клиенту": [
+    "Mehmon va mijozga",
+    "For guests and clients"
+  ],
+  "Гость сам заказывает, бронирует и возвращается": [
+    "Mehmon oʻzi buyurtma beradi, bron qiladi va qaytib keladi",
+    "Guests order, book and come back on their own"
+  ],
+  "Всё, что видит ваш гость, связано с кассой: заказ с телефона уходит на кухню, бонусы считаются сами, а подарки и сертификаты честно учтены в отчёте.": [
+    "Mehmon koʻradigan hamma narsa kassa bilan bogʻlangan: telefondan buyurtma oshxonaga ketadi, bonuslar oʻzi hisoblanadi, sovgʻa va sertifikatlar hisobotda halol hisobga olinadi.",
+    "Everything your guest sees is connected to the till: a phone order goes to the kitchen, bonuses count themselves, and gifts and certificates are honestly reflected in reports."
+  ],
+  "QR-меню на столе": [
+    "Stoldagi QR-menyu",
+    "QR menu on the table"
+  ],
+  "Заказ, «позвать официанта», «счёт» и оплата пополам": [
+    "Buyurtma, «ofitsiantni chaqirish», «hisob» va teng boʻlib toʻlash",
+    "Order, call the waiter, ask for the bill and split it"
+  ],
+  "Сайт заведения": [
+    "Muassasa sayti",
+    "Your business website"
+  ],
+  "Меню с заказом, бронь стола с предзаказом, расчёт тоя": [
+    "Buyurtmali menyu, oldindan buyurtmali stol broni, toʻy hisobi",
+    "Menu with ordering, table booking with pre-order, wedding calculator"
+  ],
+  "Бонусы и кэшбэк": [
+    "Bonuslar va keshbek",
+    "Bonuses and cashback"
+  ],
+  "Карта гостя по номеру телефона": [
+    "Telefon raqami boʻyicha mehmon kartasi",
+    "A guest card by phone number"
+  ],
+  "Каждый N-й визит — подарок": [
+    "Har N-chi tashrif — sovgʻa",
+    "Every Nth visit is free"
+  ],
+  "Штампы копятся сами, гость видит их в Telegram": [
+    "Shtamplar oʻzi yigʻiladi, mehmon ularni Telegramda koʻradi",
+    "Stamps add up by themselves; guests see them in Telegram"
+  ],
+  "Подарочные сертификаты": [
+    "Sovgʻa sertifikatlari",
+    "Gift certificates"
+  ],
+  "Продажа с QR, оплата частями, отдельно от выручки": [
+    "QR bilan sotish, qisman toʻlash, tushumdan alohida",
+    "Sold with a QR, spent in parts, kept apart from revenue"
+  ],
+  "Режим для туристов": [
+    "Sayyohlar rejimi",
+    "Tourist mode"
+  ],
+  "Меню на английском, цены и чек в долларах": [
+    "Inglizcha menyu, dollardagi narx va chek",
+    "English menu, prices and receipt in dollars"
+  ],
+  "Счастливые часы": [
+    "Baxtli soatlar",
+    "Happy hours"
+  ],
+  "Скидка в тихие часы и меню по погоде": [
+    "Tinch soatlarda chegirma va obu-havoga qarab menyu",
+    "Discounts in quiet hours and a weather-aware menu"
+  ],
+  "Отзывы после визита": [
+    "Tashrifdan keyin sharh",
+    "Reviews after the visit"
+  ],
+  "Жалоба — руководителю, пятёрка — на карты": [
+    "Shikoyat — rahbarga, beshlik — xaritalarga",
+    "Complaints go to the owner, five stars go to the maps"
+  ],
+  "Онлайн-регистрация в гостинице": [
+    "Mehmonxonada onlayn roʻyxat",
+    "Online hotel check-in"
+  ],
+  "Гость заполняет данные до заезда": [
+    "Mehmon maʼlumotlarini kelishdan oldin toʻldiradi",
+    "Guests fill in their details before arrival"
+  ],
+  "Напоминание о повторном приёме": [
+    "Qayta koʻrik eslatmasi",
+    "Follow-up reminders"
+  ],
+  "Клиника зовёт пациента — без диагноза в тексте": [
+    "Klinika bemorni chaqiradi — matnda tashxissiz",
+    "The clinic invites the patient back, with no diagnosis in the text"
+  ],
+  "Настоящие экраны": [
+    "Haqiqiy ekranlar",
+    "Real screens"
+  ],
+  "Так программа выглядит на самом деле": [
+    "Dastur aslida shunday koʻrinadi",
+    "This is what the app really looks like"
+  ],
+  "Не макет и не рисунок — снимки работающей программы на проверочных данных.": [
+    "Maket ham, rasm ham emas — tekshiruv maʼlumotlaridagi ishlayotgan dastur suratlari.",
+    "Not a mock-up or a drawing: screenshots of the working app on test data."
+  ],
+  "Касса ресторана": [
+    "Restoran kassasi",
+    "Restaurant till"
+  ],
+  "Стол, счёт и меню на одном экране; оплата — одной кнопкой": [
+    "Stol, hisob va menyu bitta ekranda; toʻlov — bitta tugma",
+    "Table, bill and menu on one screen; payment in one tap"
+  ],
+  "Шахматка гостиницы": [
+    "Mehmonxona shaxmatkasi",
+    "Hotel room chart"
+  ],
+  "Все номера и брони на две недели вперёд": [
+    "Barcha xonalar va bronlar ikki hafta oldinga",
+    "Every room and booking two weeks ahead"
+  ],
+  "Отчёт магазина": [
+    "Doʻkon hisoboti",
+    "Shop report"
+  ],
+  "Чистая прибыль, маржа, хиты и что пора закупить": [
+    "Sof foyda, marja, xitlar va nimani xarid qilish kerak",
+    "Net profit, margin, best sellers and what to restock"
+  ],
+  "Регистратура клиники": [
+    "Klinika registraturasi",
+    "Clinic front desk"
+  ],
+  "Записи дня, кто у врача и кто ещё не оплатил": [
+    "Kun yozuvlari, kim shifokorda va kim hali toʻlamagan",
+    "Today’s visits, who is with the doctor and who has not paid"
   ]
 }

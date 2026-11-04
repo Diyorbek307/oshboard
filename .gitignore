@@ -20,3 +20,6 @@ assets/uploads/
 *.log
 .DS_Store
 Thumbs.db
+
+# Сборка статической версии сайта (scripts/build-static.js)
+dist/
