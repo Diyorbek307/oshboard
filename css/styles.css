@@ -673,3 +673,10 @@ footer{border-top:1px solid var(--border);background:var(--bg-soft);padding:60px
 .shot figcaption b { font-size: 16px; }
 .shot figcaption span { opacity: .72; font-size: 14px; }
 @media (max-width: 760px) { .shots { grid-template-columns: 1fr; } }
+
+/* ---------- «Попробовать сразу»: живое демо без регистрации ---------- */
+.try-note { margin: -14px auto 26px; max-width: 520px; font-size: 14px; opacity: .72; text-align: center; }
+.try-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.try-row .btn { display: inline-flex; align-items: center; gap: 8px; }
+.try-row .i { width: 16px; height: 16px; }
+.btn-sm { padding: 9px 16px; font-size: 14px; }

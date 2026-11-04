@@ -1874,5 +1874,49 @@
   "Записи дня, кто у врача и кто ещё не оплатил": [
     "Kun yozuvlari, kim shifokorda va kim hali toʻlamagan",
     "Today’s visits, who is with the doctor and who has not paid"
+  ],
+  "Попробовать сразу": [
+    "Hoziroq sinab koʻring",
+    "Try it now"
+  ],
+  "Без регистрации и звонка: откроется готовое кафе с заказами, складом и отчётами. Смотреть можно всё.": [
+    "Roʻyxatdan oʻtmasdan va qoʻngʻiroqsiz: buyurtmalar, ombor va hisobotlari bor tayyor kafe ochiladi. Hammasini koʻrish mumkin.",
+    "No sign-up, no call: a ready-made café opens with orders, stock and reports. You can look at everything."
+  ],
+  "Открыть демо-ресторан": [
+    "Demo-restoranni ochish",
+    "Open the demo restaurant"
+  ],
+  "Демо-магазин": [
+    "Demo-doʻkon",
+    "Demo shop"
+  ],
+  "Демо-аптека": [
+    "Demo-dorixona",
+    "Demo pharmacy"
+  ],
+  "Демо-одежда": [
+    "Demo-kiyim doʻkoni",
+    "Demo clothing store"
+  ],
+  "Открыть демо-гостиницу": [
+    "Demo-mehmonxonani ochish",
+    "Open the demo hotel"
+  ],
+  "Открыть демо-клининг": [
+    "Demo-klining kompaniyasini ochish",
+    "Open the demo cleaning company"
+  ],
+  "Открыть демо-клинику": [
+    "Demo-klinikani ochish",
+    "Open the demo clinic"
+  ],
+  "Открыть демо-ферму": [
+    "Demo-fermani ochish",
+    "Open the demo farm"
+  ],
+  "Смотреть видеоинструкцию": [
+    "Video yoʻriqnomani koʻrish",
+    "Watch the video guide"
   ]
 }

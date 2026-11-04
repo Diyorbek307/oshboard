@@ -461,3 +461,13 @@ var FINE = matchMedia('(pointer:fine)').matches;
     void t.offsetWidth; t.classList.add('flash');
   }, 2200);
 })();
+
+// «Попробовать сразу»: добавляем к ссылке на демо язык, выбранный на сайте
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[data-demo]');
+  if (!a) return;
+  var lang = 'ru';
+  try { lang = localStorage.getItem('oshboard-lang') || document.documentElement.lang || 'ru'; } catch (x) {}
+  a.href = 'https://oshboard-web.onrender.com/demo?kind=' + a.getAttribute('data-demo') + '&lang=' + encodeURIComponent(lang);
+  try { if (window.oshTrack) window.oshTrack('demo_' + a.getAttribute('data-demo')); } catch (x) {}
+}, true);

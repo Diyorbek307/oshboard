@@ -11,6 +11,17 @@
   var KEY = 'oshboard-lang';
 
   var T = {
+    "Попробовать сразу": ["Hoziroq sinab koʻring", "Try it now"],
+    "Без регистрации и звонка: откроется готовое кафе с заказами, складом и отчётами. Смотреть можно всё.": ["Roʻyxatdan oʻtmasdan va qoʻngʻiroqsiz: buyurtmalar, ombor va hisobotlari bor tayyor kafe ochiladi. Hammasini koʻrish mumkin.", "No sign-up, no call: a ready-made café opens with orders, stock and reports. You can look at everything."],
+    "Открыть демо-ресторан": ["Demo-restoranni ochish", "Open the demo restaurant"],
+    "Демо-магазин": ["Demo-doʻkon", "Demo shop"],
+    "Демо-аптека": ["Demo-dorixona", "Demo pharmacy"],
+    "Демо-одежда": ["Demo-kiyim doʻkoni", "Demo clothing store"],
+    "Открыть демо-гостиницу": ["Demo-mehmonxonani ochish", "Open the demo hotel"],
+    "Открыть демо-клининг": ["Demo-klining kompaniyasini ochish", "Open the demo cleaning company"],
+    "Открыть демо-клинику": ["Demo-klinikani ochish", "Open the demo clinic"],
+    "Открыть демо-ферму": ["Demo-fermani ochish", "Open the demo farm"],
+    "Смотреть видеоинструкцию": ["Video yoʻriqnomani koʻrish", "Watch the video guide"],
     "Настоящие экраны": ["Haqiqiy ekranlar", "Real screens"],
     "Так программа выглядит на самом деле": ["Dastur aslida shunday koʻrinadi", "This is what the app really looks like"],
     "Не макет и не рисунок — снимки работающей программы на проверочных данных.": ["Maket ham, rasm ham emas — tekshiruv maʼlumotlaridagi ishlayotgan dastur suratlari.", "Not a mock-up or a drawing: screenshots of the working app on test data."],
