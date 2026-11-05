@@ -512,3 +512,19 @@ document.addEventListener('click', function (e) {
   function close() { player.pause(); player.removeAttribute('src'); player.load(); modal.hidden = true; }
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.hidden) close(); });
 })();
+
+// Будим программу заранее. Бесплатный сервер засыпает, и первое «Попробовать сразу»
+// ждало бы почти минуту. Как только человек начал читать страницу (а не робот),
+// тихо стучимся в программу — к моменту нажатия она уже проснётся.
+(function () {
+  var done = false;
+  function wake() {
+    if (done) return; done = true;
+    try {
+      fetch('https://oshboard-api.onrender.com/api/health', { mode: 'no-cors', cache: 'no-store' }).catch(function () {});
+      fetch('https://oshboard-web.onrender.com/demo', { mode: 'no-cors', cache: 'no-store' }).catch(function () {});
+    } catch (e) {}
+  }
+  ['scroll', 'pointerdown', 'keydown', 'touchstart'].forEach(function (ev) { window.addEventListener(ev, wake, { once: true, passive: true }); });
+  document.addEventListener('mouseover', function (e) { if (e.target.closest && e.target.closest('a[data-demo]')) wake(); });
+})();
