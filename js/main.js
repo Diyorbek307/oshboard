@@ -478,8 +478,8 @@ document.addEventListener('click', function (e) {
   var player = document.getElementById('vplayer');
   if (!modal || !player) return;
   var DURS = {
-    ru: { restaurant: '3:57', shop: '2:58', pharmacy: '2:15', clothing: '1:52', hotel: '2:16', clinic: '2:30', farm: '2:08', cleaning: '2:27' },
-    uz: { restaurant: '3:58', shop: '3:02', pharmacy: '2:23', clothing: '1:57', hotel: '2:22', clinic: '2:39', farm: '2:07', cleaning: '2:32' }
+    ru: { restaurant: '4:39', shop: '3:50', pharmacy: '2:57', clothing: '2:47', hotel: '3:03', clinic: '2:56', farm: '2:34', cleaning: '3:18' },
+    uz: { restaurant: '5:17', shop: '3:51', pharmacy: '3:05', clothing: '2:54', hotel: '3:11', clinic: '3:04', farm: '2:39', cleaning: '2:48' }
   };
   function lang() { try { return localStorage.getItem('oshboard-lang') || 'ru'; } catch (e) { return 'ru'; } }
   var HAS_UZ = true;
