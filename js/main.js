@@ -497,6 +497,17 @@ document.addEventListener('click', function (e) {
   posters();
   document.addEventListener('click', function (e) {
     if (e.target.closest && e.target.closest('[data-lang]')) setTimeout(posters, 50);
+    // Рекламный ролик из шапки: есть и на английском
+    var pr = e.target.closest && e.target.closest('[data-promo]');
+    if (pr) {
+      var pl = lang() === 'uz' ? 'uz' : lang() === 'en' ? 'en' : 'ru';
+      player.src = 'assets/video/promo-' + pl + '.mp4';
+      player.poster = 'assets/video/promo-' + pl + '.jpg';
+      modal.hidden = false;
+      player.play().catch(function () {});
+      try { if (window.oshTrack) window.oshTrack('video_promo'); } catch (x) {}
+      return;
+    }
     var c = e.target.closest && e.target.closest('.vcard');
     if (c) {
       var id = c.getAttribute('data-video');
