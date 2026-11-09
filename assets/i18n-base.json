@@ -1998,5 +1998,45 @@
   "Ролик за минуту": [
     "Bir daqiqalik video",
     "One-minute video"
+  ],
+  "от 290 000": [
+    "290 000 dan",
+    "from 290,000"
+  ],
+  "от 590 000": [
+    "590 000 dan",
+    "from 590,000"
+  ],
+  "Первым 10 заведениям": [
+    "Dastlabki 10 korxonaga",
+    "For the first 10 businesses"
+  ],
+  "Начните бесплатно: всё настроим сами": [
+    "Bepul boshlang: hammasini oʻzimiz sozlaymiz",
+    "Start free: we set everything up"
+  ],
+  "2 месяца бесплатно": [
+    "2 oy bepul",
+    "2 months free"
+  ],
+  "Настроим программу и занесём товары или меню у вас на месте — бесплатно": [
+    "Dasturni sozlaymiz va tovarlar yoki menyuni joyingizda kiritamiz — bepul",
+    "We set up the app and enter your goods or menu on site, free of charge"
+  ],
+  "Поддержка в Telegram": [
+    "Telegramda yordam",
+    "Support in Telegram"
+  ],
+  "Письменно обещаем отдать все ваши данные, если вы уйдёте или программа закроется": [
+    "Agar ketsangiz yoki dastur yopilsa, barcha maʼlumotlaringizni qaytarishni yozma ravishda vaʼda qilamiz",
+    "A written promise to hand over all your data if you leave or the service closes"
+  ],
+  "Взамен вы разрешаете рассказать другим владельцам о вашем результате.": [
+    "Buning evaziga natijangiz haqida boshqa egalarga aytib berishga ruxsat berasiz.",
+    "In return, you let us tell other owners about your results."
+  ],
+  "Занять место": [
+    "Joy olish",
+    "Claim a spot"
   ]
 }

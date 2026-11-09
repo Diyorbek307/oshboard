@@ -11,6 +11,16 @@
   var KEY = 'oshboard-lang';
 
   var T = {
+    "от 290 000": ["290 000 dan", "from 290,000"],
+    "от 590 000": ["590 000 dan", "from 590,000"],
+    "Первым 10 заведениям": ["Dastlabki 10 korxonaga", "For the first 10 businesses"],
+    "Начните бесплатно: всё настроим сами": ["Bepul boshlang: hammasini oʻzimiz sozlaymiz", "Start free: we set everything up"],
+    "2 месяца бесплатно": ["2 oy bepul", "2 months free"],
+    "Настроим программу и занесём товары или меню у вас на месте — бесплатно": ["Dasturni sozlaymiz va tovarlar yoki menyuni joyingizda kiritamiz — bepul", "We set up the app and enter your goods or menu on site, free of charge"],
+    "Поддержка в Telegram": ["Telegramda yordam", "Support in Telegram"],
+    "Письменно обещаем отдать все ваши данные, если вы уйдёте или программа закроется": ["Agar ketsangiz yoki dastur yopilsa, barcha maʼlumotlaringizni qaytarishni yozma ravishda vaʼda qilamiz", "A written promise to hand over all your data if you leave or the service closes"],
+    "Взамен вы разрешаете рассказать другим владельцам о вашем результате.": ["Buning evaziga natijangiz haqida boshqa egalarga aytib berishga ruxsat berasiz.", "In return, you let us tell other owners about your results."],
+    "Занять место": ["Joy olish", "Claim a spot"],
     "Ролик за минуту": ["Bir daqiqalik video", "One-minute video"],
     "Можно попробовать, не оставляя заявку?": ["Ariza qoldirmasdan sinab koʻrish mumkinmi?", "Can I try it without leaving a request?"],
     "Да. Нажмите «Попробовать сразу» вверху или кнопку демо у нужного направления — откроется готовое заведение с заказами, складом, людьми и отчётами за месяц. Смотреть можно всё, а менять нельзя, чтобы демо осталось целым для следующего человека. А в разделе «Видеоинструкции» каждое направление показано с озвучкой за 3–4 минуты.": ["Ha. Yuqoridagi «Hoziroq sinab koʻring» tugmasini yoki kerakli yoʻnalish yonidagi demo tugmasini bosing — buyurtmalar, ombor, xodimlar va bir oylik hisobotlari bor tayyor korxona ochiladi. Hammasini koʻrish mumkin, oʻzgartirib boʻlmaydi — demo keyingi odam uchun butun qolishi uchun. «Video yoʻriqnomalar» boʻlimida esa har bir yoʻnalish 3–4 daqiqada ovoz bilan koʻrsatilgan.", "Yes. Press “Try it now” at the top or the demo button of the line of business you need — a ready-made business opens with orders, stock, people and a month of reports. You can look at everything but not change it, so the demo stays intact for the next person. And in “Video guides” each line of business is shown with narration in 3–4 minutes."],

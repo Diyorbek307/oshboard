@@ -709,3 +709,14 @@ footer{border-top:1px solid var(--border);background:var(--bg-soft);padding:60px
 .promo-btn .vplay svg { width: 16px; height: 16px; }
 .hero-copy .promo-btn { display: flex; width: max-content; }
 .promo-btn:focus-visible { outline: 3px solid #e8663d; outline-offset: 4px; border-radius: 20px; }
+
+/* ---------- Предложение первым 10 заведениям ---------- */
+.first10 { display: flex; align-items: center; justify-content: space-between; gap: 28px; margin-top: 24px; padding: 30px 32px; border-radius: 26px; border: 1px solid #e8663d; background: rgba(232,102,61,.08); }
+.first10-copy { min-width: 0; }
+.first10 h3 { margin: 8px 0 14px; font-size: 26px; line-height: 1.2; }
+.first10 ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.first10 li { display: flex; gap: 9px; align-items: flex-start; line-height: 1.4; }
+.first10 li .i { flex: none; width: 18px; height: 18px; margin-top: 2px; color: #e8663d; }
+.first10 p { margin: 14px 0 0; opacity: .75; font-size: 14px; }
+.first10 .btn { flex: none; }
+@media (max-width: 760px) { .first10 { flex-direction: column; align-items: stretch; padding: 24px 20px; } .first10 .btn { text-align: center; } }
