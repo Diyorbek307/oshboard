@@ -2038,5 +2038,101 @@
   "Занять место": [
     "Joy olish",
     "Claim a spot"
+  ],
+  "Один день с OSHBOARD": [
+    "OSHBOARD bilan bir kun",
+    "One day with OSHBOARD"
+  ],
+  "Утро": [
+    "Tong",
+    "Morning"
+  ],
+  "Обед": [
+    "Tushlik",
+    "Lunch"
+  ],
+  "Кухня и склад": [
+    "Oshxona va ombor",
+    "Kitchen and stock"
+  ],
+  "Вечер": [
+    "Kechqurun",
+    "Evening"
+  ],
+  "Ночь": [
+    "Tun",
+    "Night"
+  ],
+  "День начинается со сводки": [
+    "Kun xulosadan boshlanadi",
+    "The day starts with a briefing"
+  ],
+  "Ещё до открытия программа сама пишет вам в Telegram: что закончится на складе, кто сегодня на смене и почему вчера просела выручка.": [
+    "Ochilishdan oldin dastur sizga Telegramda oʻzi yozadi: omborda nima tugaydi, bugun kim smenada va kecha tushum nega pasaydi.",
+    "Before you open, the app messages you in Telegram: what is running out, who is on shift today and why revenue dipped yesterday."
+  ],
+  "Заказ — за десять секунд": [
+    "Buyurtma — oʻn soniyada",
+    "An order in ten seconds"
+  ],
+  "Официант набирает заказ на телефоне, кухня видит его сразу. Пропал интернет — касса продолжает работать и досылает чеки, когда связь вернётся.": [
+    "Ofitsiant buyurtmani telefonda teradi, oshxona uni darhol koʻradi. Internet uzilsa — kassa ishlashda davom etadi va aloqa tiklanganda cheklarni yuboradi.",
+    "The waiter takes the order on a phone and the kitchen sees it at once. If the internet drops, the till keeps working and sends the receipts when the connection is back."
+  ],
+  "Продукты списываются сами": [
+    "Mahsulotlar oʻzi hisobdan chiqadi",
+    "Stock writes itself off"
+  ],
+  "Продали плов — рис, мясо и морковь ушли со склада по тех-карте. Программа заранее скажет: баранины осталось на два дня.": [
+    "Osh sotildi — guruch, goʻsht va sabzi texnik karta boʻyicha ombordan chiqdi. Dastur oldindan aytadi: qoʻy goʻshti ikki kunga yetadi.",
+    "You sold a plov — rice, meat and carrots left the stock by the recipe. The app warns you ahead: lamb will last two more days."
+  ],
+  "Полный зал — под контролем": [
+    "Toʻla zal — nazorat ostida",
+    "A full house, under control"
+  ],
+  "Брони, банкеты и открытые счета — на одном экране. Сразу видно, как идёт день: лучше обычного воскресенья или тише.": [
+    "Bronlar, banketlar va ochiq hisoblar — bitta ekranda. Kun qanday oʻtayotgani darhol koʻrinadi: odatdagi yakshanbadan yaxshimi yoki sustroqmi.",
+    "Bookings, banquets and open bills on one screen. You see at once how the day is going: better than a usual Sunday or quieter."
+  ],
+  "Касса закрыта — прибыль посчитана": [
+    "Kassa yopildi — foyda hisoblangan",
+    "Till closed, profit counted"
+  ],
+  "Не «выручка минус закупка», а честно: минус себестоимость, расходы и зарплаты. Итог дня приходит в Telegram — вы уже дома.": [
+    "«Tushum minus xarid» emas, halol hisob: tannarx, xarajatlar va ish haqi ayiriladi. Kun yakuni Telegramga keladi — siz allaqachon uydasiz.",
+    "Not “revenue minus purchases” but the honest figure: minus cost of goods, expenses and wages. The day’s result lands in Telegram — you are already home."
+  ],
+  "Откроется этот же ресторан — без регистрации и звонка.": [
+    "Aynan shu restoran ochiladi — roʻyxatdan oʻtmasdan va qoʻngʻiroqsiz.",
+    "This same restaurant opens — no sign-up, no call."
+  ],
+  "Ресторан «Регистан» · OSHBOARD": [
+    "«Registon» restorani · OSHBOARD",
+    "Registan restaurant · OSHBOARD"
+  ],
+  "OSHBOARD · сводка": [
+    "OSHBOARD · xulosa",
+    "OSHBOARD · briefing"
+  ],
+  "бот": [
+    "bot",
+    "bot"
+  ],
+  "Вчера 2 049 840 сум — на 24% лучше обычного воскресенья": [
+    "Kecha 2 049 840 soʻm — odatdagi yakshanbadan 24% yaxshi",
+    "Yesterday 2,049,840 UZS — 24% better than a usual Sunday"
+  ],
+  "Заканчивается: баранина — на 2 дня": [
+    "Tugayapti: qoʻy goʻshti — 2 kunga yetadi",
+    "Running out: lamb — 2 days left"
+  ],
+  "На смене сегодня: 6 человек": [
+    "Bugun smenada: 6 kishi",
+    "On shift today: 6 people"
+  ],
+  "Брони: 2 · банкет в пятницу": [
+    "Bronlar: 2 · juma kuni banket",
+    "Bookings: 2 · a banquet on Friday"
   ]
 }

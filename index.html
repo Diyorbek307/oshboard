@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/story.css">
 <script>
   /* Тема до первой отрисовки — чтобы не мигала не та тема. */
   (function () {
@@ -175,6 +176,80 @@
     <span>Рестораны</span><span>Кафе</span><span>Кофейни</span><span>Фастфуд</span><span>Продуктовые</span><span>Аптеки</span><span>Одежда</span><span>Стройматериалы</span><span>Гостиницы</span><span>Хостелы</span><span>Клиники</span><span>Медцентры</span><span>Фермы</span><span>Клининг</span>
   </div>
 </div>
+
+<!-- ОДИН ДЕНЬ С OSHBOARD: сцена стоит на месте, а день идёт вместе с прокруткой (css/story.css, js/story.js) -->
+<section class="story" id="day" data-step="0" aria-label="Один день с OSHBOARD">
+  <div class="story-stage">
+    <div class="story-sky" aria-hidden="true">
+      <b class="st-dawn"></b><b class="st-noon"></b><b class="st-dusk"></b><b class="st-night"></b>
+      <i class="st-stars"></i><i class="st-sun"></i><i class="st-moon"></i>
+      <svg class="st-city far" viewBox="0 0 1440 300" preserveAspectRatio="none" aria-hidden="true"><path d="M0 300V236h60v-18q26-30 52 0v18h70v-30h24v-34q8-12 16 0v34h40v30h96v-22q34-40 68 0v22h80v-40h30v40h110v-26q22-28 44 0v26h64v-46h18v-30q7-10 14 0v30h18v46h120v-24q30-36 60 0v24h90v-34h26v34h84v-20q24-30 48 0v20h100v-44h20v-28q7-10 14 0v28h20v44h82V300Z"/></svg>
+      <svg class="st-city near" viewBox="0 0 1440 300" preserveAspectRatio="none" aria-hidden="true"><path d="M0 300V262h34V92q9-20 18 0v170h70V124h64q26-34 52 0h64v138h66V92q9-20 18 0v170h44v-34h14v-22c-8-34 22-56 40-74 18 18 48 40 40 74v22h14v34h96v-46h70V148h36q22-28 44 0h36v68h70v-28h12v-16c-6-28 18-46 33-62 15 16 39 34 33 62v16h12v28h60v46h72V92q9-20 18 0v170h70V124h64q26-34 52 0h64v138h66V92q9-20 18 0v170h36V300Z"/><g class="lit"><path d="M158 262v-70q28-36 56 0v70ZM714 262v-52q20-26 40 0v52ZM1118 262v-70q28-36 56 0v70Z"/><rect x="84" y="206" width="10" height="16" rx="5"/><rect x="278" y="206" width="10" height="16" rx="5"/><rect x="640" y="226" width="9" height="14" rx="4.5"/><rect x="668" y="226" width="9" height="14" rx="4.5"/><rect x="792" y="226" width="9" height="14" rx="4.5"/><rect x="820" y="226" width="9" height="14" rx="4.5"/><rect x="1044" y="206" width="10" height="16" rx="5"/><rect x="1238" y="206" width="10" height="16" rx="5"/></g></svg>
+    </div>
+    <div class="story-rail" aria-hidden="true"><span>Один день с OSHBOARD</span><i></i></div>
+    <div class="wrap story-wrap">
+      <div class="story-copy">
+        <span class="story-kicker">Один день с OSHBOARD</span>
+        <article class="st-step on" data-step="0">
+          <span class="st-eyebrow"><b>07:00</b><span>Утро</span></span>
+          <h2>День начинается со сводки</h2>
+          <p>Ещё до открытия программа сама пишет вам в Telegram: что закончится на складе, кто сегодня на смене и почему вчера просела выручка.</p>
+        </article>
+        <article class="st-step" data-step="1">
+          <span class="st-eyebrow"><b>12:30</b><span>Обед</span></span>
+          <h2>Заказ — за десять секунд</h2>
+          <p>Официант набирает заказ на телефоне, кухня видит его сразу. Пропал интернет — касса продолжает работать и досылает чеки, когда связь вернётся.</p>
+        </article>
+        <article class="st-step" data-step="2">
+          <span class="st-eyebrow"><b>15:00</b><span>Кухня и склад</span></span>
+          <h2>Продукты списываются сами</h2>
+          <p>Продали плов — рис, мясо и морковь ушли со склада по тех-карте. Программа заранее скажет: баранины осталось на два дня.</p>
+        </article>
+        <article class="st-step" data-step="3">
+          <span class="st-eyebrow"><b>19:00</b><span>Вечер</span></span>
+          <h2>Полный зал — под контролем</h2>
+          <p>Брони, банкеты и открытые счета — на одном экране. Сразу видно, как идёт день: лучше обычного воскресенья или тише.</p>
+        </article>
+        <article class="st-step" data-step="4">
+          <span class="st-eyebrow"><b>23:00</b><span>Ночь</span></span>
+          <h2>Касса закрыта — прибыль посчитана</h2>
+          <p>Не «выручка минус закупка», а честно: минус себестоимость, расходы и зарплаты. Итог дня приходит в Telegram — вы уже дома.</p>
+        </article>
+        <div class="st-cta">
+          <a href="https://oshboard-web.onrender.com/demo?kind=restaurant" data-demo="restaurant" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Попробовать сразу</a>
+          <small>Откроется этот же ресторан — без регистрации и звонка.</small>
+        </div>
+      </div>
+      <div class="story-device" aria-hidden="true">
+        <div class="st-frame">
+          <div class="st-bar"><i></i><i></i><i></i><span>Ресторан «Регистан» · OSHBOARD</span></div>
+          <div class="st-screens">
+            <div class="st-screen st-tg on" data-step="0">
+              <div class="st-tg-head">
+                <span class="st-tg-av"><svg viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 16 9 5 9-5"/></svg></span>
+                <div><b>OSHBOARD · сводка</b><small>бот</small></div>
+              </div>
+              <div class="st-msg"><b>Утренняя сводка</b>
+                <ul>
+                  <li>Вчера 2 049 840 сум — на 24% лучше обычного воскресенья</li>
+                  <li>Заканчивается: баранина — на 2 дня</li>
+                  <li>На смене сегодня: 6 человек</li>
+                  <li>Брони: 2 · банкет в пятницу</li>
+                </ul>
+                <time>07:00</time>
+              </div>
+            </div>
+            <img class="st-screen" data-step="1" src="assets/img/story-pos.webp" width="1440" height="900" loading="lazy" decoding="async" alt="">
+            <img class="st-screen" data-step="2" src="assets/img/story-stock.webp" width="1440" height="900" loading="lazy" decoding="async" alt="">
+            <img class="st-screen" data-step="3" src="assets/img/story-today.webp" width="1440" height="900" loading="lazy" decoding="async" alt="">
+            <img class="st-screen" data-step="4" src="assets/img/story-profit.webp" width="1440" height="900" loading="lazy" decoding="async" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <ol class="story-dots" aria-hidden="true"><li class="on"></li><li></li><li></li><li></li><li></li></ol>
+  </div>
+</section>
 
 <!-- PROBLEM -->
 <section class="sec">
@@ -869,6 +944,7 @@
 </footer>
 
 <script src="js/main.js" defer></script>
+<script src="js/story.js" defer></script>
 <script src="js/i18n.js" defer></script>
 </body>
 </html>
