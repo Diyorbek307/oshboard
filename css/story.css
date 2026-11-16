@@ -141,3 +141,11 @@
   .st-tg-head{display:none}
   .st-msg{max-width:100%;font-size:12.5px;padding:10px 12px}
 }
+
+/* ---------- объёмная площадь (js/story3d.js): холст занимает место нарисованного неба и силуэта */
+.st-gl{position:absolute;inset:0;width:100%;height:100%;display:block}
+.story-3d .story-sky>b,.story-3d .st-city,.story-3d .st-sun,.story-3d .st-moon,.story-3d .st-stars{display:none}
+/* под текстом слева — затемнение, справа сцена остаётся яркой */
+.story-3d .story-sky::after{background:linear-gradient(90deg,rgba(8,10,16,.82) 0%,rgba(8,10,16,.55) 30%,rgba(8,10,16,.06) 52%,rgba(8,10,16,0) 100%)}
+/* экран программы теперь стоит внутри сцены — окно поверх неё прячем, место под него оставляем */
+.story-3d .story-device{visibility:hidden}
